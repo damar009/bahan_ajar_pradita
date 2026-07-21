@@ -1467,7 +1467,7 @@
         {
           "type": "contoh",
           "title": "Kuis 18",
-          "content": "18. Jika Toko Berkah akan menerima kiriman detergen merek P, Q, dan R pada hari yang sama untuk ke-6 kalinya pada 100 hari setelah 1 Mei 2026, nilai $y$ adalah ....",
+          "content": "18. Jika Toko Berkah akan menerima kiriman detergen merek P, Q, dan R pada hari yang sama untuk ke-6 kalinya pada 100 hari setelah <b>pengiriman pertama di</b> 1 Mei 2026, nilai $y$ adalah ....",
           "options": [
             {
               "label": "A",
