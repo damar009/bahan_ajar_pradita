@@ -25,7 +25,9 @@
       "judul": "Jumlah Soal dan Waktu Tes - Penalaran Umum",
       "icon": "fa-clock",
       "tipe": "table",
-      "isi": [],
+      "isi": [
+        "Subtes Penalaran Umum UTBK SNBT terdiri dari 30 soal yang mencakup Penalaran Induktif (10 soal), Penalaran Deduktif (10 soal), dan Penalaran Kuantitatif (10 soal)."
+      ],
       "table": {
         "headers": [
           "Tahun",
@@ -79,9 +81,254 @@
         ],
         "rows": [
           [
-            "- Pernyataan Paling Mungkin Benar/Salah<br>- Pernyataan yang Menjadi Asumsi<br>- Pernyataan yang Paling Menjelaskan Perbedaan<br>- Pernyataan yang Memperkuat/Memperlemah Pernyataan<br>- Pernyataan yang Didukung oleh Teks<br>- Hubungan Antarpernyataan<br>- Pernyataan Paling Tepat Berdasarkan Definisi atau Konsep<br>- Strategi atau Tindakan Paling Tepat<br>- Informasi Tambahan Agar Kesimpulan Tepat",
-            "- Pernyataan Pasti Benar/Salah<br>- Penarikan Kesimpulan - Silogisme Hipotetis<br>- Penarikan Kesimpulan - Silogisme Kategoris<br>- Kualitas Suatu Simpulan<br>- Logika Analitika",
-            "- Operasi Hitung Bilangan<br>- Penyajian Data dalam Bentuk Tabel/Diagram<br>- Kecukupan Data<br>- Deret<br>- Soal Cerita"
+            "- Pernyataan Paling Mungkin Benar/Salah<br>- Pernyataan yang Menjadi Asumsi<br>- Pernyataan yang Paling Menjelaskan Perbedaan<br>- Pernyataan yang Memperkuat/Memperlemah Pernyataan<br>- Pernyataan yang Didukung oleh Teks<br>- Hubungan Antarpernyataan<br>- Pernyataan Paling Tepat Berdasarkan Definisi atau Konsep<br>- Strategi atau Tindakan Paling Tepat<br>- Informasi Tambahan Agar Kesimpulan Tepat<br>- Pernyataan Paling Tepat Berdasarkan Definisi atau Konsep(NEW!)<br>- Strategi atau Tindakan Paling Tepat(NEW!)<br>- Informasi Tambahan Agar Kesimpulan Tepat(NEW!)",
+            "- Pernyataan Pasti Benar/Salah<br>- Penarikan Kesimpulan - Silogisme Hipotetis<br>- Penarikan Kesimpulan - Silogisme Kategoris / Kalimat Berkuantor<br>- Kualitas Suatu Simpulan<br>- Logika Analitika",
+            "- Operasi Hitung Bilangan<br>- Penyajian Data dalam Bentuk Tabel/Diagram<br>- Kecukupan Informasi<br>- Deret<br>- Soal Cerita"
+          ]
+        ]
+      }
+    },
+    {
+      "judul": "Pemetaan Tipe Soal Penalaran Induktif",
+      "icon": "fa-table",
+      "tipe": "table",
+      "isi": [
+        "Menguji kemampuan menarik simpulan yang paling mungkin benar berdasarkan informasi atau bukti yang tersedia. Simpulan induktif bersifat probabilistik dan dapat berubah apabila terdapat informasi tambahan."
+      ],
+      "table": {
+        "headers": [
+          "Tipe Soal",
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "leftAlign": [
+          0
+        ],
+        "rows": [
+          [
+            "Pernyataan Paling Mungkin Benar/Salah",
+            "5",
+            "3",
+            "1",
+            "2",
+            "–"
+          ],
+          [
+            "Pernyataan yang Menjadi Asumsi",
+            "–",
+            "1",
+            "–",
+            "2",
+            "–"
+          ],
+          [
+            "Pernyataan yang Paling Menjelaskan Perbedaan",
+            "1",
+            "–",
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "Pernyataan yang Memperkuat/Memperlemah Pernyataan",
+            "3",
+            "3",
+            "3",
+            "3",
+            "–"
+          ],
+          [
+            "Pernyataan yang Didukung oleh Teks",
+            "0",
+            "1",
+            "2",
+            "1",
+            "3"
+          ],
+          [
+            "Hubungan Antarpernyataan",
+            "2",
+            "–",
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "Pernyataan Paling Tepat Berdasarkan Definisi atau Konsep",
+            "–",
+            "–",
+            "–",
+            "–",
+            "1"
+          ],
+          [
+            "Strategi atau Tindakan Paling Tepat",
+            "–",
+            "–",
+            "–",
+            "–",
+            "2"
+          ],
+          [
+            "Informasi Tambahan Agar Kesimpulan Tepat",
+            "–",
+            "–",
+            "–",
+            "–",
+            "1"
+          ],
+          [
+            "<b>TOTAL<b>",
+            "<b>11<b>",
+            "<b>8<b>",
+            "<b>8<b>",
+            "<b>10<b>",
+            "<b>9<b>"
+          ]
+        ]
+      }
+    },
+    {
+      "judul": "Pemetaan Tipe Soal Penalaran Deduktif",
+      "icon": "fa-table",
+      "tipe": "table",
+      "isi": [
+        "Menguji kemampuan menarik kesimpulan yang pasti benar berdasarkan premis yang diberikan. Simpulan dianggap valid apabila secara logis tidak mungkin salah selama premis yang digunakan benar."
+      ],
+      "table": {
+        "headers": [
+          "Tipe Soal",
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "leftAlign": [
+          0
+        ],
+        "rows": [
+          [
+            "Pernyataan Pasti Benar/Salah",
+            "4",
+            "4",
+            "4",
+            "2",
+            "1"
+          ],
+          [
+            "Silogisme Hipotetis",
+            "3",
+            "6",
+            "6",
+            "5",
+            "9"
+          ],
+          [
+            "Kalimat Berkuantor",
+            "1",
+            "2",
+            "–",
+            "2",
+            "1"
+          ],
+          [
+            "Kualitas Suatu Simpulan",
+            "1",
+            "–",
+            "2",
+            "1",
+            "–"
+          ],
+          [
+            "Logika Analitika",
+            "2",
+            "–",
+            "–",
+            "–",
+            "–"
+          ],
+          [
+            "<b>TOTAL<b>",
+            "<b>11<b>",
+            "<b>12<b>",
+            "<b>12<b>",
+            "<b>10<b>",
+            "<b>11<b>"
+          ]
+        ]
+      }
+    },
+    {
+      "judul": "Pemetaan Tipe Soal Penalaran Kuantitatif",
+      "icon": "fa-table",
+      "tipe": "table",
+      "isi": [
+        "Menguji kemampuan menggunakan angka, hubungan matematis, pola, serta interpretasi data untuk menyelesaikan permasalahan secara logis."
+      ],
+      "table": {
+        "headers": [
+          "Tipe Soal",
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "leftAlign": [
+          0
+        ],
+        "rows": [
+          [
+            "Operasi Hitung Bilangan",
+            "2",
+            "3",
+            "2",
+            "2",
+            "1"
+          ],
+          [
+            "Penyajian Data dalam Bentuk Tabel/Diagram",
+            "2",
+            "2",
+            "3",
+            "3",
+            "3"
+          ],
+          [
+            "Kecukupan Informasi",
+            "–",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "Deret",
+            "2",
+            "3",
+            "2",
+            "2",
+            "1"
+          ],
+          [
+            "Soal Cerita",
+            "2",
+            "1",
+            "2",
+            "2",
+            "4"
+          ],
+          [
+            "<b>TOTAL<b>",
+            "<b>8<b>",
+            "<b>10<b>",
+            "<b>10<b>",
+            "<b>10<b>",
+            "<b>10<b>"
           ]
         ]
       }
@@ -122,27 +369,27 @@
         {
           "type": "contoh",
           "title": "Kuis 2",
-          "content": "2. Bilangan yang PALING MENDEKATI hasil $1,23 + \\dfrac{16}{5}$ adalah ....",
+          "content": "2. Bilangan yang PALING MENDEKATI hasil $1{,}23 + \\dfrac{16}{5}$ adalah ....",
           "options": [
             {
               "label": "A",
-              "text": "$4\\frac{9}{20}$"
+              "text": "$4\\dfrac{9}{20}$"
             },
             {
               "label": "B",
-              "text": "$4\\frac{2}{5}$"
+              "text": "$4\\dfrac{2}{5}$"
             },
             {
               "label": "C",
-              "text": "$4\\frac{1}{2}$"
+              "text": "$4\\dfrac{1}{2}$"
             },
             {
               "label": "D",
-              "text": "$5\\frac{2}{5}$"
+              "text": "$5\\dfrac{2}{5}$"
             },
             {
               "label": "E",
-              "text": "$5\\frac{1}{2}$"
+              "text": "$5\\dfrac{1}{2}$"
             }
           ]
         },
@@ -405,6 +652,181 @@
       }
     },
     {
+      "judul": "Frekuensi Persebaran Materi Pengetahuan Kuantitatif (PK)",
+      "icon": "fa-table",
+      "tipe": "table",
+      "isi": [],
+      "table": {
+        "headers": [
+          "Topik",
+          "Subtopik",
+          "Frekuensi<br>2022-2024",
+          "Frekuensi<br>2025",
+          "Frekuensi<br>2026"
+        ],
+        "leftAlign": [
+          0,
+          1
+        ],
+        "rows": [
+          [
+            "Aljabar dan Fungsi",
+            "Konsep Kilat Bentuk Aljabar",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Aljabar dan Fungsi",
+            "Konsep Kilat Aritmetika Sosial",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Aljabar dan Fungsi",
+            "Konsep Kilat Persamaan Garis Lurus",
+            "1",
+            "1",
+            "0"
+          ],
+          [
+            "Aljabar dan Fungsi",
+            "Konsep Kilat Fungsi",
+            "2",
+            "2",
+            "3"
+          ],
+          [
+            "Aljabar dan Fungsi",
+            "Konsep Kilat Fungsi komposisi dan invers",
+            "4",
+            "0",
+            "2"
+          ],
+          [
+            "Aljabar dan Fungsi",
+            "Konsep Kilat Persamaan dan Fungsi Kuadrat",
+            "2",
+            "3",
+            "0"
+          ],
+          [
+            "Aljabar dan Fungsi",
+            "Konsep Kilat Persamaan dan Pertidaksamaan",
+            "4",
+            "1",
+            "0"
+          ],
+          [
+            "Aljabar dan Fungsi",
+            "Konsep Kilat Sistem Persamaan Linear",
+            "4",
+            "1",
+            "2"
+          ],
+          [
+            "Aljabar dan Fungsi",
+            "Konsep Kilat Matriks",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Bilangan",
+            "Konsep Kilat Operasi Hitung Bilangan",
+            "6",
+            "3",
+            "5"
+          ],
+          [
+            "Bilangan",
+            "Konsep Kilat FPB dan KPK",
+            "0",
+            "1",
+            "1"
+          ],
+          [
+            "Bilangan",
+            "Konsep Kilat Himpunan",
+            "2",
+            "0",
+            "0"
+          ],
+          [
+            "Bilangan",
+            "Konsep Kilat Pola Bilangan",
+            "5",
+            "1",
+            "1"
+          ],
+          [
+            "Geometri",
+            "Konsep Kilat Jarak",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "Geometri",
+            "Konsep Kilat Garis dan Sudut",
+            "2",
+            "0",
+            "0"
+          ],
+          [
+            "Geometri",
+            "Konsep Kilat Bangun Datar",
+            "4",
+            "4",
+            "1"
+          ],
+          [
+            "Geometri",
+            "Konsep Kilat Bangun Datar (Lanjutan)",
+            "1",
+            "2",
+            "1"
+          ],
+          [
+            "Geometri",
+            "Konsep Kilat Bangun Ruang",
+            "3",
+            "0",
+            "0"
+          ],
+          [
+            "Statistika dan Peluang",
+            "Konsep Kilat Statistika Deskriptif",
+            "3",
+            "1",
+            "0"
+          ],
+          [
+            "Statistika dan Peluang",
+            "Konsep Kilat Aturan Pencacahan",
+            "2",
+            "0",
+            "3"
+          ],
+          [
+            "Statistika dan Peluang",
+            "Konsep Kilat Teori Peluang",
+            "3",
+            "0",
+            "1"
+          ],
+          [
+            "Kalkulus Dasar",
+            "Limit, Turunan, dan Integral Aljabar",
+            "1",
+            "0",
+            "0"
+          ]
+        ]
+      }
+    },
+    {
       "judul": "Tipe dan Contoh Soal - Pengetahuan Kuantitatif",
       "icon": "fa-pen-nib",
       "tipe": "box",
@@ -437,15 +859,15 @@
             },
             {
               "label": "C",
-              "text": "$\\frac{1}{3}$"
+              "text": "$\\dfrac{1}{3}$"
             },
             {
               "label": "D",
-              "text": "$-\\frac{7}{4}$"
+              "text": "$-\\dfrac{7}{4}$"
             },
             {
               "label": "E",
-              "text": "$\\frac{3}{4}$"
+              "text": "$\\dfrac{3}{4}$"
             }
           ]
         },
@@ -561,7 +983,7 @@
         {
           "type": "contoh",
           "title": "Kuis 12",
-          "content": "12. Pada garis bilangan, posisi pecahan $\\frac{4}{x}$ di sebelah kanan pecahan $\\frac{3}{y}$ dengan $x$ dan $y$ positif. Berdasarkan informasi tersebut, manakah hubungan yang benar antara kuantitas $P$ dan $Q$ berikut berdasarkan informasi yang diberikan?",
+          "content": "12. Pada garis bilangan, posisi pecahan $\\dfrac{4}{x}$ di sebelah kanan pecahan $\\dfrac{3}{y}$ dengan $x$ dan $y$ positif. Berdasarkan informasi tersebut, manakah hubungan yang benar antara kuantitas $P$ dan $Q$ berikut berdasarkan informasi yang diberikan?",
           "table": {
             "headers": [
               "P",
@@ -733,7 +1155,9 @@
       "judul": "Cakupan Materi - Penalaran Matematika",
       "icon": "fa-layer-group",
       "tipe": "table",
-      "isi": [],
+      "isi": [
+        "Materi pada Pengetahuan Kuantitatif (PK) dan Penalaran Matematika (PM) banyak beririsan, sehingga satu topik pembelajaran dapat digunakan untuk menyelesaikan soal di kedua subtes tersebut."
+      ],
       "table": {
         "headers": [
           "Aljabar dan Fungsi",
@@ -749,10 +1173,171 @@
         ],
         "rows": [
           [
-            "- Bentuk aljabar<br>- Aritmetika sosial<br>- Perbandingan<br>- Fungsi<br>- Sistem persamaan linear",
+            "- Bentuk aljabar<br>- Aritmetika sosial<br>- Perbandingan<br>- Fungsi<br>- Persamaan dan fungsi kuadrat<br>- Persamaan dan pertidaksamaan<br>- Sistem persamaan linear",
             "- Operasi hitung bilangan<br>- FPB dan KPK<br>- Pola bilangan<br>- Himpunan",
-            "- Jarak<br>- Bangun datar<br>- Kesebangunan<br>- Trigonometri dasar<br>- Bangun ruang",
+            "- Jarak<br>- Bangun datar<br>- Kesebangunan<br>- Bangun ruang",
             "- Statistika deskriptif<br>- Aturan pencacahan<br>- Teori peluang"
+          ]
+        ]
+      }
+    },
+    {
+      "judul": "Frekuensi Persebaran Materi Penalaran Matematika (PM)",
+      "icon": "fa-table",
+      "tipe": "table",
+      "isi": [],
+      "table": {
+        "headers": [
+          "Topik",
+          "Subtopik",
+          "Frekuensi<br>2022-2024",
+          "Frekuensi<br>2025",
+          "Frekuensi<br>2026"
+        ],
+        "leftAlign": [
+          0,
+          1
+        ],
+        "rows": [
+          [
+            "Aljabar dan Fungsi",
+            "Konsep Kilat Bentuk Aljabar",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Aljabar dan Fungsi",
+            "Konsep Kilat Aritmetika Sosial",
+            "12",
+            "1",
+            "1"
+          ],
+          [
+            "Aljabar dan Fungsi",
+            "Konsep Kilat Persamaan Garis Lurus",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Aljabar dan Fungsi",
+            "Konsep Kilat Fungsi",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Aljabar dan Fungsi",
+            "Konsep Kilat Fungsi komposisi dan invers",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Aljabar dan Fungsi",
+            "Konsep Kilat Persamaan dan Fungsi Kuadrat",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Aljabar dan Fungsi",
+            "Konsep Kilat Persamaan dan Pertidaksamaan",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Aljabar dan Fungsi",
+            "Konsep Kilat Sistem Persamaan Linear",
+            "2",
+            "0",
+            "3"
+          ],
+          [
+            "Bilangan",
+            "Konsep Kilat Operasi Hitung Bilangan",
+            "2",
+            "1",
+            "1"
+          ],
+          [
+            "Bilangan",
+            "Konsep Kilat FPB dan KPK",
+            "4",
+            "0",
+            "0"
+          ],
+          [
+            "Bilangan",
+            "Konsep Kilat Himpunan",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Bilangan",
+            "Konsep Kilat Pola Bilangan",
+            "3",
+            "4",
+            "1"
+          ],
+          [
+            "Geometri",
+            "Konsep Kilat Jarak",
+            "3",
+            "0",
+            "1"
+          ],
+          [
+            "Geometri",
+            "Konsep Kilat Garis dan Sudut",
+            "0",
+            "0",
+            "4"
+          ],
+          [
+            "Geometri",
+            "Konsep Kilat Bangun Datar",
+            "1",
+            "2",
+            "3"
+          ],
+          [
+            "Geometri",
+            "Konsep Kilat Bangun Datar (Lanjutan)",
+            "2",
+            "5",
+            "1"
+          ],
+          [
+            "Geometri",
+            "Konsep Kilat Bangun Ruang",
+            "6",
+            "3",
+            "0"
+          ],
+          [
+            "Statistika dan Peluang",
+            "Konsep Kilat Statistika Deskriptif",
+            "1",
+            "0",
+            "2"
+          ],
+          [
+            "Statistika dan Peluang",
+            "Konsep Kilat Aturan Pencacahan",
+            "0",
+            "0",
+            "1"
+          ],
+          [
+            "Statistika dan Peluang",
+            "Konsep Kilat Teori Peluang",
+            "1",
+            "4",
+            "2"
           ]
         ]
       }
@@ -765,7 +1350,7 @@
         "Subtes Penalaran Matematika terdiri dari soal-soal dengan pilihan ganda biasa, isian singkat, dan pilihan ganda majemuk berbentuk tabel.",
         {
           "type": "note",
-          "content": "Teks berikut digunakan untuk menjawab kuis 15-17. Terdapat 8 calon pengurus kelas yang terdiri dari 5 laki-laki dan 3 perempuan. Akan dipilih pengurus kelas yang terdiri dari ketua, sekretaris, dan bendahara secara acak dari 8 calon pengurus kelas tersebut."
+          "content": "Teks berikut digunakan untuk menjawab kuis 15-17.<br>Terdapat 8 calon pengurus kelas yang terdiri dari 5 laki-laki dan 3 perempuan. Akan dipilih pengurus kelas yang terdiri dari ketua, sekretaris, dan bendahara secara acak dari 8 calon pengurus kelas tersebut."
         },
         {
           "type": "contoh",
@@ -801,23 +1386,23 @@
           "options": [
             {
               "label": "A",
-              "text": "$\\frac{5}{28}$"
+              "text": "$\\dfrac{5}{28}$"
             },
             {
               "label": "B",
-              "text": "$\\frac{3}{28}$"
+              "text": "$\\dfrac{3}{28}$"
             },
             {
               "label": "C",
-              "text": "$\\frac{5}{14}$"
+              "text": "$\\dfrac{5}{14}$"
             },
             {
               "label": "D",
-              "text": "$\\frac{5}{8}$"
+              "text": "$\\dfrac{5}{8}$"
             },
             {
               "label": "E",
-              "text": "$\\frac{3}{8}$"
+              "text": "$\\dfrac{3}{8}$"
             }
           ]
         },
@@ -828,29 +1413,29 @@
           "options": [
             {
               "label": "A",
-              "text": "$\\frac{15}{56}$"
+              "text": "$\\dfrac{15}{56}$"
             },
             {
               "label": "B",
-              "text": "$\\frac{15}{28}$"
+              "text": "$\\dfrac{15}{28}$"
             },
             {
               "label": "C",
-              "text": "$\\frac{5}{56}$"
+              "text": "$\\dfrac{5}{56}$"
             },
             {
               "label": "D",
-              "text": "$\\frac{5}{28}$"
+              "text": "$\\dfrac{5}{28}$"
             },
             {
               "label": "E",
-              "text": "$\\frac{5}{14}$"
+              "text": "$\\dfrac{5}{14}$"
             }
           ]
         },
         {
           "type": "note",
-          "content": "Teks berikut digunakan untuk menjawab kuis 18-20. Toko Berkah menerima kiriman sabun detergen dari tiga pemasok untuk dijual kembali dengan jadwal sebagai berikut."
+          "content": "Teks berikut digunakan untuk menjawab kuis 18-20.<br>Toko Berkah menerima kiriman sabun detergen dari tiga pemasok untuk dijual kembali dengan jadwal sebagai berikut."
         },
         {
           "type": "table",
