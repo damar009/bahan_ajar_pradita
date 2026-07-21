@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Placeholder cover website">
+  <rect width="1600" height="1000" fill="#20313f"/>
+  <path d="M0 690 C 210 570, 390 760, 620 650 S 1010 500, 1240 610 S 1460 790, 1600 620 L1600 1000 L0 1000 Z" fill="#0f766e"/>
+  <path d="M0 770 C 250 690, 420 850, 700 735 S 1070 660, 1320 760 S 1510 830, 1600 735 L1600 1000 L0 1000 Z" fill="#f59e0b" opacity=".82"/>
+  <circle cx="1260" cy="230" r="150" fill="#ffffff" opacity=".12"/>
+  <circle cx="1365" cy="195" r="52" fill="#ffffff" opacity=".18"/>
+  <g fill="#ffffff" opacity=".14">
+    <rect x="150" y="160" width="310" height="28" rx="14"/>
+    <rect x="150" y="220" width="460" height="28" rx="14"/>
+    <rect x="150" y="280" width="380" height="28" rx="14"/>
+  </g>
+</svg>

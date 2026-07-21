@@ -1,0 +1,86 @@
+[
+  {
+    "id": "bookmark",
+    "title": "Bookmark",
+    "summary": "Kumpulan laman.",
+    "url": "pages/bookmark/index.html",
+    "published": true
+  },
+  {
+    "id": "page_pd_dasnum_1",
+    "title": "DASAR NUMERASI 01",
+    "summary": "| Pengenalan subtes <b>Penalaran Umum</b>, <b>Pengetahuan Kuantitatif</b>, dan <b>Penalaran Matematika</b>.",
+    "url": "pages/page_pd_dasnum_1/index.html",
+    "published": true
+  },
+  {
+    "id": "page_pd_dasnum_2",
+    "title": "DASAR NUMERASI 02",
+    "summary": "| Under Construction...",
+    "url": "pages/page_pd_dasnum_2/index.html",
+    "published": true
+  },
+  {
+    "id": "page_pd_dasnum_3",
+    "title": "DASAR NUMERASI 03",
+    "summary": "| Konten dummy sementara untuk struktur page Dasar Numerasi 03.",
+    "url": "pages/page_pd_dasnum_3/index.html",
+    "published": false
+  },
+  {
+    "id": "page_pd_dasnum_4",
+    "title": "DASAR NUMERASI 04",
+    "summary": "| Konten dummy sementara untuk struktur page Dasar Numerasi 04.",
+    "url": "pages/page_pd_dasnum_4/index.html",
+    "published": false
+  },
+  {
+    "id": "page_pd_dasnum_5",
+    "title": "DASAR NUMERASI 05",
+    "summary": "| Konten dummy sementara untuk struktur page Dasar Numerasi 05.",
+    "url": "pages/page_pd_dasnum_5/index.html",
+    "published": false
+  },
+  {
+    "id": "page_pd_dasnum_6",
+    "title": "DASAR NUMERASI 06",
+    "summary": "| Konten dummy sementara untuk struktur page Dasar Numerasi 06.",
+    "url": "pages/page_pd_dasnum_6/index.html",
+    "published": false
+  },
+  {
+    "id": "page_pd_dasnum_7",
+    "title": "DASAR NUMERASI 07",
+    "summary": "| Konten dummy sementara untuk struktur page Dasar Numerasi 07.",
+    "url": "pages/page_pd_dasnum_7/index.html",
+    "published": false
+  },
+  {
+    "id": "page_pd_dasnum_8",
+    "title": "DASAR NUMERASI 08",
+    "summary": "| Konten dummy sementara untuk struktur page Dasar Numerasi 08.",
+    "url": "pages/page_pd_dasnum_8/index.html",
+    "published": false
+  },
+  {
+    "id": "page_pd_dasnum_9",
+    "title": "DASAR NUMERASI 09",
+    "summary": "| Konten dummy sementara untuk struktur page Dasar Numerasi 09.",
+    "url": "pages/page_pd_dasnum_9/index.html",
+    "published": false
+  },
+  {
+    "id": "page_pd_dasnum_10",
+    "title": "DASAR NUMERASI 10",
+    "summary": "| Konten dummy sementara untuk struktur page Dasar Numerasi 10.",
+    "url": "pages/page_pd_dasnum_10/index.html",
+    "published": false
+  },
+  {
+    "id": "contoh-halaman",
+    "title": "Contoh HalamanContoh HalamanContoh HalamanContoh HalamanContoh HalamanContoh Halaman",
+    "summary": "Template halaman mandiri dengan HTML, CSS, JS, JSON, dan aset.",
+    "url": "pages/contoh-halaman/index.html",
+    "published": false
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "title": "Contoh Halaman",
+  "category": "Template",
+  "summary": "Gunakan folder ini sebagai contoh ketika menambah halaman baru.",
+  "sections": [
+    {
+      "tag": "HTML",
+      "heading": "index.html",
+      "body": "Berisi struktur halaman dan titik pemasangan navigasi bersama."
+    },
+    {
+      "tag": "CSS",
+      "heading": "style.css",
+      "body": "Berisi tampilan khusus untuk halaman ini saja."
+    },
+    {
+      "tag": "JSON",
+      "heading": "data.json",
+      "body": "Berisi data yang bisa diedit tanpa menyentuh banyak kode."
+    }
+  ]
+}

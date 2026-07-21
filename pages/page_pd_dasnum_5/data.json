@@ -1,0 +1,17 @@
+{
+  "materi": [
+    {
+      "judul": "Dummy Page Dasar Numerasi 05",
+      "icon": "fa-book-open",
+      "tipe": "basic",
+      "isi": [
+        "<strong>Status:</strong> Konten dummy sementara.",
+        "<strong>Catatan:</strong> Ganti isi file <code>data.json</code> ini saat materi asli sudah siap.",
+        {
+          "type": "note",
+          "content": "File ini dibuat sebagai placeholder agar page sudah muncul di daftar isi, dropdown, dan bookmark."
+        }
+      ]
+    }
+  ]
+}

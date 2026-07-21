@@ -1,0 +1,966 @@
+{
+  "materi": [
+    {
+      "judul": "Belajar Apa Hari Ini",
+      "icon": "fa-book-open",
+      "tipe": "basic",
+      "isi": [
+        "<strong>Topik:</strong> Pengenalan Subtes",
+        "<strong>Subtopik:</strong> Pengenalan Penalaran Umum, Pengetahuan Kuantitatif, dan Penalaran Matematika",
+        {
+          "type": "note",
+          "content": "Viewer ini memuat materi pengenalan subtes dari bahan ajar. Bagian pembahasan soal tidak disertakan sesuai ketentuan."
+        }
+      ]
+    },
+    {
+      "judul": "A. Pengenalan Subtes Penalaran Umum",
+      "icon": "fa-brain",
+      "tipe": "basic",
+      "isi": [
+        "Subtes Penalaran Umum mengukur kemampuan peserta dalam memahami informasi, menarik simpulan, dan menggunakan pola penalaran untuk menyelesaikan masalah."
+      ]
+    },
+    {
+      "judul": "Jumlah Soal dan Waktu Tes - Penalaran Umum",
+      "icon": "fa-clock",
+      "tipe": "table",
+      "isi": [],
+      "table": {
+        "headers": [
+          "Tahun",
+          "Jumlah Soal",
+          "Waktu Tes"
+        ],
+        "rows": [
+          [
+            "2022",
+            "30 soal",
+            "30 menit"
+          ],
+          [
+            "2023",
+            "30 soal",
+            "30 menit"
+          ],
+          [
+            "2024",
+            "30 soal",
+            "30 menit"
+          ],
+          [
+            "2025",
+            "30 soal",
+            "30 menit"
+          ],
+          [
+            "2026",
+            "30 soal",
+            "30 menit"
+          ]
+        ]
+      }
+    },
+    {
+      "judul": "Cakupan Materi - Penalaran Umum",
+      "icon": "fa-layer-group",
+      "tipe": "table",
+      "isi": [],
+      "table": {
+        "headers": [
+          "Penalaran Induktif",
+          "Penalaran Deduktif",
+          "Penalaran Kuantitatif"
+        ],
+        "leftAlign": [
+          0,
+          1,
+          2
+        ],
+        "rows": [
+          [
+            "- Pernyataan Paling Mungkin Benar/Salah<br>- Pernyataan yang Menjadi Asumsi<br>- Pernyataan yang Paling Menjelaskan Perbedaan<br>- Pernyataan yang Memperkuat/Memperlemah Pernyataan<br>- Pernyataan yang Didukung oleh Teks<br>- Hubungan Antarpernyataan<br>- Pernyataan Paling Tepat Berdasarkan Definisi atau Konsep<br>- Strategi atau Tindakan Paling Tepat<br>- Informasi Tambahan Agar Kesimpulan Tepat",
+            "- Pernyataan Pasti Benar/Salah<br>- Penarikan Kesimpulan - Silogisme Hipotetis<br>- Penarikan Kesimpulan - Silogisme Kategoris<br>- Kualitas Suatu Simpulan<br>- Logika Analitika",
+            "- Operasi Hitung Bilangan<br>- Penyajian Data dalam Bentuk Tabel/Diagram<br>- Kecukupan Data<br>- Deret<br>- Soal Cerita"
+          ]
+        ]
+      }
+    },
+    {
+      "judul": "Tipe dan Contoh Soal - Penalaran Umum",
+      "icon": "fa-pen-nib",
+      "tipe": "box",
+      "isi": [
+        "Subtes Penalaran Umum terdiri dari soal-soal dengan pilihan ganda biasa, pilihan ganda majemuk berbentuk tabel, dan isian singkat. Soal-soal yang akan dibahas di sini hanya bagian Penalaran Kuantitatif karena menjadi bagian dari dasar-dasar numerasi. Sementara itu, bagian Penalaran Induktif dan Penalaran Deduktif akan dijelaskan tersendiri di bagian Penalaran Umum.",
+        {
+          "type": "contoh",
+          "title": "Kuis 1",
+          "content": "1. Jumlah pengunjung perpustakaan pada hari Rabu, Kamis, Jumat, dan Sabtu berturut-turut adalah 125, 136, 147, dan 158. Jika kenaikan jumlah pengunjung perpustakaan tersebut bersifat konstan setiap harinya pada minggu tersebut, jumlah pengunjung pada hari Senin adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "102"
+            },
+            {
+              "label": "B",
+              "text": "103"
+            },
+            {
+              "label": "C",
+              "text": "114"
+            },
+            {
+              "label": "D",
+              "text": "115"
+            },
+            {
+              "label": "E",
+              "text": "124"
+            }
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 2",
+          "content": "2. Bilangan yang PALING MENDEKATI hasil $1,23 + \\dfrac{16}{5}$ adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "$4\\frac{9}{20}$"
+            },
+            {
+              "label": "B",
+              "text": "$4\\frac{2}{5}$"
+            },
+            {
+              "label": "C",
+              "text": "$4\\frac{1}{2}$"
+            },
+            {
+              "label": "D",
+              "text": "$5\\frac{2}{5}$"
+            },
+            {
+              "label": "E",
+              "text": "$5\\frac{1}{2}$"
+            }
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 3",
+          "content": "3. Untuk membuat racikan kopi susu, rasio kopi dan susu yang digunakan adalah 2 : 5. Jika jumlah susu yang digunakan adalah 80 ml, maka jumlah kopi yang dibutuhkan adalah ... ml.",
+          "options": [
+            {
+              "label": "A",
+              "text": "200"
+            },
+            {
+              "label": "B",
+              "text": "64"
+            },
+            {
+              "label": "C",
+              "text": "40"
+            },
+            {
+              "label": "D",
+              "text": "32"
+            },
+            {
+              "label": "E",
+              "text": "8"
+            }
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 4",
+          "content": "4. Sebuah toko buah menjual 20 kg apel. Sebagian apel terjual dengan harga total Rp15.000,00 per kg, sedangkan sisanya terjual dengan harga normal Rp18.000,00 per kg. Jika total pendapatan dari penjualan seluruh apel tersebut adalah Rp324.000,00, banyak apel yang terjual dengan harga promo adalah ... kg.",
+          "options": [
+            {
+              "label": "A",
+              "text": "8"
+            },
+            {
+              "label": "B",
+              "text": "10"
+            },
+            {
+              "label": "C",
+              "text": "12"
+            },
+            {
+              "label": "D",
+              "text": "14"
+            },
+            {
+              "label": "E",
+              "text": "16"
+            }
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 5",
+          "content": "5. Enam tahun yang lalu, usia Bu Aminah adalah 6 kali lipat usia anaknya, Salsa. Saat ini, usia Bu Aminah adalah 3 kali lipat usia Salsa. Jumlah usia mereka berdua saat ini adalah ... tahun.",
+          "options": [
+            {
+              "label": "A",
+              "text": "36"
+            },
+            {
+              "label": "B",
+              "text": "40"
+            },
+            {
+              "label": "C",
+              "text": "42"
+            },
+            {
+              "label": "D",
+              "text": "45"
+            },
+            {
+              "label": "E",
+              "text": "48"
+            }
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 6",
+          "content": "6. Berikut adalah tabel kandungan nutrisi dari lima jenis susu kemasan per 200 ml. Seseorang yang sedang menjalani program diet ingin memilih susu yang paling optimal untuk kesehatan tulangnya, tetapi tetap rendah kalori. Ia memutuskan untuk memilih susu dengan rasio kandungan Kalsium per kkal energi tertinggi. Susu yang sebaiknya ia pilih adalah susu ....",
+          "table": {
+            "headers": [
+              "Jenis Susu",
+              "Energi (kkal)",
+              "Kalsium (mg)",
+              "Gula (g)"
+            ],
+            "rows": [
+              [
+                "Susu P",
+                "120",
+                "300",
+                "10"
+              ],
+              [
+                "Susu Q",
+                "150",
+                "450",
+                "12"
+              ],
+              [
+                "Susu R",
+                "100",
+                "200",
+                "5"
+              ],
+              [
+                "Susu S",
+                "160",
+                "480",
+                "16"
+              ],
+              [
+                "Susu T",
+                "140",
+                "350",
+                "7"
+              ]
+            ]
+          },
+          "options": [
+            {
+              "label": "A",
+              "text": "P"
+            },
+            {
+              "label": "B",
+              "text": "Q"
+            },
+            {
+              "label": "C",
+              "text": "R"
+            },
+            {
+              "label": "D",
+              "text": "S"
+            },
+            {
+              "label": "E",
+              "text": "T"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Metode Penarikan Kesimpulan dalam Penalaran Umum",
+      "icon": "fa-diagram-project",
+      "tipe": "grid",
+      "isi": [
+        "Dalam cakupan Penalaran Umum, bagian Penalaran Deduktif memuat penarikan kesimpulan dan penilaian kualitas simpulan."
+      ],
+      "grid": [
+        {
+          "title": "Silogisme Hipotetis",
+          "content": "Materi penarikan kesimpulan berbasis hubungan bersyarat atau implikasi."
+        },
+        {
+          "title": "Silogisme Kategoris",
+          "content": "Materi penarikan kesimpulan berbasis hubungan kategori atau kelompok."
+        },
+        {
+          "title": "Kualitas Suatu Simpulan",
+          "content": "Materi untuk menilai apakah suatu simpulan pasti, mungkin, atau tidak dapat dipastikan dari informasi yang tersedia."
+        }
+      ]
+    },
+    {
+      "judul": "B. Pengenalan Subtes Pengetahuan Kuantitatif",
+      "icon": "fa-calculator",
+      "tipe": "basic",
+      "isi": [
+        "Subtes Pengetahuan Kuantitatif memuat soal-soal numerasi dan matematika dasar dengan ragam bentuk pilihan jawaban."
+      ]
+    },
+    {
+      "judul": "Jumlah Soal dan Waktu Tes - Pengetahuan Kuantitatif",
+      "icon": "fa-clock",
+      "tipe": "table",
+      "isi": [],
+      "table": {
+        "headers": [
+          "Tahun",
+          "Jumlah Soal",
+          "Waktu Tes"
+        ],
+        "rows": [
+          [
+            "2021",
+            "15 soal",
+            "22,5 menit"
+          ],
+          [
+            "2022",
+            "20 soal",
+            "20 menit"
+          ],
+          [
+            "2023",
+            "15 soal",
+            "20 menit"
+          ],
+          [
+            "2024",
+            "20 soal",
+            "20 menit"
+          ],
+          [
+            "2025",
+            "20 soal",
+            "20 menit"
+          ],
+          [
+            "2026",
+            "20 soal",
+            "20 menit"
+          ]
+        ]
+      }
+    },
+    {
+      "judul": "Cakupan Materi - Pengetahuan Kuantitatif",
+      "icon": "fa-layer-group",
+      "tipe": "table",
+      "isi": [
+        "Cakupan materi di sini adalah materi-materi yang pernah muncul sejak awal TPS - PK diujikan pada tahun 2019."
+      ],
+      "table": {
+        "headers": [
+          "Aljabar dan Fungsi",
+          "Bilangan",
+          "Geometri",
+          "Statistika dan Peluang",
+          "Kalkulus Dasar"
+        ],
+        "leftAlign": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "rows": [
+          [
+            "- Bentuk aljabar<br>- Aritmetika sosial<br>- Perbandingan<br>- Persamaan garis lurus<br>- Fungsi<br>- Fungsi komposisi dan invers<br>- Persamaan dan fungsi kuadrat<br>- Persamaan dan pertidaksamaan<br>- Sistem persamaan linear<br>- Matriks",
+            "- Operasi hitung bilangan<br>- FPB dan KPK<br>- Pola bilangan<br>- Himpunan",
+            "- Jarak<br>- Garis dan sudut<br>- Bangun datar<br>- Kesebangunan<br>- Trigonometri dasar<br>- Transformasi geometri<br>- Bangun ruang",
+            "- Statistika deskriptif<br>- Aturan pencacahan<br>- Teori peluang",
+            "- Limit bentuk aljabar<br>- Turunan bentuk aljabar<br>- Integral bentuk aljabar"
+          ]
+        ]
+      }
+    },
+    {
+      "judul": "Tipe dan Contoh Soal - Pengetahuan Kuantitatif",
+      "icon": "fa-pen-nib",
+      "tipe": "box",
+      "isi": [
+        "Subtes Pengetahuan Kuantitatif terdiri dari soal-soal dengan bentuk:",
+        {
+          "type": "list",
+          "items": [
+            "pilihan ganda biasa,",
+            "pilihan ganda 1234/123,",
+            "pilihan ganda banyak pernyataan benar,",
+            "pilihan ganda perbandingan dua nilai (P dan Q),",
+            "pilihan ganda kecukupan data,",
+            "pilihan ganda majemuk berbentuk tabel, dan",
+            "isian singkat."
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 7",
+          "content": "7. Jika $2A + 3 \\times 5 - 10 \\div 2 = 4$, maka nilai $A$ adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "3"
+            },
+            {
+              "label": "B",
+              "text": "$-3$"
+            },
+            {
+              "label": "C",
+              "text": "$\\frac{1}{3}$"
+            },
+            {
+              "label": "D",
+              "text": "$-\\frac{7}{4}$"
+            },
+            {
+              "label": "E",
+              "text": "$\\frac{3}{4}$"
+            }
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 8",
+          "content": "8. Bilangan-bilangan 3, 2, 9, 1, 6, 1, 5 diurutkan dari yang terkecil hingga terbesar. Jika $p$, $q$, dan $r$ menyatakan bilangan pada posisi ke-1, ke-5, dan ke-7, maka nilai dari $p + q \\times r$ adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "54"
+            },
+            {
+              "label": "B",
+              "text": "50"
+            },
+            {
+              "label": "C",
+              "text": "46"
+            },
+            {
+              "label": "D",
+              "text": "45"
+            },
+            {
+              "label": "E",
+              "text": "14"
+            }
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 9",
+          "content": "9. Banyak segitiga pada bangun datar berikut adalah ....",
+          "diagram": "triangle-9",
+          "options": [
+            {
+              "label": "A",
+              "text": "10"
+            },
+            {
+              "label": "B",
+              "text": "11"
+            },
+            {
+              "label": "C",
+              "text": "12"
+            },
+            {
+              "label": "D",
+              "text": "13"
+            },
+            {
+              "label": "E",
+              "text": "14"
+            }
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 10",
+          "content": "10. Rata-rata dari 3, 1, 5, 3, 5, 6, 2, dan $x$ adalah 4. Nilai dari $x$ adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "7"
+            },
+            {
+              "label": "B",
+              "text": "6"
+            },
+            {
+              "label": "C",
+              "text": "5"
+            },
+            {
+              "label": "D",
+              "text": "4"
+            },
+            {
+              "label": "E",
+              "text": "3"
+            }
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 11",
+          "content": "11. Fungsi $g$ memenuhi $3x + 10 < g(x) < 5^x$ untuk $x \\ge 2$. Di antara pilihan berikut, nilai $g$ saat $x = 2$ yang TIDAK MUNGKIN adalah ....<br>1. 18<br>2. 21<br>3. 24<br>4. 27",
+          "options": [
+            {
+              "label": "A",
+              "text": "1, 2, dan 3 SAJA"
+            },
+            {
+              "label": "B",
+              "text": "1 dan 3 SAJA"
+            },
+            {
+              "label": "C",
+              "text": "2 dan 4 SAJA"
+            },
+            {
+              "label": "D",
+              "text": "HANYA 4"
+            },
+            {
+              "label": "E",
+              "text": "SEMUA pilihan"
+            }
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 12",
+          "content": "12. Pada garis bilangan, posisi pecahan $\\frac{4}{x}$ di sebelah kanan pecahan $\\frac{3}{y}$ dengan $x$ dan $y$ positif. Berdasarkan informasi tersebut, manakah hubungan yang benar antara kuantitas $P$ dan $Q$ berikut berdasarkan informasi yang diberikan?",
+          "table": {
+            "headers": [
+              "P",
+              "Q"
+            ],
+            "rows": [
+              [
+                "$3x$",
+                "$4y$"
+              ]
+            ]
+          },
+          "options": [
+            {
+              "label": "A",
+              "text": "Kuantitas $P$ lebih besar daripada $Q$."
+            },
+            {
+              "label": "B",
+              "text": "Kuantitas $P$ lebih kecil daripada $Q$."
+            },
+            {
+              "label": "C",
+              "text": "Kuantitas $P$ sama dengan $Q$."
+            },
+            {
+              "label": "D",
+              "text": "Tidak dapat ditentukan hubungan antara kuantitas $P$ dan $Q$."
+            }
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 13",
+          "content": "13. Variabel $a$, $b$, dan $c$ merupakan bilangan real yang memenuhi $2a + b + 3c = 15$. Berapakah nilai $b$? Putuskan apakah pernyataan 1 dan 2 berikut cukup untuk menjawab pertanyaan tersebut.<br>1. $a = 3$<br>2. $2b + c = 8$",
+          "options": [
+            {
+              "label": "A",
+              "text": "Pernyataan 1 SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan 2 SAJA tidak cukup."
+            },
+            {
+              "label": "B",
+              "text": "Pernyataan 2 SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan 1 SAJA tidak cukup."
+            },
+            {
+              "label": "C",
+              "text": "DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup."
+            },
+            {
+              "label": "D",
+              "text": "Pernyataan 1 SAJA cukup untuk menjawab pertanyaan dan pernyataan 2 SAJA cukup."
+            },
+            {
+              "label": "E",
+              "text": "Pernyataan 1 dan 2 tidak cukup untuk menjawab pertanyaan."
+            }
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 14",
+          "content": "14. Suatu tabung memiliki tinggi 9 cm dan volume $144\\pi$ cm$^3$. Berdasarkan informasi di atas, tentukan apakah pernyataan berikut benar atau salah.",
+          "table": {
+            "headers": [
+              "Pernyataan",
+              "Benar",
+              "Salah"
+            ],
+            "leftAlign": [
+              0
+            ],
+            "rows": [
+              [
+                "Jari-jari tabung kurang dari 5 cm.",
+                "",
+                ""
+              ],
+              [
+                "Luas alas tabung lebih dari 55 cm$^2$.",
+                "",
+                ""
+              ],
+              [
+                "Tabung dapat memuat balok yang berukuran 5 cm × 5 cm × 7 cm.",
+                "",
+                ""
+              ]
+            ]
+          },
+          "options": [
+            {
+              "label": "A",
+              "text": "BBB"
+            },
+            {
+              "label": "B",
+              "text": "BBS"
+            },
+            {
+              "label": "C",
+              "text": "BSB"
+            },
+            {
+              "label": "D",
+              "text": "SSB"
+            },
+            {
+              "label": "E",
+              "text": "SSS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "C. Pengenalan Subtes Penalaran Matematika",
+      "icon": "fa-square-root-variable",
+      "tipe": "basic",
+      "isi": [
+        "Subtes Penalaran Matematika menguji kemampuan menggunakan konsep matematika dalam situasi bernalar, termasuk memilih strategi dan menafsirkan informasi kuantitatif."
+      ]
+    },
+    {
+      "judul": "Jumlah Soal dan Waktu Tes - Penalaran Matematika",
+      "icon": "fa-clock",
+      "tipe": "table",
+      "isi": [],
+      "table": {
+        "headers": [
+          "Tahun",
+          "Jumlah Soal",
+          "Waktu Tes"
+        ],
+        "rows": [
+          [
+            "2021",
+            "15 soal",
+            "22,5 menit"
+          ],
+          [
+            "2022",
+            "20 soal",
+            "45 menit"
+          ],
+          [
+            "2023",
+            "20 soal",
+            "30 menit"
+          ],
+          [
+            "2024",
+            "20 soal",
+            "37,5 menit"
+          ],
+          [
+            "2025",
+            "20 soal",
+            "42,5 menit"
+          ],
+          [
+            "2026",
+            "20 soal",
+            "42,5 menit"
+          ]
+        ]
+      }
+    },
+    {
+      "judul": "Cakupan Materi - Penalaran Matematika",
+      "icon": "fa-layer-group",
+      "tipe": "table",
+      "isi": [],
+      "table": {
+        "headers": [
+          "Aljabar dan Fungsi",
+          "Bilangan",
+          "Geometri",
+          "Statistika dan Peluang"
+        ],
+        "leftAlign": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "rows": [
+          [
+            "- Bentuk aljabar<br>- Aritmetika sosial<br>- Perbandingan<br>- Fungsi<br>- Sistem persamaan linear",
+            "- Operasi hitung bilangan<br>- FPB dan KPK<br>- Pola bilangan<br>- Himpunan",
+            "- Jarak<br>- Bangun datar<br>- Kesebangunan<br>- Trigonometri dasar<br>- Bangun ruang",
+            "- Statistika deskriptif<br>- Aturan pencacahan<br>- Teori peluang"
+          ]
+        ]
+      }
+    },
+    {
+      "judul": "Tipe dan Contoh Soal - Penalaran Matematika",
+      "icon": "fa-pen-nib",
+      "tipe": "box",
+      "isi": [
+        "Subtes Penalaran Matematika terdiri dari soal-soal dengan pilihan ganda biasa, isian singkat, dan pilihan ganda majemuk berbentuk tabel.",
+        {
+          "type": "note",
+          "content": "Teks berikut digunakan untuk menjawab kuis 15-17. Terdapat 8 calon pengurus kelas yang terdiri dari 5 laki-laki dan 3 perempuan. Akan dipilih pengurus kelas yang terdiri dari ketua, sekretaris, dan bendahara secara acak dari 8 calon pengurus kelas tersebut."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 15",
+          "content": "15. Banyak cara terpilihnya pengurus kelas dengan ketua laki-laki adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "336"
+            },
+            {
+              "label": "B",
+              "text": "210"
+            },
+            {
+              "label": "C",
+              "text": "126"
+            },
+            {
+              "label": "D",
+              "text": "30"
+            },
+            {
+              "label": "E",
+              "text": "8"
+            }
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 16",
+          "content": "16. Peluang terpilihnya ketua laki-laki adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "$\\frac{5}{28}$"
+            },
+            {
+              "label": "B",
+              "text": "$\\frac{3}{28}$"
+            },
+            {
+              "label": "C",
+              "text": "$\\frac{5}{14}$"
+            },
+            {
+              "label": "D",
+              "text": "$\\frac{5}{8}$"
+            },
+            {
+              "label": "E",
+              "text": "$\\frac{3}{8}$"
+            }
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 17",
+          "content": "17. Peluang terpilihnya sekretaris dan bendahara yang berbeda gender adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "$\\frac{15}{56}$"
+            },
+            {
+              "label": "B",
+              "text": "$\\frac{15}{28}$"
+            },
+            {
+              "label": "C",
+              "text": "$\\frac{5}{56}$"
+            },
+            {
+              "label": "D",
+              "text": "$\\frac{5}{28}$"
+            },
+            {
+              "label": "E",
+              "text": "$\\frac{5}{14}$"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Teks berikut digunakan untuk menjawab kuis 18-20. Toko Berkah menerima kiriman sabun detergen dari tiga pemasok untuk dijual kembali dengan jadwal sebagai berikut."
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "Merek",
+              "Jadwal Pengiriman",
+              "Jumlah Setiap Pengiriman (Bungkus)"
+            ],
+            "rows": [
+              [
+                "P",
+                "Setiap 4 hari sekali",
+                "12"
+              ],
+              [
+                "Q",
+                "Setiap 5 hari sekali",
+                "18"
+              ],
+              [
+                "R",
+                "Setiap $y$ hari sekali",
+                "25"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 18",
+          "content": "18. Jika Toko Berkah akan menerima kiriman detergen merek P, Q, dan R pada hari yang sama untuk ke-6 kalinya pada 100 hari setelah 1 Mei 2026, nilai $y$ adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "6"
+            },
+            {
+              "label": "B",
+              "text": "8"
+            },
+            {
+              "label": "C",
+              "text": "10"
+            },
+            {
+              "label": "D",
+              "text": "12"
+            },
+            {
+              "label": "E",
+              "text": "15"
+            }
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 19",
+          "content": "19. Jika Toko Berkah menerima kiriman detergen merek P, Q, dan R bersamaan pada tanggal 1 Mei 2026, volume detergen merek P dan Q yang diterima Toko Berkah pada bulan Mei 2026 adalah ... bungkus.",
+          "options": [
+            {
+              "label": "A",
+              "text": "198"
+            },
+            {
+              "label": "B",
+              "text": "210"
+            },
+            {
+              "label": "C",
+              "text": "222"
+            },
+            {
+              "label": "D",
+              "text": "234"
+            },
+            {
+              "label": "E",
+              "text": "246"
+            }
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 20",
+          "content": "20. Jika Toko Berkah menerima kiriman detergen merek P, Q, dan R bersamaan pada tanggal 1 Mei 2026, jumlah hari Toko Berkah tidak menerima satu pun kiriman detergen merek P ataupun Q pada bulan Mei 2026 adalah ... hari.",
+          "options": [
+            {
+              "label": "A",
+              "text": "15"
+            },
+            {
+              "label": "B",
+              "text": "16"
+            },
+            {
+              "label": "C",
+              "text": "17"
+            },
+            {
+              "label": "D",
+              "text": "18"
+            },
+            {
+              "label": "E",
+              "text": "19"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
