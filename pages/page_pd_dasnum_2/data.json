@@ -104,7 +104,7 @@
         {
           "type": "contoh",
           "title": "Fungsi Rasional",
-          "content": "Bentuk umum: $f(x)=\\frac{g(x)}{h(x)}$. Domainnya semua bilangan real kecuali nilai yang membuat penyebut nol, yaitu $D_f=\\{x|h(x)\\ne0\\}$."
+          "content": "Bentuk umum: $f(x)=\\dfrac{g(x)}{h(x)}$. Domainnya semua bilangan real kecuali nilai yang membuat penyebut nol, yaitu $D_f=\\{x|h(x)\\ne0\\}$."
         },
         {
           "type": "contoh",
@@ -131,7 +131,7 @@
         {
           "type": "contoh",
           "title": "Fungsi Rasional",
-          "content": "Tentukan domain $f(x)=\\frac{5-x}{x^2-4x-12}$. Syarat domain: penyebut tidak boleh nol. $x^2-4x-12=(x+2)(x-6)$, sehingga $x\\ne-2$ dan $x\\ne6$. Jadi $D_f=\\{x|x\\ne-2, x\\ne6, x\\in\\mathbb{R}\\}$."
+          "content": "Tentukan domain $f(x)=\\dfrac{5-x}{x^2-4x-12}$. Syarat domain: penyebut tidak boleh nol. $x^2-4x-12=(x+2)(x-6)$, sehingga $x\\ne-2$ dan $x\\ne6$. Jadi $D_f=\\{x|x\\ne-2, x\\ne6, x\\in\\mathbb{R}\\}$."
         },
         {
           "type": "contoh",
@@ -258,7 +258,7 @@
         {
           "type": "contoh",
           "title": "Kuis 2",
-          "content": "Diberikan $P=\\frac{2^x+1}{4^x-1}$. Jika $x<0$, maka ....",
+          "content": "Diberikan $P=\\dfrac{2^x+1}{4^x-1}$. Jika $x<0$, maka ....",
           "options": [
             {
               "label": "A",
@@ -284,7 +284,7 @@
         },
         {
           "type": "note",
-          "content": "Jawaban Kuis 2: A. Karena $4^x-1=(2^x+1)(2^x-1)$, maka $P=\\frac{1}{2^x-1}$. Untuk $x<0$, $2^x<1$, sehingga penyebut negatif dan $P<0$."
+          "content": "Jawaban Kuis 2: A. Karena $4^x-1=(2^x+1)(2^x-1)$, maka $P=\\dfrac{1}{2^x-1}$. Untuk $x<0$, $2^x<1$, sehingga penyebut negatif dan $P<0$."
         },
         {
           "type": "contoh",
@@ -340,7 +340,7 @@
             },
             {
               "label": "E",
-              "text": "$T(x)=\\frac{5}{11}x+22.000$"
+              "text": "$T(x)=\\dfrac{5}{11}x+22.000$"
             }
           ]
         },
@@ -600,7 +600,7 @@
         {
           "type": "contoh",
           "title": "Kuis 10",
-          "content": "Jika $p$ dan $q$ berturut-turut merupakan upah Ara dan Bey dalam satu jam serta $\\frac{p+7.500}{q}=\\frac{3}{2}$, nilai dari $p+q$ adalah ....",
+          "content": "Jika $p$ dan $q$ berturut-turut merupakan upah Ara dan Bey dalam satu jam serta $\\dfrac{p+7.500}{q}=\\dfrac{3}{2}$, nilai dari $p+q$ adalah ....",
           "options": [
             {
               "label": "A",
@@ -626,7 +626,7 @@
         },
         {
           "type": "note",
-          "content": "Jawaban Kuis 10: A. Dari selisih upah diperoleh $p-q=4.000$. Persamaan $\\frac{p+7.500}{q}=\\frac{3}{2}$ memberi $2p-3q=-15.000$. Substitusi menghasilkan $q=23.000$ dan $p=27.000$, sehingga $p+q=50.000$."
+          "content": "Jawaban Kuis 10: A. Dari selisih upah diperoleh $p-q=4.000$. Persamaan $\\dfrac{p+7.500}{q}=\\dfrac{3}{2}$ memberi $2p-3q=-15.000$. Substitusi menghasilkan $q=23.000$ dan $p=27.000$, sehingga $p+q=50.000$."
         }
       ]
     },
@@ -674,7 +674,7 @@
         },
         {
           "title": "Rumus Kuadratik",
-          "content": "Gunakan rumus $x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$ jika faktorisasi tidak langsung terlihat."
+          "content": "Gunakan rumus $x=\\dfrac{-b\\pm\\sqrt{b^2-4ac}}{2a}$ jika faktorisasi tidak langsung terlihat."
         }
       ]
     },
@@ -722,11 +722,11 @@
         "Jika $x_1$ dan $x_2$ adalah akar-akar persamaan kuadrat $ax^2+bx+c=0$, maka berlaku:",
         {
           "type": "formula",
-          "content": "$x_1+x_2=-\\frac{b}{a}$"
+          "content": "$x_1+x_2=-\\dfrac{b}{a}$"
         },
         {
           "type": "formula",
-          "content": "$x_1 \\cdot x_2=\\frac{c}{a}$"
+          "content": "$x_1 \\cdot x_2=\\dfrac{c}{a}$"
         },
         "Jika akar-akar suatu persamaan kuadrat diketahui, bentuk persamaannya dapat ditulis sebagai:",
         {
@@ -757,7 +757,7 @@
         },
         {
           "type": "formula",
-          "content": "$x_p=-\\frac{b}{2a}$"
+          "content": "$x_p=-\\dfrac{b}{2a}$"
         },
         {
           "type": "formula",
@@ -789,7 +789,7 @@
           ],
           [
             "$b$",
-            "Bersama $a$ menentukan sumbu simetri $x=-\\frac{b}{2a}$ dan absis titik puncak."
+            "Bersama $a$ menentukan sumbu simetri $x=-\\dfrac{b}{2a}$ dan absis titik puncak."
           ],
           [
             "$c$",
@@ -814,11 +814,11 @@
         {
           "type": "contoh",
           "title": "Menganalisis $f(x)=2x^2-8x+6$",
-          "content": "Pada $f(x)=2x^2-8x+6$, diperoleh $a=2$, $b=-8$, dan $c=6$. Karena $a>0$, parabola terbuka ke atas. Sumbu simetri $x=-\\frac{-8}{2(2)}=2$. Titik puncaknya berada di $x=2$ dengan $f(2)=2(4)-16+6=-2$, sehingga titik puncak $(2,-2)$. Titik potong sumbu-$y$ adalah $(0,6)$. Diskriminannya $D=(-8)^2-4(2)(6)=16$, sehingga grafik memotong sumbu-$x$ di dua titik."
+          "content": "Pada $f(x)=2x^2-8x+6$, diperoleh $a=2$, $b=-8$, dan $c=6$. Karena $a>0$, parabola terbuka ke atas. Sumbu simetri $x=-\\dfrac{-8}{2(2)}=2$. Titik puncaknya berada di $x=2$ dengan $f(2)=2(4)-16+6=-2$, sehingga titik puncak $(2,-2)$. Titik potong sumbu-$y$ adalah $(0,6)$. Diskriminannya $D=(-8)^2-4(2)(6)=16$, sehingga grafik memotong sumbu-$x$ di dua titik."
         },
         {
           "type": "note",
-          "content": "Untuk membaca bentuk kurva dengan cepat, periksa berurutan: tanda $a$, nilai $c$, sumbu simetri $-\\frac{b}{2a}$, lalu diskriminan."
+          "content": "Untuk membaca bentuk kurva dengan cepat, periksa berurutan: tanda $a$, nilai $c$, sumbu simetri $-\\dfrac{b}{2a}$, lalu diskriminan."
         }
       ]
     },
@@ -834,15 +834,15 @@
           "options": [
             {
               "label": "A",
-              "text": "$P>Q$"
+              "text": "$P > Q$"
             },
             {
               "label": "B",
-              "text": "$P<Q$"
+              "text": "$P < Q$"
             },
             {
               "label": "C",
-              "text": "$P=Q$"
+              "text": "$P = Q$"
             },
             {
               "label": "D",
@@ -852,7 +852,7 @@
         },
         {
           "type": "note",
-          "content": "Jawaban Kuis 11: D. Jika $f(x)=ax^2+bx+3$, hasil kali akar-akarnya adalah $\\frac{3}{a}$. Karena nilai $a$ tidak diketahui, hubungan $P$ dan $Q$ tidak dapat ditentukan."
+          "content": "Jawaban Kuis 11: D. Jika $f(x)=ax^2+bx+3$, hasil kali akar-akarnya adalah $\\dfrac{3}{a}$. Karena nilai $a$ tidak diketahui, hubungan $P$ dan $Q$ tidak dapat ditentukan."
         },
         {
           "type": "contoh",
@@ -883,7 +883,7 @@
         },
         {
           "type": "note",
-          "content": "Jawaban Kuis 12: B. Substitusi $f(x)=x-3$ menghasilkan $(x-3)^2+3=3(x-2)$ atau $x^2-9x+18=0$. Jumlah akar $x_1+x_2=-\\frac{b}{a}=9$."
+          "content": "Jawaban Kuis 12: B. Substitusi $f(x)=x-3$ menghasilkan $(x-3)^2+3=3(x-2)$ atau $x^2-9x+18=0$. Jumlah akar $x_1+x_2=-\\dfrac{b}{a}=9$."
         },
         {
           "type": "contoh",
@@ -952,7 +952,7 @@
           [
             "Senilai",
             "Besaran pertama naik, besaran kedua ikut naik.",
-            "$\\frac{x_1}{y_1}=\\frac{x_2}{y_2}$",
+            "$\\dfrac{x_1}{y_1}=\\dfrac{x_2}{y_2}$",
             "Semakin lama waktu membuat karangan bunga, semakin banyak karangan bunga yang selesai."
           ],
           [
@@ -978,7 +978,7 @@
         {
           "type": "contoh",
           "title": "Perbandingan Senilai",
-          "content": "Nabil dapat membuat 4 karangan bunga dalam 3 jam. Karena banyak karangan bunga dan waktu bekerja berbanding lurus, maka $\\frac{4}{3}=\\frac{x}{12}$ sehingga $x=16$. Jadi, dalam 12 jam Nabil dapat membuat 16 karangan bunga."
+          "content": "Nabil dapat membuat 4 karangan bunga dalam 3 jam. Karena banyak karangan bunga dan waktu bekerja berbanding lurus, maka $\\dfrac{4}{3}=\\dfrac{x}{12}$ sehingga $x=16$. Jadi, dalam 12 jam Nabil dapat membuat 16 karangan bunga."
         },
         {
           "type": "contoh",
@@ -1026,7 +1026,7 @@
         },
         {
           "type": "note",
-          "content": "Jawaban Kuis 14: B. Jarak tempuh Edo $60\\times\\frac{30}{60}=30$ km. Jika kecepatannya 90 km/jam, waktu tempuh 20 menit sehingga 10 menit lebih cepat. Jika tiba 15 menit lebih lambat, waktu 45 menit dan kecepatannya 40 km/jam."
+          "content": "Jawaban Kuis 14: B. Jarak tempuh Edo $60\\times\\dfrac{30}{60}=30$ km. Jika kecepatannya 90 km/jam, waktu tempuh 20 menit sehingga 10 menit lebih cepat. Jika tiba 15 menit lebih lambat, waktu 45 menit dan kecepatannya 40 km/jam."
         },
         {
           "type": "contoh",
@@ -1175,7 +1175,7 @@
         },
         {
           "type": "note",
-          "content": "Jawaban Kuis 16: A. Setelah diskon, tiket bioskop menjadi $60\\%x$ dan tiket konser menjadi $80\\%x$. Dari pembahasan diperoleh $P=\\frac{21}{15}x$ dan $Q=\\frac{20}{15}x$, sehingga $P>Q$."
+          "content": "Jawaban Kuis 16: A. Setelah diskon, tiket bioskop menjadi $60\\%x$ dan tiket konser menjadi $80\\%x$. Dari pembahasan diperoleh $P=\\dfrac{21}{15}x$ dan $Q=\\dfrac{20}{15}x$, sehingga $P>Q$."
         },
         {
           "type": "contoh",
@@ -1305,23 +1305,6 @@
         {
           "type": "note",
           "content": "Jawaban Kuis 20: E. Modal roti I = 46 ribu, roti II = 37 ribu, dan roti III = 37 ribu rupiah. Keuntungannya berturut-turut 54 ribu, 53 ribu, dan 58 ribu rupiah; modal roti II sama dengan roti III."
-        }
-      ]
-    },
-    {
-      "judul": "Strategi Menyelesaikan Soal Numerasi Aljabar",
-      "icon": "fa-lightbulb",
-      "tipe": "note",
-      "isi": [
-        {
-          "type": "ordered-list",
-          "items": [
-            "Tentukan jenis konsep yang digunakan: fungsi, sistem persamaan, kuadrat, perbandingan, atau aritmetika sosial.",
-            "Ubah kalimat penting menjadi variabel dan persamaan.",
-            "Periksa satuan, arah perubahan, dan definisi variabel sejak awal.",
-            "Gunakan metode hitung yang paling singkat, lalu tafsirkan hasil sesuai konteks.",
-            "Pada pilihan ganda, uji juga alasan mengapa pilihan lain salah, terutama untuk soal pernyataan benar-salah."
-          ]
         }
       ]
     }

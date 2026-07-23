@@ -281,6 +281,52 @@ p {
     font-weight: 700;
 }
 
+.note-box--toggle {
+    padding: 0;
+    overflow: hidden;
+}
+
+.note-toggle {
+    width: 100%;
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    padding: 16px 20px;
+    font: inherit;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-align: left;
+    cursor: pointer;
+}
+
+.note-toggle span {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.note-toggle__icon {
+    flex: 0 0 auto;
+    transition: transform 0.2s ease;
+}
+
+.note-box__content {
+    padding: 0 20px 18px;
+}
+
+.note-box.is-collapsed .note-box__content {
+    display: none;
+}
+
+.note-box.is-collapsed .note-toggle__icon {
+    transform: rotate(180deg);
+}
+
 .table-container {
     width: 100%;
     overflow-x: auto;

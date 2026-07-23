@@ -96,7 +96,15 @@ const renderContentBlock = (block) => {
                 </div>
             `;
         case 'note':
-            return `<div class="note-box"><i class="fa-solid fa-circle-info"></i> ${block.content}</div>`;
+            return `
+                <div class="note-box note-box--toggle is-collapsed">
+                    <button class="note-toggle" type="button" aria-expanded="false">
+                        <span><i class="fa-solid fa-circle-info"></i> Catatan</span>
+                        <i class="fa-solid fa-chevron-up note-toggle__icon" aria-hidden="true"></i>
+                    </button>
+                    <div class="note-box__content">${block.content}</div>
+                </div>
+            `;
         case 'table':
             return renderTable(block.table);
         case 'grid':
@@ -129,6 +137,15 @@ const renderMateriCard = (materi) => {
 const renderData = (data) => {
     mainContent.innerHTML = data.materi.map(renderMateriCard).join('');
 };
+
+mainContent.addEventListener('click', (event) => {
+    const toggle = event.target.closest('.note-toggle');
+    if (!toggle) return;
+
+    const noteBox = toggle.closest('.note-box');
+    const isCollapsed = noteBox.classList.toggle('is-collapsed');
+    toggle.setAttribute('aria-expanded', String(!isCollapsed));
+});
 
 const loadMateri = async () => {
     try {
