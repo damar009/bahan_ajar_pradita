@@ -5,7 +5,7 @@
       "icon": "fa-book-open",
       "tipe": "basic",
       "isi": [
-        "<strong>Topik:</strong> [PRADITA07] Aljabar dan Fungsi",
+        "<strong>Topik:</strong>Aljabar dan Fungsi",
         "<strong>Subtopik:</strong> Aljabar dan Fungsi",
         "Materi ini membahas lima pokok bahasan numerasi: fungsi, sistem persamaan linear, persamaan dan fungsi kuadrat, perbandingan, serta aritmetika sosial.",
         {
@@ -17,10 +17,6 @@
             "Perbandingan: hubungan senilai, berbalik nilai, dan perbandingan beberapa besaran.",
             "Aritmetika sosial: diskon, harga setelah diskon, pajak, modal, harga jual, dan keuntungan."
           ]
-        },
-        {
-          "type": "note",
-          "content": "Materi disusun dari bahan ajar DASAR NUMERASI 02 dan diformat sebagai komponen JSON untuk page pembelajaran."
         }
       ]
     },
@@ -95,6 +91,61 @@
       ]
     },
     {
+      "judul": "Beberapa Bentuk Fungsi dan Domainnya",
+      "icon": "fa-shapes",
+      "tipe": "grid",
+      "isi": [
+        "Domain fungsi ditentukan dari semua nilai $x$ yang membuat aturan fungsi terdefinisi. Setiap bentuk fungsi memiliki syarat domain yang berbeda.",
+        {
+          "type": "contoh",
+          "title": "Fungsi Polinomial",
+          "content": "Bentuk umum: $$f(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0$$. Domainnya seluruh bilangan real, yaitu $D_f=\\{x|x\\in\\mathbb{R}\\}$."
+        },
+        {
+          "type": "contoh",
+          "title": "Fungsi Rasional",
+          "content": "Bentuk umum: $f(x)=\\frac{g(x)}{h(x)}$. Domainnya semua bilangan real kecuali nilai yang membuat penyebut nol, yaitu $D_f=\\{x|h(x)\\ne0\\}$."
+        },
+        {
+          "type": "contoh",
+          "title": "Fungsi Irasional",
+          "content": "Bentuk umum: $f(x)=\\sqrt{g(x)}$. Untuk akar genap, domainnya nilai yang membuat bagian dalam akar tidak negatif, yaitu $D_f=\\{x|g(x)\\ge0\\}$."
+        },
+        {
+          "type": "contoh",
+          "title": "Fungsi Logaritma",
+          "content": "Bentuk umum: $f(x)=\\log_a g(x)$, dengan $a>0$ dan $a\\ne1$. Domainnya nilai yang membuat numerus positif, yaitu $D_f=\\{x|g(x)>0\\}$."
+        }
+      ]
+    },
+    {
+      "judul": "Contoh Soal Domain Fungsi",
+      "icon": "fa-pen-ruler",
+      "tipe": "box",
+      "isi": [
+        {
+          "type": "contoh",
+          "title": "Fungsi Polinomial",
+          "content": "Tentukan domain $f(x)=3x^4-2x^2+x-7$. Karena fungsi polinomial terdefinisi untuk semua bilangan real, domainnya adalah $D_f=\\{x|x\\in\\mathbb{R}\\}$."
+        },
+        {
+          "type": "contoh",
+          "title": "Fungsi Rasional",
+          "content": "Tentukan domain $f(x)=\\frac{5-x}{x^2-4x-12}$. Syarat domain: penyebut tidak boleh nol. $x^2-4x-12=(x+2)(x-6)$, sehingga $x\\ne-2$ dan $x\\ne6$. Jadi $D_f=\\{x|x\\ne-2, x\\ne6, x\\in\\mathbb{R}\\}$."
+        },
+        {
+          "type": "contoh",
+          "title": "Fungsi Irasional",
+          "content": "Tentukan domain $f(x)=\\sqrt{2x-6}$. Syarat akar genap: $2x-6\\ge0$, sehingga $x\\ge3$. Jadi $D_f=\\{x|x\\ge3, x\\in\\mathbb{R}\\}$."
+        },
+        {
+          "type": "contoh",
+          "title": "Fungsi Logaritma",
+          "content": "Tentukan domain $f(x)=\\log_2(x-5)$. Syarat logaritma: $x-5>0$, sehingga $x>5$. Jadi $D_f=\\{x|x>5, x\\in\\mathbb{R}\\}$."
+        }
+      ]
+    },
+    {
       "judul": "Fungsi Linear dalam Masalah Kontekstual",
       "icon": "fa-chart-line",
       "tipe": "box",
@@ -113,6 +164,189 @@
         {
           "type": "note",
           "content": "Pada soal cerita fungsi linear, tentukan dulu apakah variabel waktu dimulai dari 0 atau 1 karena pilihan jawaban dapat berbeda hanya karena definisi indeks waktu."
+        }
+      ]
+    },
+    {
+      "judul": "Pergeseran Grafik Fungsi",
+      "icon": "fa-up-down-left-right",
+      "tipe": "table",
+      "isi": [
+        "Pergeseran grafik mengubah posisi grafik fungsi tanpa mengubah bentuk dasarnya. Pergeseran horizontal ditulis di dalam input fungsi, sedangkan pergeseran vertikal ditulis di luar fungsi."
+      ],
+      "table": {
+        "headers": [
+          "Pergeseran",
+          "Fungsi Baru"
+        ],
+        "rows": [
+          [
+            "$a$ satuan ke kiri",
+            "$g(x)=f(x+a)$"
+          ],
+          [
+            "$a$ satuan ke kanan",
+            "$g(x)=f(x-a)$"
+          ],
+          [
+            "$a$ satuan ke atas",
+            "$g(x)=f(x)+a$"
+          ],
+          [
+            "$a$ satuan ke bawah",
+            "$g(x)=f(x)-a$"
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "judul": "Contoh Pergeseran Grafik Fungsi",
+      "icon": "fa-arrows-turn-to-dots",
+      "tipe": "box",
+      "isi": [
+        {
+          "type": "contoh",
+          "title": "Geser Kiri dan Bawah",
+          "content": "Jika grafik $f(x)=2x+4$ digeser 2 satuan ke kiri dan 3 satuan ke bawah, maka fungsi barunya adalah $g(x)=f(x+2)-3$. Karena $f(x+2)=2(x+2)+4=2x+8$, diperoleh $g(x)=2x+8-3=2x+5$."
+        },
+        {
+          "type": "note",
+          "content": "Pergeseran ke kiri memakai $x+a$, sedangkan pergeseran ke kanan memakai $x-a$. Tanda di dalam fungsi terlihat berlawanan dengan arah geser horizontal."
+        }
+      ]
+    },
+    {
+      "judul": "Kuis 1-4: Fungsi",
+      "icon": "fa-star",
+      "tipe": "box",
+      "isi": [
+        {
+          "type": "contoh",
+          "title": "Kuis 1",
+          "content": "Jika $P=\\{a,b,c,d\\}$ dan $Q=\\{96,97,98,99\\}$, maka himpunan pasangan terurut yang menyatakan fungsi dari Q ke P adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "$\\{(a,96),(d,97),(c,98),(d,99)\\}$"
+            },
+            {
+              "label": "B",
+              "text": "$\\{(99,a),(98,b),(97,c),(98,d)\\}$"
+            },
+            {
+              "label": "C",
+              "text": "$\\{(a,96),(b,97),(c,98),(d,99)\\}$"
+            },
+            {
+              "label": "D",
+              "text": "$\\{(99,a),(98,b),(97,a),(96,b)\\}$"
+            },
+            {
+              "label": "E",
+              "text": "$\\{(a,99),(b,99),(c,99),(d,99)\\}$"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 1: D. Relasi dari Q ke P harus memakai anggota Q sebagai komponen pertama dan setiap anggota Q muncul tepat satu kali."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 2",
+          "content": "Diberikan $P=\\frac{2^x+1}{4^x-1}$. Jika $x<0$, maka ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "$P<0$"
+            },
+            {
+              "label": "B",
+              "text": "$P>0$"
+            },
+            {
+              "label": "C",
+              "text": "$P=0$"
+            },
+            {
+              "label": "D",
+              "text": "$P\\le0$"
+            },
+            {
+              "label": "E",
+              "text": "$P\\ge0$"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 2: A. Karena $4^x-1=(2^x+1)(2^x-1)$, maka $P=\\frac{1}{2^x-1}$. Untuk $x<0$, $2^x<1$, sehingga penyebut negatif dan $P<0$."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 3",
+          "content": "Diketahui $f(x)=\\sqrt{2x+k}$ dengan $f(6)=4$ dan $g(x)=f(x-2)$. Berdasarkan informasi tersebut, berapa banyak pernyataan berikut yang bernilai benar? (1) $k=4$. (2) $-1$ termasuk anggota domain fungsi $f$. (3) Grafik fungsi $g$ diperoleh dengan menggeser grafik fungsi $f$ sejauh 2 satuan ke kanan. (4) Jika $g(a)=6$, maka $a=18$.",
+          "options": [
+            {
+              "label": "A",
+              "text": "0"
+            },
+            {
+              "label": "B",
+              "text": "1"
+            },
+            {
+              "label": "C",
+              "text": "2"
+            },
+            {
+              "label": "D",
+              "text": "3"
+            },
+            {
+              "label": "E",
+              "text": "4"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 3: E. Dari $f(6)=4$ diperoleh $k=4$; domain $2x+4\\ge0$ memuat $-1$; $f(x-2)$ berarti geser kanan 2 satuan; dan $g(a)=\\sqrt{2a}=6$ memberi $a=18$."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 4",
+          "content": "Andika menabung mulai Januari 2023 dengan nominal awal Rp22.000,00. Setiap bulan tabungannya bertambah Rp10.000,00 secara konstan. Fungsi yang tepat untuk menyatakan tabungan Andika setelah $x$ bulan adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "$T(x)=10.000x+22.000$"
+            },
+            {
+              "label": "B",
+              "text": "$T(x)=10.000x-22.000$"
+            },
+            {
+              "label": "C",
+              "text": "$T(x)=10.000(x+22.000)$"
+            },
+            {
+              "label": "D",
+              "text": "$T(x)=32.000x$"
+            },
+            {
+              "label": "E",
+              "text": "$T(x)=\\frac{5}{11}x+22.000$"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 4: A. Nilai awal adalah 22.000 dan kenaikan tetap per bulan adalah 10.000, sehingga model linearnya $T(x)=10.000x+22.000$."
         }
       ]
     },
@@ -195,6 +429,204 @@
         {
           "type": "note",
           "content": "Masalah paket harga, campuran barang, atau bahan produksi sering dapat dimodelkan sebagai SPLTV."
+        }
+      ]
+    },
+    {
+      "judul": "Kuis 5-10: Sistem Persamaan Linear",
+      "icon": "fa-star",
+      "tipe": "box",
+      "isi": [
+        {
+          "type": "contoh",
+          "title": "Kuis 5",
+          "content": "Andika mulai menabung dari Januari 2023 dengan nominal awal Rp22.000,00 dan tabungannya bertambah Rp10.000,00 setiap bulan. Jika ia ingin membeli buku seharga Rp250.000,00, maka paling cepat ia dapat membeli buku tersebut pada ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "Desember 2024"
+            },
+            {
+              "label": "B",
+              "text": "November 2024"
+            },
+            {
+              "label": "C",
+              "text": "Januari 2025"
+            },
+            {
+              "label": "D",
+              "text": "Desember 2025"
+            },
+            {
+              "label": "E",
+              "text": "November 2025"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 5: A. Dari $10.000x+22.000\\ge250.000$ diperoleh $x\\ge22,8$, sehingga diambil bulan ke-23. Jika Januari 2023 dihitung sebagai bulan ke-0, bulan ke-23 adalah Desember 2024."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 6",
+          "content": "Misalkan $(x,y)$ menyatakan koordinat suatu titik pada bidang-$xy$ dengan $x+y\\ne0$. Apakah $x=2y$? Putuskan kecukupan pernyataan: (1) $2y=1-x$. (2) $(4-y)(x+y)=x^2-y^2$.",
+          "options": [
+            {
+              "label": "A",
+              "text": "Pernyataan 1 saja cukup, tetapi pernyataan 2 saja tidak cukup."
+            },
+            {
+              "label": "B",
+              "text": "Pernyataan 2 saja cukup, tetapi pernyataan 1 saja tidak cukup."
+            },
+            {
+              "label": "C",
+              "text": "Dua pernyataan bersama-sama cukup, tetapi satu pernyataan saja tidak cukup."
+            },
+            {
+              "label": "D",
+              "text": "Pernyataan 1 saja cukup dan pernyataan 2 saja cukup."
+            },
+            {
+              "label": "E",
+              "text": "Pernyataan 1 dan 2 tidak cukup."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 6: C. Pernyataan (1) hanya memberi $x+2y=1$, pernyataan (2) hanya memberi $x=4$; bersama-sama keduanya cukup untuk membandingkan $x$ dan $2y$."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 7",
+          "content": "Uang Andi sama dengan dua kali uang Budi. Berapakah uang Budi? Putuskan kecukupan pernyataan: (1) Jumlah uang Andi dan Budi Rp150.000,00. (2) Selisih uang Budi dan Andi sama dengan uang Budi.",
+          "options": [
+            {
+              "label": "A",
+              "text": "Pernyataan 1 saja cukup, tetapi pernyataan 2 saja tidak cukup."
+            },
+            {
+              "label": "B",
+              "text": "Pernyataan 2 saja cukup, tetapi pernyataan 1 saja tidak cukup."
+            },
+            {
+              "label": "C",
+              "text": "Dua pernyataan bersama-sama cukup, tetapi satu pernyataan saja tidak cukup."
+            },
+            {
+              "label": "D",
+              "text": "Pernyataan 1 saja cukup dan pernyataan 2 saja cukup."
+            },
+            {
+              "label": "E",
+              "text": "Pernyataan 1 dan 2 tidak cukup."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 7: A. Dengan $a=2b$, pernyataan (1) memberi $3b=150.000$ sehingga $b=50.000$. Pernyataan (2) tidak menambah informasi penentu nilai uang Budi."
+        },
+        {
+          "type": "contoh",
+          "title": "Informasi untuk Kuis 8-10",
+          "content": "Ara, Bey, dan Choi bekerja paruh waktu. Ara mendapat upah tertinggi dan Choi terendah. Selisih upah Ara dan Choi adalah Rp8.000,00 per jam, sedangkan selisih upah Bey dan Choi adalah Rp4.000,00 per jam."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 8",
+          "content": "Selisih upah per jam Ara dan Bey adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "Rp16.000,00"
+            },
+            {
+              "label": "B",
+              "text": "Rp12.000,00"
+            },
+            {
+              "label": "C",
+              "text": "Rp8.000,00"
+            },
+            {
+              "label": "D",
+              "text": "Rp6.000,00"
+            },
+            {
+              "label": "E",
+              "text": "Rp4.000,00"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 8: E. Jika upah Ara, Bey, Choi adalah $a,b,c$, maka $a-c=8.000$ dan $b-c=4.000$, sehingga $a-b=4.000$."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 9",
+          "content": "Suatu hari, Ara dan Bey harus membayar utang sebesar upah 3 jam kerja Choi. Jika untuk membayar utang tersebut Ara bekerja 2 jam dan Bey bekerja 1 jam, maka sisa uang Ara dan Bey adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "Tidak ada"
+            },
+            {
+              "label": "B",
+              "text": "Rp12.000,00"
+            },
+            {
+              "label": "C",
+              "text": "Rp20.000,00"
+            },
+            {
+              "label": "D",
+              "text": "Rp30.000,00"
+            },
+            {
+              "label": "E",
+              "text": "Rp50.000,00"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 9: C. Sisa uang adalah $2a+b-3c=2(a-c)+(b-c)=2(8.000)+4.000=20.000$."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 10",
+          "content": "Jika $p$ dan $q$ berturut-turut merupakan upah Ara dan Bey dalam satu jam serta $\\frac{p+7.500}{q}=\\frac{3}{2}$, nilai dari $p+q$ adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "50.000"
+            },
+            {
+              "label": "B",
+              "text": "35.000"
+            },
+            {
+              "label": "C",
+              "text": "31.000"
+            },
+            {
+              "label": "D",
+              "text": "27.000"
+            },
+            {
+              "label": "E",
+              "text": "23.000"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 10: A. Dari selisih upah diperoleh $p-q=4.000$. Persamaan $\\frac{p+7.500}{q}=\\frac{3}{2}$ memberi $2p-3q=-15.000$. Substitusi menghasilkan $q=23.000$ dan $p=27.000$, sehingga $p+q=50.000$."
         }
       ]
     },
@@ -339,6 +771,154 @@
       ]
     },
     {
+      "judul": "Karakteristik Kurva dari Nilai a, b, dan c",
+      "icon": "fa-chart-simple",
+      "tipe": "table",
+      "isi": [
+        "Pada fungsi kuadrat $f(x)=ax^2+bx+c$, nilai $a$, $b$, dan $c$ memengaruhi arah buka, posisi sumbu simetri, titik puncak, dan titik potong grafik."
+      ],
+      "table": {
+        "headers": [
+          "Komponen",
+          "Karakteristik Kurva"
+        ],
+        "rows": [
+          [
+            "$a$",
+            "Menentukan arah buka dan lebar parabola. Jika $a>0$, kurva terbuka ke atas. Jika $a<0$, kurva terbuka ke bawah. Semakin besar $|a|$, kurva semakin sempit."
+          ],
+          [
+            "$b$",
+            "Bersama $a$ menentukan sumbu simetri $x=-\\frac{b}{2a}$ dan absis titik puncak."
+          ],
+          [
+            "$c$",
+            "Menentukan titik potong terhadap sumbu-$y$, yaitu $(0,c)$."
+          ],
+          [
+            "$D=b^2-4ac$",
+            "Menentukan banyak titik potong terhadap sumbu-$x$: dua titik jika $D>0$, satu titik jika $D=0$, dan tidak memotong sumbu-$x$ jika $D<0$."
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "judul": "Contoh Karakteristik Kurva Kuadrat",
+      "icon": "fa-magnifying-glass-chart",
+      "tipe": "box",
+      "isi": [
+        {
+          "type": "contoh",
+          "title": "Menganalisis $f(x)=2x^2-8x+6$",
+          "content": "Pada $f(x)=2x^2-8x+6$, diperoleh $a=2$, $b=-8$, dan $c=6$. Karena $a>0$, parabola terbuka ke atas. Sumbu simetri $x=-\\frac{-8}{2(2)}=2$. Titik puncaknya berada di $x=2$ dengan $f(2)=2(4)-16+6=-2$, sehingga titik puncak $(2,-2)$. Titik potong sumbu-$y$ adalah $(0,6)$. Diskriminannya $D=(-8)^2-4(2)(6)=16$, sehingga grafik memotong sumbu-$x$ di dua titik."
+        },
+        {
+          "type": "note",
+          "content": "Untuk membaca bentuk kurva dengan cepat, periksa berurutan: tanda $a$, nilai $c$, sumbu simetri $-\\frac{b}{2a}$, lalu diskriminan."
+        }
+      ]
+    },
+    {
+      "judul": "Kuis 11-13: Fungsi dan Persamaan Kuadrat",
+      "icon": "fa-star",
+      "tipe": "box",
+      "isi": [
+        {
+          "type": "contoh",
+          "title": "Kuis 11",
+          "content": "Suatu fungsi kuadrat $f$ memotong sumbu-$y$ di titik $(0,3)$. Berdasarkan informasi tersebut, manakah hubungan yang benar antara kuantitas $P$ dan $Q$ jika $P$ adalah hasil kali akar-akar persamaan $f(x)=0$ dan $Q=3$?",
+          "options": [
+            {
+              "label": "A",
+              "text": "$P>Q$"
+            },
+            {
+              "label": "B",
+              "text": "$P<Q$"
+            },
+            {
+              "label": "C",
+              "text": "$P=Q$"
+            },
+            {
+              "label": "D",
+              "text": "Hubungan $P$ dan $Q$ tidak dapat ditentukan"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 11: D. Jika $f(x)=ax^2+bx+3$, hasil kali akar-akarnya adalah $\\frac{3}{a}$. Karena nilai $a$ tidak diketahui, hubungan $P$ dan $Q$ tidak dapat ditentukan."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 12",
+          "content": "Jika $x_1$ dan $x_2$ memenuhi $(f(x))^2+3=3(x-2)$ untuk $f(x)=x-3$, nilai $x_1+x_2$ adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "18"
+            },
+            {
+              "label": "B",
+              "text": "9"
+            },
+            {
+              "label": "C",
+              "text": "3"
+            },
+            {
+              "label": "D",
+              "text": "$-9$"
+            },
+            {
+              "label": "E",
+              "text": "$-18$"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 12: B. Substitusi $f(x)=x-3$ menghasilkan $(x-3)^2+3=3(x-2)$ atau $x^2-9x+18=0$. Jumlah akar $x_1+x_2=-\\frac{b}{a}=9$."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 13",
+          "content": "Titik P terletak pada kurva $y=x^2+4$ dan $y=x+x$. Koordinat titik P yang mungkin adalah: (1) $(2,6)$, (2) $(6,2)$, (3) $(-2,2)$, (4) $(-2,6)$.",
+          "options": [
+            {
+              "label": "A",
+              "text": "(1), (2), dan (3) saja yang benar"
+            },
+            {
+              "label": "B",
+              "text": "(1) dan (3) saja yang benar"
+            },
+            {
+              "label": "C",
+              "text": "(2) dan (4) saja yang benar"
+            },
+            {
+              "label": "D",
+              "text": "Hanya (4) yang benar"
+            },
+            {
+              "label": "E",
+              "text": "Semua pilihan benar"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 13: B. Dari kesamaan dua kurva diperoleh $x^2=4$, sehingga $x=2$ atau $x=-2$. Koordinat yang mungkin adalah $(2,6)$ dan $(-2,2)$."
+        }
+      ]
+    },
+    {
       "judul": "4. Perbandingan",
       "icon": "fa-percent",
       "tipe": "basic",
@@ -409,6 +989,75 @@
           "type": "contoh",
           "title": "Perbandingan Tiga Besaran",
           "content": "Jika perbandingan kelereng Andi, Beni, dan Calvin adalah $4:3:5$, maka banyak kelerengnya dapat dimisalkan $4k$, $3k$, dan $5k$. Jika selisih Calvin dan Beni adalah $p$, maka $5k-3k=2k=p$, sehingga totalnya $12k=6p$."
+        }
+      ]
+    },
+    {
+      "judul": "Kuis 14-15: Perbandingan",
+      "icon": "fa-star",
+      "tipe": "box",
+      "isi": [
+        {
+          "type": "contoh",
+          "title": "Kuis 14",
+          "content": "Edo mengendarai motor dengan kecepatan rata-rata 60 km/jam dan tiba di tujuan 30 menit kemudian. Berdasarkan informasi tersebut, tentukan nilai kebenaran tiga pernyataan pada soal.",
+          "options": [
+            {
+              "label": "A",
+              "text": "BBB"
+            },
+            {
+              "label": "B",
+              "text": "BBS"
+            },
+            {
+              "label": "C",
+              "text": "BSS"
+            },
+            {
+              "label": "D",
+              "text": "SSB"
+            },
+            {
+              "label": "E",
+              "text": "SSS"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 14: B. Jarak tempuh Edo $60\\times\\frac{30}{60}=30$ km. Jika kecepatannya 90 km/jam, waktu tempuh 20 menit sehingga 10 menit lebih cepat. Jika tiba 15 menit lebih lambat, waktu 45 menit dan kecepatannya 40 km/jam."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 15",
+          "content": "Perbandingan kelereng milik Andi, Beni, dan Calvin adalah $4:3:5$. Jika selisih kelereng milik Beni dan Calvin adalah $p$, maka total kelereng mereka bertiga adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "$24p$"
+            },
+            {
+              "label": "B",
+              "text": "$18p$"
+            },
+            {
+              "label": "C",
+              "text": "$12p$"
+            },
+            {
+              "label": "D",
+              "text": "$9p$"
+            },
+            {
+              "label": "E",
+              "text": "$6p$"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 15: E. Misalkan banyak kelereng Andi, Beni, dan Calvin adalah $4k$, $3k$, dan $5k$. Selisih Calvin dan Beni adalah $2k=p$, sehingga totalnya $12k=6p$."
         }
       ]
     },
@@ -493,6 +1142,169 @@
         {
           "type": "note",
           "content": "Untuk perubahan berurutan, jangan menjumlahkan persentase secara langsung. Terapkan persentase satu per satu terhadap harga pada tahap tersebut."
+        }
+      ]
+    },
+    {
+      "judul": "Kuis 16-20: Aritmetika Sosial",
+      "icon": "fa-star",
+      "tipe": "box",
+      "isi": [
+        {
+          "type": "contoh",
+          "title": "Kuis 16",
+          "content": "Pembelian 1 tiket bioskop memperoleh diskon 40%, sedangkan 1 tiket konser memperoleh diskon 20%. Harga awal 1 tiket bioskop dan 1 tiket konser sama, yaitu $x$ rupiah. Manakah hubungan yang benar antara kuantitas $P$ dan $Q$ berdasarkan informasi yang diberikan?",
+          "options": [
+            {
+              "label": "A",
+              "text": "$P>Q$"
+            },
+            {
+              "label": "B",
+              "text": "$Q>P$"
+            },
+            {
+              "label": "C",
+              "text": "$P=Q$"
+            },
+            {
+              "label": "D",
+              "text": "Informasi tidak cukup"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 16: A. Setelah diskon, tiket bioskop menjadi $60\\%x$ dan tiket konser menjadi $80\\%x$. Dari pembahasan diperoleh $P=\\frac{21}{15}x$ dan $Q=\\frac{20}{15}x$, sehingga $P>Q$."
+        },
+        {
+          "type": "contoh",
+          "title": "Informasi untuk Kuis 17-18",
+          "content": "Seorang penjual minuman menjual 3 variasi minuman dan memberi diskon 20% untuk setiap pembelian paket. Paket 1 berisi 2 minuman A dan 1 minuman B seharga Rp45.600,00. Paket 2 berisi 1 minuman A, 1 minuman B, dan 1 minuman C seharga Rp47.600,00. Paket 3 berisi 1 minuman B dan 3 minuman C seharga Rp65.600,00."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 17",
+          "content": "Jika Alex membeli 1 minuman jenis A, Alex harus membayar uang sebesar ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "Rp17.500,00"
+            },
+            {
+              "label": "B",
+              "text": "Rp18.000,00"
+            },
+            {
+              "label": "C",
+              "text": "Rp20.000,00"
+            },
+            {
+              "label": "D",
+              "text": "Rp21.500,00"
+            },
+            {
+              "label": "E",
+              "text": "Rp22.000,00"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 17: A. Dengan memodelkan harga sebelum diskon minuman A, B, dan C sebagai sistem persamaan linear dari tiga paket, diperoleh harga 1 minuman jenis A sebesar Rp17.500,00."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 18",
+          "content": "Jika setiap pembelian dikenakan pajak 10%, maka harga 1 minuman jenis A dan 1 minuman jenis B setelah dikenakan pajak adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "Rp40.550,00"
+            },
+            {
+              "label": "B",
+              "text": "Rp41.250,00"
+            },
+            {
+              "label": "C",
+              "text": "Rp43.450,00"
+            },
+            {
+              "label": "D",
+              "text": "Rp45.450,00"
+            },
+            {
+              "label": "E",
+              "text": "Rp46.200,00"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 18: C. Setelah harga satuan A dan B diperoleh dari sistem paket, jumlah harga A dan B dikenai pajak 10%, sehingga totalnya Rp43.450,00."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 19",
+          "content": "Pada tahun 2020 harga sebuah rumah adalah Rp200.000.000,00. Pada tahun 2021 naik 30% dari tahun sebelumnya. Kemudian pada tahun 2022 rumah tersebut diberi diskon 10% dari harga tahun 2021. Maka, harga rumah tersebut pada tahun 2022 adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "Rp234.000.000,00"
+            },
+            {
+              "label": "B",
+              "text": "Rp220.000.000,00"
+            },
+            {
+              "label": "C",
+              "text": "Rp240.000.000,00"
+            },
+            {
+              "label": "D",
+              "text": "Rp242.000.000,00"
+            },
+            {
+              "label": "E",
+              "text": "Rp250.000.000,00"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 19: A. Harga tahun 2021 adalah $130\\%\\times200.000.000=260.000.000$. Setelah diskon 10%, harga tahun 2022 menjadi $90\\%\\times260.000.000=234.000.000$."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 20",
+          "content": "Ibu membuat tiga jenis roti dengan bahan telur, tepung, dan gula. Roti I membutuhkan 2 telur, 2 kg tepung, 4 kg gula, harga jual 100 ribu rupiah. Roti II membutuhkan 4 telur, 1 kg tepung, 3 kg gula, harga jual 90 ribu rupiah. Roti III membutuhkan 3 telur, 3 kg tepung, 2 kg gula, harga jual 95 ribu rupiah. Harga telur Rp2.000,00 per butir, tepung Rp5.000,00 per kg, dan gula Rp8.000,00 per kg. Manakah pernyataan yang benar? (1) Untung roti I Rp54.000,00. (2) Untung roti II Rp53.000,00. (3) Untung roti III Rp58.000,00. (4) Modal roti II sama dengan modal roti III.",
+          "options": [
+            {
+              "label": "A",
+              "text": "1, 2, dan 3"
+            },
+            {
+              "label": "B",
+              "text": "1 dan 3"
+            },
+            {
+              "label": "C",
+              "text": "2 dan 4"
+            },
+            {
+              "label": "D",
+              "text": "4"
+            },
+            {
+              "label": "E",
+              "text": "1, 2, 3, dan 4"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 20: E. Modal roti I = 46 ribu, roti II = 37 ribu, dan roti III = 37 ribu rupiah. Keuntungannya berturut-turut 54 ribu, 53 ribu, dan 58 ribu rupiah; modal roti II sama dengan roti III."
         }
       ]
     },
