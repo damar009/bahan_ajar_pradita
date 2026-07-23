@@ -1,15 +1,515 @@
 {
   "materi": [
     {
-      "judul": "Aljabar dan Fungsi",
+      "judul": "Belajar Apa Hari Ini",
       "icon": "fa-book-open",
       "tipe": "basic",
       "isi": [
-        "<strong>Status:</strong> Konten dummy sementara.",
-        "<strong>Catatan:</strong> Ganti isi file <code>data.json</code> ini saat materi asli sudah siap.",
+        "<strong>Topik:</strong> [PRADITA07] Aljabar dan Fungsi",
+        "<strong>Subtopik:</strong> Aljabar dan Fungsi",
+        "Materi ini membahas lima pokok bahasan numerasi: fungsi, sistem persamaan linear, persamaan dan fungsi kuadrat, perbandingan, serta aritmetika sosial.",
+        {
+          "type": "list",
+          "items": [
+            "Fungsi: relasi yang memasangkan setiap anggota domain tepat satu kali ke kodomain.",
+            "Sistem persamaan linear: model persamaan yang dapat diselesaikan dengan substitusi, eliminasi, atau gabungan keduanya.",
+            "Persamaan dan fungsi kuadrat: bentuk aljabar berpangkat dua, akar-akar, diskriminan, titik puncak, dan grafik.",
+            "Perbandingan: hubungan senilai, berbalik nilai, dan perbandingan beberapa besaran.",
+            "Aritmetika sosial: diskon, harga setelah diskon, pajak, modal, harga jual, dan keuntungan."
+          ]
+        },
         {
           "type": "note",
-          "content": "File ini dibuat sebagai placeholder agar page sudah muncul di daftar isi, dropdown, dan bookmark."
+          "content": "Materi disusun dari bahan ajar DASAR NUMERASI 02 dan diformat sebagai komponen JSON untuk page pembelajaran."
+        }
+      ]
+    },
+    {
+      "judul": "Tujuan Pembelajaran",
+      "icon": "fa-bullseye",
+      "tipe": "grid",
+      "isi": [
+        "Setelah mempelajari materi ini, siswa diharapkan mampu mengenali bentuk, memilih strategi penyelesaian, dan menerapkan konsep aljabar dalam konteks soal numerasi."
+      ],
+      "grid": [
+        {
+          "title": "LO1 - Fungsi",
+          "content": "Memahami relasi yang merupakan fungsi, notasi fungsi, domain, kodomain, range, nilai fungsi, dan transformasi sederhana pada fungsi."
+        },
+        {
+          "title": "LO2 - Sistem Persamaan Linear",
+          "content": "Menyusun model linear dari informasi kontekstual dan menyelesaikan SPLDV atau SPLTV menggunakan metode substitusi dan eliminasi."
+        },
+        {
+          "title": "LO3 - Persamaan dan Fungsi Kuadrat",
+          "content": "Menentukan akar persamaan kuadrat, menggunakan diskriminan, menyusun persamaan dari akar-akar, serta membaca grafik fungsi kuadrat."
+        },
+        {
+          "title": "LO4 - Perbandingan",
+          "content": "Menggunakan perbandingan senilai, berbalik nilai, dan perbandingan beberapa besaran untuk menyelesaikan masalah."
+        },
+        {
+          "title": "LO5 - Aritmetika Sosial",
+          "content": "Menghitung diskon, harga akhir, pajak, modal, harga jual, dan keuntungan pada situasi jual beli."
+        }
+      ]
+    },
+    {
+      "judul": "1. Fungsi",
+      "icon": "fa-diagram-project",
+      "tipe": "basic",
+      "isi": [
+        "Fungsi adalah relasi khusus dari himpunan A ke himpunan B. Setiap anggota himpunan A harus dipasangkan dengan tepat satu anggota himpunan B.",
+        "Sebuah relasi bukan fungsi jika ada anggota domain yang memiliki lebih dari satu pasangan atau ada anggota domain yang tidak memiliki pasangan.",
+        {
+          "type": "contoh",
+          "title": "Contoh Relasi Fungsi dan Bukan Fungsi",
+          "content": "Dari himpunan $A = \\{a,b,c\\}$ dan $B = \\{k,l,m\\}$, relasi $R = \\{(a,k),(b,l),(c,m)\\}$ merupakan fungsi karena setiap anggota A mempunyai tepat satu pasangan. Relasi $R = \\{(a,k),(b,k),(b,l),(c,m)\\}$ bukan fungsi karena $b$ memiliki dua pasangan. Relasi $R = \\{(a,k),(c,m)\\}$ juga bukan fungsi karena $b$ tidak memiliki pasangan."
+        },
+        {
+          "type": "note",
+          "content": "Kodomain boleh memiliki anggota yang tidak mendapat pasangan, tetapi domain tidak boleh kosong dari pasangan dan tidak boleh bercabang ke dua hasil."
+        }
+      ]
+    },
+    {
+      "judul": "Notasi, Domain, Kodomain, dan Range",
+      "icon": "fa-arrow-right-arrow-left",
+      "tipe": "basic",
+      "isi": [
+        "Fungsi yang memetakan himpunan A ke himpunan B dapat ditulis dengan beberapa notasi.",
+        {
+          "type": "list",
+          "items": [
+            "$f : A \\to B$",
+            "$f : x \\mapsto y$, dengan $x \\in A$ dan $y \\in B$",
+            "$f : x \\mapsto f(x)$, dengan $f(x)$ sebagai aturan fungsi dari $x$"
+          ]
+        },
+        "Domain adalah himpunan semua nilai masukan yang diperbolehkan. Kodomain adalah himpunan target keluaran. Range adalah himpunan hasil keluaran yang benar-benar diperoleh dari pemetaan fungsi.",
+        {
+          "type": "contoh",
+          "title": "Menentukan Range",
+          "content": "Jika $f : A \\to B$ dengan $A = \\{1,2,3\\}$ dan $f(x)=2x$, maka nilai fungsi untuk anggota A adalah $2,4,6$. Jadi domainnya $\\{1,2,3\\}$ dan range-nya $\\{2,4,6\\}$."
+        }
+      ]
+    },
+    {
+      "judul": "Fungsi Linear dalam Masalah Kontekstual",
+      "icon": "fa-chart-line",
+      "tipe": "box",
+      "isi": [
+        "Fungsi linear digunakan ketika suatu besaran berubah secara tetap atau konstan. Bentuk umumnya dapat dinyatakan sebagai:",
+        {
+          "type": "formula",
+          "content": "$f(x)=mx+c$"
+        },
+        "Pada bentuk tersebut, $m$ menyatakan gradien atau besar perubahan setiap satu satuan $x$, sedangkan $c$ menyatakan nilai awal ketika $x=0$.",
+        {
+          "type": "contoh",
+          "title": "Tabungan Bertambah Tetap",
+          "content": "Andika menabung mulai Januari 2023 dengan saldo awal Rp22.000,00. Setiap bulan saldo bertambah Rp10.000,00. Jika $x$ menyatakan bulan ke-$x$, maka model linear dapat dibaca sebagai saldo awal ditambah kenaikan tetap setiap bulan, yaitu $T(x)=10.000x+22.000$ dengan penyesuaian definisi bulan ke-0 atau bulan pertama sesuai konteks soal."
+        },
+        {
+          "type": "note",
+          "content": "Pada soal cerita fungsi linear, tentukan dulu apakah variabel waktu dimulai dari 0 atau 1 karena pilihan jawaban dapat berbeda hanya karena definisi indeks waktu."
+        }
+      ]
+    },
+    {
+      "judul": "2. Sistem Persamaan Linear",
+      "icon": "fa-equals",
+      "tipe": "basic",
+      "isi": [
+        "Persamaan linear adalah persamaan dengan variabel berpangkat satu. Bentuk persamaan linear satu variabel dapat ditulis sebagai:",
+        {
+          "type": "formula",
+          "content": "$ax+b=c$, dengan $a \\ne 0$"
+        },
+        "Penyelesaiannya adalah nilai variabel yang membuat kedua ruas persamaan bernilai sama.",
+        {
+          "type": "contoh",
+          "title": "Persamaan Linear Satu Variabel",
+          "content": "Untuk menyelesaikan $3x-12=4x-8$, tambahkan 12 pada kedua ruas sehingga $3x=4x+4$. Kurangkan $4x$ pada kedua ruas sehingga $-x=4$. Maka $x=-4$."
+        }
+      ]
+    },
+    {
+      "judul": "Metode Penyelesaian SPLDV",
+      "icon": "fa-gears",
+      "tipe": "grid",
+      "isi": [
+        "SPLDV memuat dua persamaan linear dengan dua variabel. Himpunan penyelesaian SPLDV adalah titik potong kedua garis."
+      ],
+      "grid": [
+        {
+          "title": "Metode Substitusi",
+          "content": "Ubah salah satu persamaan menjadi satu variabel sebagai fungsi variabel lainnya. Substitusikan bentuk tersebut ke persamaan kedua, lalu cari nilai kedua variabel."
+        },
+        {
+          "title": "Metode Eliminasi",
+          "content": "Samakan koefisien salah satu variabel dengan mengalikan persamaan. Jika tanda koefisien sama, kurangkan; jika tanda berbeda, jumlahkan. Ulangi untuk variabel lain."
+        },
+        {
+          "title": "Metode Gabungan",
+          "content": "Eliminasi salah satu variabel untuk memperoleh nilai variabel pertama, lalu substitusikan nilai itu ke salah satu persamaan untuk mendapatkan variabel kedua."
+        }
+      ]
+    },
+    {
+      "judul": "Langkah Umum SPLDV",
+      "icon": "fa-list-ol",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "ordered-list",
+          "items": [
+            "Identifikasi dua informasi yang dapat ditulis sebagai dua persamaan linear.",
+            "Tentukan variabel yang mewakili besaran pada soal, misalnya $x$ untuk harga barang pertama dan $y$ untuk harga barang kedua.",
+            "Pilih metode substitusi atau eliminasi sesuai bentuk persamaan yang paling mudah.",
+            "Hitung nilai variabel, lalu tafsirkan kembali sesuai pertanyaan soal."
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Membentuk Model dari Selisih Upah",
+          "content": "Jika selisih upah Ara dan Choi adalah Rp8.000,00 serta selisih upah Bey dan Choi adalah Rp4.000,00, misalkan upah Ara, Bey, dan Choi berturut-turut $a$, $b$, dan $c$. Informasi tersebut dapat dimodelkan menjadi dua persamaan, misalnya $a-c=8.000$ dan $b-c=4.000$, lalu dikombinasikan sesuai nilai yang ditanyakan."
+        }
+      ]
+    },
+    {
+      "judul": "Sistem Persamaan Linear Tiga Variabel",
+      "icon": "fa-cubes",
+      "tipe": "box",
+      "isi": [
+        "SPLTV memuat tiga persamaan linear dengan tiga variabel. Strategi dasarnya adalah mengubah masalah tiga variabel menjadi beberapa persamaan dua variabel melalui eliminasi.",
+        {
+          "type": "ordered-list",
+          "items": [
+            "Tentukan tiga variabel yang sesuai dengan tiga besaran yang tidak diketahui.",
+            "Susun tiga persamaan dari informasi soal.",
+            "Eliminasi satu variabel dari dua pasang persamaan sehingga diperoleh dua persamaan baru dengan dua variabel.",
+            "Selesaikan dua persamaan baru tersebut, kemudian substitusikan kembali untuk memperoleh variabel ketiga."
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Masalah paket harga, campuran barang, atau bahan produksi sering dapat dimodelkan sebagai SPLTV."
+        }
+      ]
+    },
+    {
+      "judul": "3. Persamaan Kuadrat",
+      "icon": "fa-square-root-variable",
+      "tipe": "basic",
+      "isi": [
+        "Bentuk umum persamaan kuadrat adalah:",
+        {
+          "type": "formula",
+          "content": "$ax^2+bx+c=0$, dengan $a \\ne 0$"
+        },
+        "Nilai pengganti variabel yang memenuhi persamaan kuadrat disebut solusi atau akar-akar persamaan kuadrat.",
+        {
+          "type": "list",
+          "items": [
+            "$x$ adalah variabel.",
+            "$a$ adalah koefisien $x^2$ dan tidak boleh nol.",
+            "$b$ adalah koefisien $x$.",
+            "$c$ adalah konstanta."
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Cara Menentukan Akar Persamaan Kuadrat",
+      "icon": "fa-screwdriver-wrench",
+      "tipe": "grid",
+      "isi": [
+        "Akar persamaan kuadrat dapat dicari dengan beberapa cara. Pilih cara yang paling efisien berdasarkan bentuk persamaannya."
+      ],
+      "grid": [
+        {
+          "title": "Faktorisasi Distributif",
+          "content": "Gunakan ketika ada faktor yang sama. Contoh: $2x^2+6x=0$ menjadi $2x(x+3)=0$, sehingga $x=0$ atau $x=-3$."
+        },
+        {
+          "title": "Selisih Kuadrat",
+          "content": "Gunakan bentuk $p^2-q^2=(p+q)(p-q)$. Contoh: $y^2-4=0$ menjadi $(y+2)(y-2)=0$, sehingga $y=-2$ atau $y=2$."
+        },
+        {
+          "title": "Faktorisasi Trinomial",
+          "content": "Gunakan ketika $ax^2+bx+c$ dapat dipecah menjadi perkalian dua faktor linear."
+        },
+        {
+          "title": "Rumus Kuadratik",
+          "content": "Gunakan rumus $x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$ jika faktorisasi tidak langsung terlihat."
+        }
+      ]
+    },
+    {
+      "judul": "Diskriminan Persamaan Kuadrat",
+      "icon": "fa-scale-balanced",
+      "tipe": "table",
+      "isi": [
+        "Diskriminan digunakan untuk menentukan jenis akar-akar persamaan kuadrat tanpa harus mencari nilai akarnya terlebih dahulu.",
+        {
+          "type": "formula",
+          "content": "$D=b^2-4ac$"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Nilai Diskriminan",
+          "Jenis Akar"
+        ],
+        "rows": [
+          [
+            "$D>0$",
+            "Dua akar real berbeda"
+          ],
+          [
+            "$D=0$",
+            "Dua akar real sama atau akar kembar"
+          ],
+          [
+            "$D<0$",
+            "Tidak memiliki akar real"
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "judul": "Jumlah dan Hasil Kali Akar",
+      "icon": "fa-link",
+      "tipe": "box",
+      "isi": [
+        "Jika $x_1$ dan $x_2$ adalah akar-akar persamaan kuadrat $ax^2+bx+c=0$, maka berlaku:",
+        {
+          "type": "formula",
+          "content": "$x_1+x_2=-\\frac{b}{a}$"
+        },
+        {
+          "type": "formula",
+          "content": "$x_1 \\cdot x_2=\\frac{c}{a}$"
+        },
+        "Jika akar-akar suatu persamaan kuadrat diketahui, bentuk persamaannya dapat ditulis sebagai:",
+        {
+          "type": "formula",
+          "content": "$(x-x_1)(x-x_2)=0$"
+        },
+        {
+          "type": "contoh",
+          "title": "Menyusun Persamaan dari Akar",
+          "content": "Persamaan kuadrat yang memiliki akar 2 dan 3 adalah $(x-2)(x-3)=0$, sehingga $x^2-5x+6=0$."
+        }
+      ]
+    },
+    {
+      "judul": "Fungsi Kuadrat dan Grafik",
+      "icon": "fa-chart-area",
+      "tipe": "basic",
+      "isi": [
+        "Fungsi kuadrat dapat ditulis sebagai $f(x)=ax^2+bx+c$ dengan $a \\ne 0$. Grafiknya berbentuk parabola.",
+        {
+          "type": "list",
+          "items": [
+            "Jika $a>0$, parabola terbuka ke atas dan memiliki titik puncak minimum.",
+            "Jika $a<0$, parabola terbuka ke bawah dan memiliki titik puncak maksimum.",
+            "Titik potong terhadap sumbu-$y$ terjadi saat $x=0$, sehingga titiknya adalah $(0,c)$.",
+            "Titik potong terhadap sumbu-$x$ terjadi saat $y=0$, sehingga dicari dari akar-akar persamaan kuadrat."
+          ]
+        },
+        {
+          "type": "formula",
+          "content": "$x_p=-\\frac{b}{2a}$"
+        },
+        {
+          "type": "formula",
+          "content": "$y_p=f(x_p)$"
+        },
+        {
+          "type": "contoh",
+          "title": "Titik Potong Grafik",
+          "content": "Untuk $f(x)=x^2-5x+6$, titik potong sumbu-$x$ diperoleh dari $x^2-5x+6=0=(x-2)(x-3)$, yaitu $(2,0)$ dan $(3,0)$. Titik potong sumbu-$y$ adalah $(0,6)$."
+        }
+      ]
+    },
+    {
+      "judul": "4. Perbandingan",
+      "icon": "fa-percent",
+      "tipe": "basic",
+      "isi": [
+        "Perbandingan menyatakan hubungan antara dua besaran atau lebih. Pada soal numerasi, perbandingan sering digunakan untuk menentukan banyak barang, waktu kerja, kecepatan, jarak, atau pembagian bagian.",
+        {
+          "type": "list",
+          "items": [
+            "Perbandingan senilai: jika satu besaran bertambah, besaran lain juga bertambah dengan rasio tetap.",
+            "Perbandingan berbalik nilai: jika satu besaran bertambah, besaran lain berkurang dengan hasil kali tetap.",
+            "Perbandingan tiga besaran dapat dimodelkan dengan pengali yang sama, misalnya $4:3:5$ menjadi $4k$, $3k$, dan $5k$."
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Perbandingan Senilai dan Berbalik Nilai",
+      "icon": "fa-arrows-left-right",
+      "tipe": "table",
+      "isi": [
+        "Perbedaan utama kedua jenis perbandingan terletak pada arah perubahan dua besaran."
+      ],
+      "table": {
+        "headers": [
+          "Jenis",
+          "Ciri",
+          "Rumus Hubungan",
+          "Contoh"
+        ],
+        "rows": [
+          [
+            "Senilai",
+            "Besaran pertama naik, besaran kedua ikut naik.",
+            "$\\frac{x_1}{y_1}=\\frac{x_2}{y_2}$",
+            "Semakin lama waktu membuat karangan bunga, semakin banyak karangan bunga yang selesai."
+          ],
+          [
+            "Berbalik nilai",
+            "Besaran pertama naik, besaran kedua turun.",
+            "$x_1y_1=x_2y_2$",
+            "Semakin banyak pekerja, waktu penyelesaian pekerjaan semakin singkat."
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "judul": "Contoh Perbandingan",
+      "icon": "fa-puzzle-piece",
+      "tipe": "box",
+      "isi": [
+        {
+          "type": "contoh",
+          "title": "Perbandingan Senilai",
+          "content": "Nabil dapat membuat 4 karangan bunga dalam 3 jam. Karena banyak karangan bunga dan waktu bekerja berbanding lurus, maka $\\frac{4}{3}=\\frac{x}{12}$ sehingga $x=16$. Jadi, dalam 12 jam Nabil dapat membuat 16 karangan bunga."
+        },
+        {
+          "type": "contoh",
+          "title": "Perbandingan Berbalik Nilai",
+          "content": "Jika 12 pekerja menyelesaikan pekerjaan dalam 60 hari, maka 18 pekerja membutuhkan waktu lebih singkat. Gunakan $12 \\cdot 60 = 18 \\cdot y$, sehingga $y=40$ hari."
+        },
+        {
+          "type": "contoh",
+          "title": "Perbandingan Tiga Besaran",
+          "content": "Jika perbandingan kelereng Andi, Beni, dan Calvin adalah $4:3:5$, maka banyak kelerengnya dapat dimisalkan $4k$, $3k$, dan $5k$. Jika selisih Calvin dan Beni adalah $p$, maka $5k-3k=2k=p$, sehingga totalnya $12k=6p$."
+        }
+      ]
+    },
+    {
+      "judul": "5. Aritmetika Sosial",
+      "icon": "fa-cart-shopping",
+      "tipe": "basic",
+      "isi": [
+        "Aritmetika sosial membahas penggunaan operasi hitung dalam kegiatan ekonomi sehari-hari, misalnya diskon, pajak, modal, harga jual, dan keuntungan.",
+        "Diskon adalah potongan atau pengurangan harga. Diskon biasanya dinyatakan sebagai persentase dari harga mula-mula.",
+        {
+          "type": "formula",
+          "content": "$\\text{Diskon}=\\%D \\times Hb$"
+        },
+        {
+          "type": "formula",
+          "content": "$Hb'=Hb-\\text{Diskon}$"
+        },
+        {
+          "type": "formula",
+          "content": "$Hb'=(100\\%-\\%D)\\times Hb$"
+        }
+      ]
+    },
+    {
+      "judul": "Rumus Aritmetika Sosial",
+      "icon": "fa-receipt",
+      "tipe": "table",
+      "isi": [
+        "Gunakan rumus berikut untuk membaca hubungan antara harga awal, diskon, pajak, modal, harga jual, dan keuntungan."
+      ],
+      "table": {
+        "headers": [
+          "Konsep",
+          "Rumus",
+          "Keterangan"
+        ],
+        "rows": [
+          [
+            "Harga setelah diskon",
+            "$Hb'=(100\\%-\\%D)\\times Hb$",
+            "$Hb$ adalah harga mula-mula dan $\\%D$ adalah persentase diskon."
+          ],
+          [
+            "Pajak",
+            "$\\text{Harga akhir}=(100\\%+\\%P)\\times \\text{harga sebelum pajak}$",
+            "$\\%P$ adalah persentase pajak."
+          ],
+          [
+            "Keuntungan",
+            "$\\text{Untung}=\\text{Harga jual}-\\text{Modal}$",
+            "Keuntungan bernilai positif jika harga jual lebih besar daripada modal."
+          ],
+          [
+            "Modal",
+            "$\\text{Modal}=\\text{jumlah bahan} \\times \\text{harga satuan bahan}$",
+            "Pada soal produksi, modal dapat dihitung dari kebutuhan bahan dan harga setiap bahan."
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "judul": "Contoh Aritmetika Sosial",
+      "icon": "fa-tags",
+      "tipe": "box",
+      "isi": [
+        {
+          "type": "contoh",
+          "title": "Mencari Harga Mula-Mula",
+          "content": "Sebuah toko memberi diskon 30% untuk sepatu. Jika pembeli membayar Rp420.000,00, maka harga setelah diskon adalah 70% dari harga mula-mula. Jadi $70\\% \\times Hb = 420.000$, sehingga $Hb=600.000$."
+        },
+        {
+          "type": "contoh",
+          "title": "Kenaikan Lalu Diskon",
+          "content": "Harga rumah tahun 2020 adalah Rp200.000.000,00. Tahun 2021 naik 30%, sehingga menjadi Rp260.000.000,00. Tahun 2022 didiskon 10% dari harga tahun 2021, sehingga harganya $90\\% \\times 260.000.000 = 234.000.000$."
+        },
+        {
+          "type": "note",
+          "content": "Untuk perubahan berurutan, jangan menjumlahkan persentase secara langsung. Terapkan persentase satu per satu terhadap harga pada tahap tersebut."
+        }
+      ]
+    },
+    {
+      "judul": "Strategi Menyelesaikan Soal Numerasi Aljabar",
+      "icon": "fa-lightbulb",
+      "tipe": "note",
+      "isi": [
+        {
+          "type": "ordered-list",
+          "items": [
+            "Tentukan jenis konsep yang digunakan: fungsi, sistem persamaan, kuadrat, perbandingan, atau aritmetika sosial.",
+            "Ubah kalimat penting menjadi variabel dan persamaan.",
+            "Periksa satuan, arah perubahan, dan definisi variabel sejak awal.",
+            "Gunakan metode hitung yang paling singkat, lalu tafsirkan hasil sesuai konteks.",
+            "Pada pilihan ganda, uji juga alasan mengapa pilihan lain salah, terutama untuk soal pernyataan benar-salah."
+          ]
         }
       ]
     }
