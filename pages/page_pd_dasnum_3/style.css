@@ -327,6 +327,10 @@ p {
     transform: rotate(180deg);
 }
 
+.note-box + .contoh-box {
+    margin-top: 34px;
+}
+
 .table-container {
     width: 100%;
     overflow-x: auto;

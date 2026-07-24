@@ -1,15 +1,1291 @@
 {
   "materi": [
     {
-      "judul": "Dummy Page Dasar Numerasi 03",
+      "judul": "Belajar Apa Hari Ini",
       "icon": "fa-book-open",
       "tipe": "basic",
       "isi": [
-        "<strong>Status:</strong> Konten dummy sementara.",
-        "<strong>Catatan:</strong> Ganti isi file <code>data.json</code> ini saat materi asli sudah siap.",
+        "<strong>Topik:</strong> [PRADITA07] Bilangan",
+        "<strong>Subtopik:</strong> Bilangan",
+        "Materi ini membahas operasi hitung bilangan, FPB dan KPK, pola bilangan, serta himpunan sebagai dasar penyelesaian soal numerasi.",
+        {
+          "type": "list",
+          "items": [
+            "Operasi hitung bilangan: operasi bilangan bulat, pecahan, desimal, persen, pangkat, akar, dan operasi campuran.",
+            "FPB dan KPK: faktor, kelipatan, faktorisasi prima, faktor persekutuan terbesar, kelipatan persekutuan terkecil, serta relasi $FPB(a,b) \\times KPK(a,b)=a\\times b$.",
+            "Pola bilangan: barisan dan deret aritmetika, barisan dan deret geometri, serta barisan rekursif.",
+            "Himpunan: notasi himpunan, representasi anggota, operasi himpunan, diagram Venn, dan prinsip inklusi-eksklusi."
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Tujuan Pembelajaran",
+      "icon": "fa-bullseye",
+      "tipe": "grid",
+      "isi": [
+        "Setelah mempelajari materi ini, siswa diharapkan mampu menggunakan konsep bilangan untuk menyelesaikan soal hitungan langsung, soal data, dan soal penalaran numerasi."
+      ],
+      "grid": [
+        {
+          "title": "LO1 - Operasi Hitung",
+          "content": "Memahami dan menyelesaikan soal yang berkaitan dengan operasi hitung bilangan, termasuk operasi campuran, pecahan, desimal, persen, pangkat, dan akar."
+        },
+        {
+          "title": "LO2 - FPB dan KPK",
+          "content": "Menentukan faktor, kelipatan, FPB, KPK, dan menerapkannya pada konteks pembagian kelompok atau pola kejadian berulang."
+        },
+        {
+          "title": "LO3 - Pola Bilangan",
+          "content": "Mengidentifikasi barisan aritmetika, barisan geometri, deret, dan pola rekursif untuk menghitung suku atau jumlah tertentu."
+        },
+        {
+          "title": "LO4 - Himpunan",
+          "content": "Merepresentasikan himpunan, membaca notasi, melakukan operasi himpunan, dan memakai diagram Venn atau inklusi-eksklusi."
+        }
+      ]
+    },
+    {
+      "judul": "Operasi Hitung Bilangan",
+      "icon": "fa-calculator",
+      "tipe": "basic",
+      "isi": [
+        "Penjumlahan dan pengurangan bilangan bulat negatif mengikuti aturan tanda. Secara umum, $a+(-b)=a-b$ dan $a-(-b)=a+b$.",
+        {
+          "type": "contoh",
+          "title": "Contoh Operasi Tanda",
+          "content": "$2+(-3)=2-3=-1$ dan $2-(-3)=2+3=5$."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pada penjumlahan berlaku sifat komutatif: $a+b=b+a$.",
+            "Pada penjumlahan berlaku sifat asosiatif: $(a+b)+c=a+(b+c)$.",
+            "Pada pengurangan tidak berlaku sifat komutatif dan tidak berlaku sifat asosiatif.",
+            "Pada perkalian berlaku sifat komutatif: $a\\times b=b\\times a$.",
+            "Pada perkalian berlaku sifat asosiatif: $(a\\times b)\\times c=a\\times(b\\times c)$.",
+            "Perkalian distributif terhadap penjumlahan dan pengurangan: $a\\times(b\\pm c)=(a\\times b)\\pm(a\\times c)$."
+          ]
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "Bentuk",
+              "Hasil / Keterangan"
+            ],
+            "rows": [
+              [
+                "$\\dfrac{a}{1}$",
+                "$a$"
+              ],
+              [
+                "$\\dfrac{a}{0}$",
+                "Tidak terdefinisi"
+              ],
+              [
+                "$\\dfrac{0}{0}$",
+                "Tak tentu"
+              ],
+              [
+                "$\\dfrac{0}{a}$",
+                "$0$, dengan $a\\ne0$"
+              ]
+            ],
+            "leftAlign": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "Operasi",
+              "Kebalikan Operasi"
+            ],
+            "rows": [
+              [
+                "Penjumlahan: $a+b=c$",
+                "Pengurangan: $c-b=a$ dan $c-a=b$"
+              ],
+              [
+                "Perkalian: $a\\times b=c$",
+                "Pembagian: $c\\div a=b$ dan $c\\div b=a$"
+              ],
+              [
+                "Pemangkatan: $a^n=b$",
+                "Pengakaran: $\\sqrt[n]{b}=a$"
+              ]
+            ],
+            "leftAlign": [
+              0,
+              1
+            ]
+          }
+        },
         {
           "type": "note",
-          "content": "File ini dibuat sebagai placeholder agar page sudah muncul di daftar isi, dropdown, dan bookmark."
+          "content": "Dalam operasi campuran, dahulukan operasi di dalam tanda kurung, lalu pangkat/akar, perkalian/pembagian, dan terakhir penjumlahan/pengurangan sesuai urutan operasi yang muncul."
+        }
+      ]
+    },
+    {
+      "judul": "Pecahan, Desimal, dan Persen",
+      "icon": "fa-percent",
+      "tipe": "table",
+      "isi": [
+        "Bilangan dapat dinyatakan dalam bentuk pecahan, desimal, maupun persen. Perubahan bentuk perlu dilakukan agar bilangan lebih mudah dibandingkan atau dihitung."
+      ],
+      "table": {
+        "headers": [
+          "Bentuk",
+          "Makna",
+          "Contoh"
+        ],
+        "rows": [
+          [
+            "Pecahan",
+            "$\\dfrac{a}{b}$ dengan $b\\ne0$",
+            "$\\dfrac{3}{4}$"
+          ],
+          [
+            "Desimal",
+            "Bentuk berbasis tempat persepuluhan",
+            "$0,75$"
+          ],
+          [
+            "Persen",
+            "Per seratus",
+            "$75\\%=\\dfrac{75}{100}=0,75$"
+          ],
+          [
+            "Pecahan senilai",
+            "Pembilang dan penyebut dikali atau dibagi bilangan yang sama",
+            "$\\dfrac{3}{4}=\\dfrac{75}{100}$"
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "judul": "Bilangan Berpangkat dan Bentuk Akar",
+      "icon": "fa-square-root-variable",
+      "tipe": "table",
+      "isi": [
+        "$$a^n=\\underbrace{a \\times a \\times a \\times \\cdots \\times a}_n$$",
+        "Bilangan berpangkat adalah perkalian berulang dengan basis yang sama. Untuk basis negatif, tanda hasil bergantung pada ganjil atau genapnya pangkat.",
+        {
+          "type": "list",
+          "items": [
+            "Jika pangkat bilangan negatif adalah ganjil, maka hasilnya negatif: $(-a)^n=-a^n$ untuk $n$ ganjil dan $a>0$.",
+            "Jika pangkat bilangan negatif adalah genap, maka hasilnya positif: $(-a)^n=a^n$ untuk $n$ genap dan $a>0$.",
+            "Contoh: $(-6)^3=-216$, sedangkan $(-6)^2=36$."
+          ]
+        }
+      ],
+      "table": {
+        "headers": [
+          "Sifat",
+          "Rumus"
+        ],
+        "rows": [
+          [
+            "Pangkat penjumlahan",
+            "$a^m\\times a^n=a^{m+n}$"
+          ],
+          [
+            "Pangkat pengurangan",
+            "$\\dfrac{a^m}{a^n}=a^{m-n}$"
+          ],
+          [
+            "Pangkat perkalian",
+            "$(a^m)^n=a^{mn}$"
+          ],
+          [
+            "Pangkat negatif",
+            "$a^{-m}=\\dfrac{1}{a^m}$"
+          ],
+          [
+            "Pangkat pecahan",
+            "$a^{\\dfrac{m}{n}}=\\sqrt[n]{a^m}$"
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "judul": "Kuis Operasi Hitung Bilangan 1-4",
+      "icon": "fa-star",
+      "tipe": "box",
+      "isi": [
+        {
+          "type": "contoh",
+          "title": "Kuis 1",
+          "content": "Urutan bilangan $88$, $88\\%$, $0,888$, $\\dfrac{8}{9}$, dan $\\left(\\dfrac{8}{9}\\right)^2$ dari yang terbesar hingga yang terkecil adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "$88, 88\\%; \\dfrac{8}{9}; (\\dfrac{8}{9})^2; 0,888$"
+            },
+            {
+              "label": "B",
+              "text": "$\\dfrac{8}{9}; 88,88\\%; 0,888; (\\dfrac{8}{9})^2$"
+            },
+            {
+              "label": "C",
+              "text": "$\\dfrac{8}{9}; 0,888; 88,88\\%; (\\dfrac{8}{9})^2$"
+            },
+            {
+              "label": "D",
+              "text": "$0,888; (\\dfrac{8}{9})^2; \\dfrac{8}{9}; 88,88\\%$"
+            },
+            {
+              "label": "E",
+              "text": "$(\\dfrac{8}{9})^2; 0,888; 88,88\\%; \\dfrac{8}{9}$"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 1: B. Ubah semua ke desimal: $\\dfrac{8}{9}=0,888888\\ldots$, $88,88\\%=0,8888$, $0,888=0,888$, dan $(\\dfrac{8}{9})^2=\\dfrac{64}{81}\\approx0,79$. Urutannya adalah $\\dfrac{8}{9}; 88,88\\%; 0,888; (\\dfrac{8}{9})^2$."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 2",
+          "content": "Jika $a\\#b=a+2b-a\\cdot b$, maka nilai $12\\#4$ adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "$-28$"
+            },
+            {
+              "label": "B",
+              "text": "$-20$"
+            },
+            {
+              "label": "C",
+              "text": "$-16$"
+            },
+            {
+              "label": "D",
+              "text": "$20$"
+            },
+            {
+              "label": "E",
+              "text": "$28$"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 2: A. $12\\#4=12+2(4)-12\\cdot4=12+8-48=-28$."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 3",
+          "content": "Misalkan simbol <code>$</code> dan <code>#</code> menyatakan operasi hitung $+$, $-$, $\\times$, atau $\\div$ dengan keduanya tidak menyatakan operasi hitung yang sama. Jika $0<\\dfrac{2}{5}\\;\\$\\;\\dfrac{3}{4}<\\dfrac{1}{2}$ dan $2\\;\\$\\;3\\;\\#\\;5=1$, manakah pernyataan yang benar? <br>1. $4\\;\\#\\;3\\;\\$\\;2=-2$ <br>2. Hasil dari $5\\;\\$\\;4\\;\\#\\;2\\;\\$\\;2$ adalah bilangan kuadrat. <br>3. Hasil dari $1\\;\\#\\;2\\;\\$\\;3\\;\\#\\;4$ adalah bilangan negatif. <br>4. Hasil dari $3\\;\\$\\;2\\;\\#\\;1$ adalah bilangan prima.",
+          "options": [
+            {
+              "label": "A",
+              "text": "1, 2, dan 3"
+            },
+            {
+              "label": "B",
+              "text": "1 dan 3"
+            },
+            {
+              "label": "C",
+              "text": "2 dan 4"
+            },
+            {
+              "label": "D",
+              "text": "4 saja"
+            },
+            {
+              "label": "E",
+              "text": "1, 2, 3, dan 4"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 3: E. Dari $0<\\dfrac{2}{5}\\;\\$\\;\\dfrac{3}{4}<\\dfrac{1}{2}$, simbol <code>$</code> harus berupa perkalian. Dari $2\\;\\$\\;3\\;\\#\\;5=1$, simbol <code>#</code> harus berupa pengurangan. Maka (1) $4-3\\times2=-2$ benar, (2) $5\\times4-2\\times2=16=4^2$ benar, (3) $1-2\\times3-4=-9$ benar, dan (4) $3\\times2-1=5$ benar. Jadi jawaban E."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 4",
+          "content": "Pada kompetisi matematika terdapat 50 soal. Jawaban benar bernilai 4 poin, tidak dijawab bernilai 1 poin, dan salah mengurangi 1 poin. Dari tabel peserta, peserta yang mendapat lebih dari 120 poin ada berapa orang?",
+          "table": {
+            "headers": [
+              "Nama Peserta",
+              "Benar",
+              "Salah",
+              "Tidak Dijawab"
+            ],
+            "rows": [
+              [
+                "Arika",
+                "30",
+                "9",
+                "11"
+              ],
+              [
+                "Benny",
+                "28",
+                "7",
+                "15"
+              ],
+              [
+                "Cut",
+                "29",
+                "4",
+                "17"
+              ],
+              [
+                "Dede",
+                "31",
+                "12",
+                "7"
+              ],
+              [
+                "Erwin",
+                "35",
+                "10",
+                "5"
+              ]
+            ],
+            "leftAlign": [
+              0,
+              4
+            ]
+          },
+          "options": [
+            {
+              "label": "A",
+              "text": "5"
+            },
+            {
+              "label": "B",
+              "text": "4"
+            },
+            {
+              "label": "C",
+              "text": "3"
+            },
+            {
+              "label": "D",
+              "text": "2"
+            },
+            {
+              "label": "E",
+              "text": "1"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 4: C. Skor Arika 122, Benny 120, Cut 129, Dede 119, dan Erwin 135. Yang lebih dari 120 adalah Arika, Cut, dan Erwin, sehingga ada 3 peserta."
+        }
+      ]
+    },
+    {
+      "judul": "Ciri-ciri Bilangan Habis Dibagi",
+      "icon": "fa-divide",
+      "tipe": "basic",
+      "isi": [
+        "Berikut adalah data keterbagian bilangan yang sering muncul.",
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "Keterbagian",
+              "Ciri"
+            ],
+            "rows": [
+              [
+                "2",
+                "Digit satuannya genap."
+              ],
+              [
+                "3",
+                "Jumlah angka penyusun bilangan habis dibagi 3."
+              ],
+              [
+                "4",
+                "Dua digit terakhir habis dibagi 4."
+              ],
+              [
+                "5",
+                "Digit satuannya 0 atau 5."
+              ],
+              [
+                "6",
+                "Bilangan habis dibagi 2 dan 3."
+              ],
+              [
+                "7",
+                "Ambil digit satuan, kalikan 2, lalu kurangkan dari bilangan yang tersisa. Jika hasilnya habis dibagi 7, maka bilangan semula habis dibagi 7."
+              ],
+              [
+                "9",
+                "Jumlah angka penyusun bilangan habis dibagi 9."
+              ],
+              [
+                "10",
+                "Digit satuannya 0."
+              ],
+              [
+                "11",
+                "Selisih jumlah digit pada posisi berselang-seling habis dibagi 11 atau bernilai 0."
+              ],
+              [
+                "12",
+                "Bilangan habis dibagi 3 dan 4 sekaligus."
+              ]
+            ],
+            "leftAlign": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "type": "note",
+          "content": "Ciri keterbagian membantu menyaring kemungkinan jawaban lebih cepat tanpa harus melakukan pembagian panjang."
+        },
+        {
+          "type": "contoh",
+          "title": "Contoh Bilangan Habis Dibagi 3",
+          "content": "Bilangan 372 habis dibagi 3 karena jumlah digitnya $3+7+2=12$ dan 12 habis dibagi 3. Bilangan 373 tidak habis dibagi 3 karena $3+7+3=13$ dan 13 tidak habis dibagi 3."
+        },
+        {
+          "type": "contoh",
+          "title": "Contoh Bilangan Habis Dibagi 9",
+          "content": "Bilangan 729 habis dibagi 9 karena jumlah digitnya $7+2+9=18$ dan 18 habis dibagi 9. Bilangan 728 tidak habis dibagi 9 karena $7+2+8=17$ dan 17 tidak habis dibagi 9."
+        },
+        {
+          "type": "contoh",
+          "title": "Contoh Bilangan Habis Dibagi 7",
+          "content": "Bilangan 203 habis dibagi 7. Caranya, ambil digit satuan 3, kalikan 2 menjadi 6, lalu kurangkan dari bilangan yang tersisa: $20-6=14$. Karena 14 habis dibagi 7, maka 203 habis dibagi 7. Bilangan 204 tidak habis dibagi 7 karena $20-2(4)=12$ dan 12 tidak habis dibagi 7."
+        },
+        {
+          "type": "contoh",
+          "title": "Contoh Bilangan Habis Dibagi 11",
+          "content": "Bilangan 253 habis dibagi 11 karena selisih jumlah digit berselang-selingnya adalah $(2+3)-5=0$. Bilangan 254 tidak habis dibagi 11 karena $(2+4)-5=1$ dan 1 tidak habis dibagi 11."
+        },
+        {
+          "type": "contoh",
+          "title": "Contoh Bilangan Habis Dibagi 12",
+          "content": "Bilangan 252 habis dibagi 12 karena memenuhi dua syarat sekaligus: $2+5+2=9$ habis dibagi 3 dan dua digit terakhirnya 52 habis dibagi 4. Bilangan 250 tidak habis dibagi 12 karena $2+5+0=7$ tidak habis dibagi 3 dan 50 tidak habis dibagi 4."
+        }
+      ]
+    },
+    {
+      "judul": "Kuis Operasi Hitung Bilangan 5-8",
+      "icon": "fa-star-half-stroke",
+      "tipe": "box",
+      "isi": [
+        {
+          "type": "contoh",
+          "title": "Kuis 5",
+          "content": "Fuad mengikuti kompetisi yang sama. Hanya ada 1 soal yang tidak dijawabnya. Jika skor Fuad sama dengan skor salah satu dari 5 peserta pada tabel, banyak soal yang dijawab benar oleh Fuad adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "30"
+            },
+            {
+              "label": "B",
+              "text": "31"
+            },
+            {
+              "label": "C",
+              "text": "33"
+            },
+            {
+              "label": "D",
+              "text": "34"
+            },
+            {
+              "label": "E",
+              "text": "36"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 5: D. Jika Fuad benar $b$ soal, salah $49-b$ soal, dan tidak menjawab 1 soal, skornya $4b+1-(49-b)=5b-48=5(b-10)+2$. Skor harus bersisa 2 saat dibagi 5. Dari tabel, skor yang cocok adalah 122, sehingga $5b-48=122$ dan $b=34$."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 6",
+          "content": "Diketahui bilangan $2a.57b$ habis dibagi 9. Berapa banyak pernyataan yang benar? <br>1. Jika $a=1$, nilai $b=3$. <br>2. Jika $a=3$, nilai $b=1$. <br>3. Jika $a=6$, nilai $b=7$. <br>4. Jika $a=9$, nilai $b=0$.",
+          "options": [
+            {
+              "label": "A",
+              "text": "0"
+            },
+            {
+              "label": "B",
+              "text": "1"
+            },
+            {
+              "label": "C",
+              "text": "2"
+            },
+            {
+              "label": "D",
+              "text": "3"
+            },
+            {
+              "label": "E",
+              "text": "4"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 6: D. Jumlah digitnya $2+a+5+7+b=14+a+b$ harus habis dibagi 9. Pernyataan 1, 2, dan 3 benar; untuk $a=9$, nilai $b$ yang memenuhi adalah 4, bukan 0."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 7",
+          "content": "Diketahui $x$ adalah bilangan di antara 500 dan 1.000. Berapakah sisa pembagian $x$ oleh 10? Putuskan apakah pernyataan 1 dan 2 berikut cukup untuk menjawab pertanyaan tersebut.<br>1. $x$ habis dibagi 13.<br>2. $x$ habis dibagi 37.",
+          "options": [
+            {
+              "label": "A",
+              "text": "1 saja cukup, 2 saja tidak cukup"
+            },
+            {
+              "label": "B",
+              "text": "2 saja cukup, 1 saja tidak cukup"
+            },
+            {
+              "label": "C",
+              "text": "1 dan 2 cukup, salah satu tidak cukup"
+            },
+            {
+              "label": "D",
+              "text": "1 ataupun 2 saja cukup"
+            },
+            {
+              "label": "E",
+              "text": "1 dan 2 tidak cukup"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 7: C. Pernyataan 1 saja memberi banyak kemungkinan kelipatan 13 dengan digit satuan berbeda. Pernyataan 2 saja juga memberi banyak kemungkinan kelipatan 37 dengan digit satuan berbeda. Jika keduanya dipakai, $x$ habis dibagi $13\\times37=481$ dan di antara 500 sampai 1.000 hanya mungkin $962$, sehingga sisanya saat dibagi 10 adalah 2."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 8",
+          "content": "Dua bilangan dua digit berbeda dibentuk dari angka 3, 5, 7, 8. Berapa banyak pernyataan yang benar? <br>1. Bilangan terbesar yang mungkin dibentuk habis dibagi 3. <br>2. Jumlah terkecil dari kedua bilangan yang mungkin terbentuk adalah 131. <br>3. Jumlah terbesar dari kedua bilangan yang mungkin terbentuk adalah 158. <br>4. Selisih terkecil dari kedua bilangan yang mungkin terbentuk adalah 12.",
+          "options": [
+            {
+              "label": "A",
+              "text": "0"
+            },
+            {
+              "label": "B",
+              "text": "1"
+            },
+            {
+              "label": "C",
+              "text": "2"
+            },
+            {
+              "label": "D",
+              "text": "3"
+            },
+            {
+              "label": "E",
+              "text": "4"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 8: C. Bilangan terbesar 87 habis dibagi 3, sehingga pernyataan 1 benar. Jumlah terkecil dapat dibuat 37+58 atau 38+57, yaitu 95, sehingga pernyataan 2 salah. Jumlah terbesar 85+73 atau 83+75, yaitu 158, sehingga pernyataan 3 benar. Selisih terkecil adalah 8, bukan 12, sehingga pernyataan 4 salah."
+        }
+      ]
+    },
+    {
+      "judul": "FPB dan KPK",
+      "icon": "fa-layer-group",
+      "tipe": "basic",
+      "isi": [
+        "Faktor suatu bilangan adalah bilangan-bilangan yang habis membagi bilangan tersebut. Bilangan prima adalah bilangan asli lebih dari 1 yang hanya memiliki faktor 1 dan bilangan itu sendiri.",
+        {
+          "type": "list",
+          "items": [
+            "Faktor prima adalah bilangan prima yang habis membagi suatu bilangan.",
+            "Faktorisasi prima adalah penulisan ulang suatu bilangan sebagai perkalian faktor-faktor primanya.",
+            "Faktor persekutuan adalah faktor-faktor yang sama dari beberapa bilangan.",
+            "Kelipatan persekutuan adalah kelipatan-kelipatan yang sama dari beberapa bilangan."
+          ]
+        },
+        {
+          "type": "contoh",
+          "title": "Faktor Persekutuan",
+          "content": "Faktor dari 18 adalah 1, 2, 3, 6, 9, 18. Faktor dari 24 adalah 1, 2, 3, 4, 6, 8, 12, 24. Faktor persekutuan dari 18 dan 24 adalah 1, 2, 3, 6."
+        },
+        {
+          "type": "contoh",
+          "title": "Kelipatan Persekutuan",
+          "content": "Kelipatan 3 yang kurang dari 30 adalah 3, 6, 9, 12, 15, 18, 21, 24, 27. Kelipatan 4 yang kurang dari 30 adalah 4, 8, 12, 16, 20, 24, 28. Kelipatan persekutuannya adalah 12 dan 24."
+        }
+      ]
+    },
+    {
+      "judul": "Mencari FPB dan KPK",
+      "icon": "fa-sitemap",
+      "tipe": "grid",
+      "isi": [
+        "FPB dan KPK dapat dicari dengan faktorisasi prima. Perhatikan pangkat faktor prima yang digunakan."
+      ],
+      "grid": [
+        {
+          "title": "Langkah FPB",
+          "content": "Tentukan faktorisasi prima tiap bilangan, lalu kalikan faktor prima yang sama dengan pangkat terendah."
+        },
+        {
+          "title": "Langkah KPK",
+          "content": "Tentukan faktorisasi prima tiap bilangan, lalu kalikan semua faktor prima yang muncul dengan pangkat tertinggi."
+        },
+        {
+          "title": "Relasi Dua Bilangan",
+          "content": "Untuk dua bilangan $a$ dan $b$, berlaku $FPB(a,b)\\times KPK(a,b)=a\\times b$."
+        }
+      ]
+    },
+    {
+      "judul": "Contoh FPB dan KPK",
+      "icon": "fa-chalkboard-user",
+      "tipe": "box",
+      "isi": [
+        {
+          "type": "contoh",
+          "title": "FPB dari 12 dan 30",
+          "content": "$12=2^2\\times3$ dan $30=2\\times3\\times5$. Faktor prima yang sama dengan pangkat terendah adalah $2^1\\times3^1=6$, sehingga $FPB(12,30)=6$."
+        },
+        {
+          "type": "contoh",
+          "title": "Pembagian Kue",
+          "content": "Tiara memiliki 60 kue bolu dan 72 kue pandan. Banyak teman paling banyak yang bisa menerima bagian sama adalah $FPB(60,72)=12$, sehingga ada 12 teman."
+        },
+        {
+          "type": "contoh",
+          "title": "KPK dari 12, 18, dan 24",
+          "content": "$12=2^2\\times3$, $18=2\\times3^2$, dan $24=2^3\\times3$. KPK mengambil pangkat tertinggi, yaitu $2^3\\times3^2=72$."
+        },
+        {
+          "type": "contoh",
+          "title": "KPK dari 12 dan 15",
+          "content": "Karena $FPB(12,15)=3$, maka $KPK(12,15)=\\dfrac{12\\times15}{3}=60$."
+        }
+      ]
+    },
+    {
+      "judul": "Kuis FPB dan KPK 9-13",
+      "icon": "fa-star",
+      "tipe": "box",
+      "isi": [
+        {
+          "type": "contoh",
+          "title": "Kuis 9",
+          "content": "FPB tiap dua bilangan di antara tiga bilangan asli $p,q,r$ adalah 1 dengan $pq=12$ dan $p+r=10$. Jumlah ketiga bilangan tersebut adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "22"
+            },
+            {
+              "label": "B",
+              "text": "16"
+            },
+            {
+              "label": "C",
+              "text": "14"
+            },
+            {
+              "label": "D",
+              "text": "13"
+            },
+            {
+              "label": "E",
+              "text": "12"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 9: C. Cek pasangan faktor 12 yang saling prima. Pasangan yang memenuhi seluruh syarat adalah $p=3$, $q=4$, dan $r=7$, sehingga $p+q+r=14$."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 10",
+          "content": "Diberikan tiga bilangan asli $x < y < z$. Berapakah FPB dan KPK dari ketiga bilangan tersebut? Putuskan kecukupan pernyataan: 1. $x\\cdot y=6$. 2. $y+z=8$.",
+          "options": [
+            {
+              "label": "A",
+              "text": "Pernyataan 1 saja cukup"
+            },
+            {
+              "label": "B",
+              "text": "Pernyataan 2 saja cukup"
+            },
+            {
+              "label": "C",
+              "text": "Dua pernyataan bersama-sama cukup, satu saja tidak cukup"
+            },
+            {
+              "label": "D",
+              "text": "Masing-masing pernyataan saja cukup"
+            },
+            {
+              "label": "E",
+              "text": "Kedua pernyataan tidak cukup"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 10: C. Pernyataan 1 saja belum menentukan $z$. Pernyataan 2 saja belum menentukan $x$. Jika digabung, karena $x<y<z$, $xy=6$, dan $y+z=8$, didapat $x=2$, $y=3$, dan $z=5$, sehingga FPB dan KPK dapat ditentukan."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 11",
+          "content": "Tiga kelompok ayam diambil telurnya tiap 3, 4, dan 6 hari sekali, mulai bersamaan pada 1 Mei. Tanggal yang tidak terdapat aktivitas pengumpulan telur adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "17 Mei"
+            },
+            {
+              "label": "B",
+              "text": "19 Mei"
+            },
+            {
+              "label": "C",
+              "text": "21 Mei"
+            },
+            {
+              "label": "D",
+              "text": "23 Mei"
+            },
+            {
+              "label": "E",
+              "text": "25 Mei"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 11: D. Kelompok 1 aktif tanggal 1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31. Kelompok 2 aktif tanggal 1, 5, 9, 13, 17, 21, 25, 29. Kelompok 3 aktif tanggal 1, 7, 13, 19, 25, 31. Dari pilihan yang ada, tanggal tanpa aktivitas adalah 23 Mei."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 12",
+          "content": "Selama bulan Mei, banyak tanggal yang terdapat aktivitas pengumpulan telur dari kelompok 3, tetapi tidak terdapat aktivitas pengumpulan telur di kelompok 1 adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "11"
+            },
+            {
+              "label": "B",
+              "text": "6"
+            },
+            {
+              "label": "C",
+              "text": "5"
+            },
+            {
+              "label": "D",
+              "text": "1"
+            },
+            {
+              "label": "E",
+              "text": "0"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 12: E. Aktivitas kelompok 3 terjadi pada 1, 7, 13, 19, 25, dan 31 Mei. Tanggal-tanggal itu juga selalu merupakan tanggal aktivitas kelompok 1, sehingga jumlahnya 0."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 13",
+          "content": "Perkiraan banyak telur maksimum yang dapat dikumpulkan dari ayam pada ketiga kelompok dalam 7 hari adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "1.200"
+            },
+            {
+              "label": "B",
+              "text": "1.050"
+            },
+            {
+              "label": "C",
+              "text": "950"
+            },
+            {
+              "label": "D",
+              "text": "725"
+            },
+            {
+              "label": "E",
+              "text": "575"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 13: B. Dalam kondisi optimal 7 hari, kelompok 1 dapat diambil 3 kali, kelompok 2 sebanyak 2 kali, dan kelompok 3 sebanyak 2 kali. Totalnya $100\\times3+150\\times2+225\\times2=300+300+450=1.050$ butir."
+        }
+      ]
+    },
+    {
+      "judul": "Pola Bilangan",
+      "icon": "fa-chart-line",
+      "tipe": "basic",
+      "isi": [
+        "Barisan aritmetika adalah barisan bilangan yang mempunyai beda tetap antara dua suku berdekatan. Rumus beda barisan aritmetika adalah $b=U_2-U_1=U_3-U_2=\\cdots=U_n-U_{n-1}$.",
+        {
+          "type": "formula",
+          "content": "$U_n=U_1+(n-1)b$"
+        },
+        {
+          "type": "contoh",
+          "title": "Suku ke-10 Barisan Aritmetika",
+          "content": "Untuk barisan $1,4,7,10,\\ldots$, diketahui $U_1=1$ dan $b=3$. Maka $U_{10}=1+(10-1)3=28$."
+        },
+        "Deret aritmetika adalah jumlah suku-suku barisan aritmetika.",
+        {
+          "type": "formula",
+          "content": "$S_n=\\dfrac{n}{2}(U_1+U_n)$ atau $S_n=\\dfrac{n}{2}(2U_1+(n-1)b)$"
+        }
+      ]
+    },
+    {
+      "judul": "Barisan dan Deret Geometri",
+      "icon": "fa-arrow-trend-up",
+      "tipe": "basic",
+      "isi": [
+        "Barisan geometri adalah barisan bilangan yang mempunyai rasio tetap antara dua suku berdekatan. Rasio dapat dihitung dengan $r=\\dfrac{U_2}{U_1}=\\dfrac{U_3}{U_2}=\\cdots$.",
+        {
+          "type": "formula",
+          "content": "$U_n=ar^{n-1}$"
+        },
+        {
+          "type": "contoh",
+          "title": "Suku ke-11 Barisan Geometri",
+          "content": "Untuk barisan $3,6,12,24,48,\\ldots$, diketahui $a=3$ dan $r=2$. Maka $U_{11}=3\\cdot2^{10}=3072$."
+        },
+        "Deret geometri adalah jumlah suku-suku barisan geometri.",
+        {
+          "type": "formula",
+          "content": "$S_n=\\dfrac{a(1-r^n)}{1-r}$ untuk $r\\ne1$"
+        },
+        {
+          "type": "contoh",
+          "title": "Jumlah 8 Suku Pertama",
+          "content": "Untuk barisan $7,14,28,56,\\ldots$, diketahui $a=7$ dan $r=2$. Maka $S_8=\\dfrac{7(1-2^8)}{1-2}=1785$."
+        },
+        {
+          "type": "note",
+          "content": "Barisan rekursif adalah barisan yang nilai suku-sukunya bergantung pada suku sebelumnya, misalnya $u_{n+1}=2u_n-3$."
+        }
+      ]
+    },
+    {
+      "judul": "Kuis Pola Bilangan 14-18",
+      "icon": "fa-star-half-stroke",
+      "tipe": "box",
+      "isi": [
+        {
+          "type": "contoh",
+          "title": "Kuis 14",
+          "content": "Diketahui suku ke-4 dan suku ke-7 suatu barisan aritmetika berturut-turut adalah 13 dan 22. Berapa banyak pernyataan yang benar? <br>1. Suku pertama 3. <br>2. Beda 4. <br>3. Suku ke-20 adalah 64. <br>4. Jumlah 10 suku pertama adalah 175.",
+          "options": [
+            {
+              "label": "A",
+              "text": "0"
+            },
+            {
+              "label": "B",
+              "text": "1"
+            },
+            {
+              "label": "C",
+              "text": "2"
+            },
+            {
+              "label": "D",
+              "text": "3"
+            },
+            {
+              "label": "E",
+              "text": "4"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 14: B. Dari $U_4=a+3b=13$ dan $U_7=a+6b=22$, diperoleh $3b=9$ sehingga $b=3$ dan $a=4$. Maka pernyataan 1, 2, dan 3 salah, sedangkan $S_{10}=\\dfrac{10}{2}(2\\cdot4+9\\cdot3)=175$ benar."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 15",
+          "content": "Diberikan barisan geometri $18, 7x-2, 8, \\ldots$ yang suku-sukunya selalu positif. Nilai $x$ yang memenuhi adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "$-2$"
+            },
+            {
+              "label": "B",
+              "text": "$-\\dfrac{10}{7}$"
+            },
+            {
+              "label": "C",
+              "text": "$\\dfrac{10}{7}$"
+            },
+            {
+              "label": "D",
+              "text": "$2$"
+            },
+            {
+              "label": "E",
+              "text": "$\\dfrac{5}{2}$"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 15: D. Pada barisan geometri, $(7x-2)^2=18\\cdot8=144$, sehingga $7x-2=\\pm12$. Karena semua suku positif, ambil $7x-2=12$, maka $x=2$."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 16",
+          "content": "Novel trilogi Bung Lala memiliki halaman 160, lalu tiap novel berikutnya 40 halaman lebih banyak. Anita selesai membaca novel pertama dan kedua, serta 40% novel ketiga. Dari total halaman ketiga novel, Anita sudah membaca sebanyak ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "70%"
+            },
+            {
+              "label": "B",
+              "text": "72%"
+            },
+            {
+              "label": "C",
+              "text": "75%"
+            },
+            {
+              "label": "D",
+              "text": "76%"
+            },
+            {
+              "label": "E",
+              "text": "80%"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 16: D. Banyak halaman novel adalah 160, 200, dan 240. Anita membaca $160+200+40\\%\\times240=456$ halaman dari total 600 halaman. Persentasenya $456/600=76\\%$."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 17",
+          "content": "Jika novel Mangkuk Retak dimulai dari halaman 1, hasil penjumlahan semua nomor halaman yang sudah dibaca Anita dari halaman 37 hingga halaman terakhir yang ia baca adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "684"
+            },
+            {
+              "label": "B",
+              "text": "703"
+            },
+            {
+              "label": "C",
+              "text": "1.746"
+            },
+            {
+              "label": "D",
+              "text": "3.886"
+            },
+            {
+              "label": "E",
+              "text": "3.990"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 17: E. Anita sudah membaca 40% dari 240 halaman, yaitu 96 halaman. Jumlah nomor halaman dari 37 sampai 96 adalah deret aritmetika dengan 60 suku: $S_{60}=\\dfrac{60}{2}(37+96)=30\\cdot133=3.990$."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 18",
+          "content": "Anita melanjutkan bacaannya hingga menyelesaikan $\\dfrac{1}{3}$ dari sisa halaman yang belum dibaca. Jika nomor halaman Mangkuk Retak dimulai dari 1, nomor halaman terakhir yang sudah dibaca Anita adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "160"
+            },
+            {
+              "label": "B",
+              "text": "144"
+            },
+            {
+              "label": "C",
+              "text": "128"
+            },
+            {
+              "label": "D",
+              "text": "120"
+            },
+            {
+              "label": "E",
+              "text": "96"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 18: B. Sebelumnya Anita sudah membaca 96 halaman dari 240 halaman. Sisa halaman 144, lalu ia membaca $\\dfrac{1}{3}\\times144=48$ halaman. Total halaman yang sudah dibaca menjadi $96+48=144$, sehingga halaman terakhir adalah 144."
+        }
+      ]
+    },
+    {
+      "judul": "Himpunan",
+      "icon": "fa-circle-nodes",
+      "tipe": "basic",
+      "isi": [
+        "Himpunan adalah sekumpulan objek yang terdefinisi dengan jelas.",
+        {
+          "type": "list",
+          "items": [
+            "Contoh himpunan: kumpulan siswa berumur 13-15 tahun.",
+            "Contoh bukan himpunan: kumpulan siswa berhati baik, karena kriteria berhati baik tidak terdefinisi dengan jelas."
+          ]
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "Notasi",
+              "Makna"
+            ],
+            "rows": [
+              [
+                "$S$",
+                "Himpunan semesta, yaitu himpunan yang memuat seluruh anggota yang menjadi objek pembicaraan."
+              ],
+              [
+                "$\\{\\}$ atau $\\varnothing$",
+                "Himpunan kosong, yaitu himpunan yang tidak memiliki anggota dari himpunan semesta."
+              ],
+              [
+                "$\\in$",
+                "Anggota atau elemen suatu himpunan."
+              ],
+              [
+                "$\\notin$",
+                "Bukan anggota suatu himpunan."
+              ],
+              [
+                "$n(A)$",
+                "Banyaknya anggota himpunan $A$."
+              ],
+              [
+                "$\\subset$",
+                "Himpunan bagian atau subset."
+              ]
+            ],
+            "leftAlign": [
+              0,
+              1
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "judul": "Representasi dan Operasi Himpunan",
+      "icon": "fa-diagram-project",
+      "tipe": "table",
+      "isi": [
+        "Anggota himpunan dapat direpresentasikan secara deskriptif, daftar, notasi pembentuk himpunan, atau diagram Venn."
+      ],
+      "table": {
+        "headers": [
+          "Representasi",
+          "Contoh"
+        ],
+        "rows": [
+          [
+            "Deskriptif",
+            "$A=\\{$bilangan asli kurang dari 5$\\}$"
+          ],
+          [
+            "Daftar",
+            "$A=\\{1,2,3,4\\}$"
+          ],
+          [
+            "Notasi pembentuk himpunan",
+            "$A=\\{x\\mid x<5, x\\in\\mathbb{N}\\}$"
+          ],
+          [
+            "Diagram Venn",
+            "Himpunan digambarkan dalam lingkaran atau daerah pada himpunan semesta."
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "judul": "Operasi pada Himpunan",
+      "icon": "fa-object-group",
+      "tipe": "grid",
+      "isi": [
+        "Operasi himpunan membantu menghitung dan membandingkan anggota pada beberapa kelompok."
+      ],
+      "grid": [
+        {
+          "title": "Komplemen",
+          "content": "$A^c$ adalah semua anggota $S$ yang bukan anggota $A$."
+        },
+        {
+          "title": "Irisan",
+          "content": "$A\\cap B$ adalah anggota yang berada di $A$ sekaligus di $B$."
+        },
+        {
+          "title": "Gabungan",
+          "content": "$A\\cup B$ adalah anggota yang berada di $A$ atau di $B$."
+        },
+        {
+          "title": "Selisih",
+          "content": "$A-B$ adalah anggota $A$ yang bukan anggota $B$."
+        },
+        {
+          "title": "Sifat Komutatif",
+          "content": "$A\\cap B=B\\cap A$ dan $A\\cup B=B\\cup A$."
+        },
+        {
+          "title": "Sifat Asosiatif",
+          "content": "$(A\\cap B)\\cap C=A\\cap(B\\cap C)$ dan $(A\\cup B)\\cup C=A\\cup(B\\cup C)$."
+        }
+      ]
+    },
+    {
+      "judul": "Prinsip Inklusi-Eksklusi",
+      "icon": "fa-circle-nodes",
+      "tipe": "basic",
+      "isi": [
+        "Banyak anggota gabungan dua himpunan dapat dihitung dengan menjumlahkan anggota masing-masing himpunan, lalu mengurangi bagian yang terhitung ganda.",
+        {
+          "type": "formula",
+          "content": "$n(P\\cup Q)=n(P)+n(Q)-n(P\\cap Q)$"
+        },
+        {
+          "type": "contoh",
+          "title": "Dua Himpunan",
+          "content": "Jika $n(P)=5$, $n(Q)=4$, dan $n(P\\cap Q)=3$, maka $n(P\\cup Q)=5+4-3=6$."
+        },
+        "Untuk tiga himpunan, bagian irisan tiga himpunan perlu ditambahkan kembali setelah irisan berpasangan dikurangi.",
+        {
+          "type": "formula",
+          "content": "$n(A\\cup B\\cup C)=n(A)+n(B)+n(C)-n(A\\cap B)-n(A\\cap C)-n(B\\cap C)+n(A\\cap B\\cap C)$"
+        },
+        {
+          "type": "contoh",
+          "title": "Tiga Himpunan",
+          "content": "Jika $n(A)=6$, $n(B)=5$, $n(C)=4$, $n(A\\cap B)=3$, $n(A\\cap C)=2$, $n(B\\cap C)=2$, dan $n(A\\cap B\\cap C)=1$, maka $n(A\\cup B\\cup C)=6+5+4-3-2-2+1=9$."
+        }
+      ]
+    },
+    {
+      "judul": "Kuis Himpunan 19-20",
+      "icon": "fa-star",
+      "tipe": "box",
+      "isi": [
+        {
+          "type": "contoh",
+          "title": "Kuis 19",
+          "content": "Diketahui $S=\\{x\\mid0\\le x\\le20\\}$, $K$ adalah himpunan bilangan prima kurang dari 10, dan $L$ adalah himpunan bilangan genap di antara 4 dan 14. Berdasarkan informasi, hubungan kuantitas $P$ dan $Q$ yang benar adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "$P>Q$"
+            },
+            {
+              "label": "B",
+              "text": "$P<Q$"
+            },
+            {
+              "label": "C",
+              "text": "$P=Q$"
+            },
+            {
+              "label": "D",
+              "text": "Tidak dapat ditentukan hubungan $P$ dan $Q$"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 19: A. Dari informasi, $K=\\{2,3,5,7\\}$ dan $L=\\{6,8,10,12\\}$. Maka $K\\cup L=\\{2,3,5,6,7,8,10,12\\}$ dan $n(K\\cup L)=8$. Dengan demikian $P=8$ dan $P>Q$ sesuai pembahasan PDF."
+        },
+        {
+          "type": "contoh",
+          "title": "Kuis 20",
+          "content": "Dari 100 siswa Brain Academy, 70 siswa menyukai belajar di sore hari dan 50 siswa menyukai belajar di malam hari. Jika $x$ dan $y$ berturut-turut menyatakan nilai minimum dan maksimum yang mungkin dari jumlah siswa yang menyukai keduanya, selisih $x$ dan $y$ adalah ....",
+          "options": [
+            {
+              "label": "A",
+              "text": "10"
+            },
+            {
+              "label": "B",
+              "text": "20"
+            },
+            {
+              "label": "C",
+              "text": "30"
+            },
+            {
+              "label": "D",
+              "text": "40"
+            },
+            {
+              "label": "E",
+              "text": "50"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Jawaban Kuis 20: C. Minimum irisan terjadi saat gabungan memenuhi 100 siswa: $70+50-x=100$, sehingga $x=20$. Maksimum irisan tidak boleh melebihi kelompok yang lebih kecil, yaitu $y=50$. Selisihnya $50-20=30$."
         }
       ]
     }
