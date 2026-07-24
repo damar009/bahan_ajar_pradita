@@ -77,6 +77,13 @@
     "published": false
   },
   {
+    "id": "page_mat_wajib_01",
+    "title": "Matematika 01",
+    "summary": "| Konten dummy sementara untuk struktur page Dasar Numerasi 10.",
+    "url": "pages/page_pd_dasnum_10/index.html",
+    "published": true
+  },
+  {
     "id": "contoh-halaman",
     "title": "Contoh HalamanContoh HalamanContoh HalamanContoh HalamanContoh HalamanContoh Halaman",
     "summary": "Template halaman mandiri dengan HTML, CSS, JS, JSON, dan aset.",

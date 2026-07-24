@@ -735,7 +735,7 @@
         {
           "type": "contoh",
           "title": "Kuis 10",
-          "content": "Diberikan tiga bilangan asli $x < y < z$. Berapakah FPB dan KPK dari ketiga bilangan tersebut? Putuskan kecukupan pernyataan: 1. $x\\cdot y=6$. 2. $y+z=8$.",
+          "content": "Diberikan tiga bilangan asli $x < y < z$. Berapakah FPB dan KPK dari ketiga bilangan tersebut?<br>1. $x\\cdot y=6$.<br>2. $y+z=8$.",
           "options": [
             {
               "label": "A",
@@ -761,7 +761,7 @@
         },
         {
           "type": "note",
-          "content": "Jawaban Kuis 10: C. Pernyataan 1 saja belum menentukan $z$. Pernyataan 2 saja belum menentukan $x$. Jika digabung, karena $x<y<z$, $xy=6$, dan $y+z=8$, didapat $x=2$, $y=3$, dan $z=5$, sehingga FPB dan KPK dapat ditentukan."
+          "content": "Jawaban Kuis 10: C. Pernyataan 1 saja belum menentukan $z$. Pernyataan 2 saja belum menentukan $x$. Jika digabung, karena $x < y < z$, $xy=6$, dan $y+z=8$, didapat $x=2$, $y=3$, dan $z=5$, sehingga FPB dan KPK dapat ditentukan."
         },
         {
           "type": "contoh",
