@@ -1,0 +1,20 @@
+body.has-page-watermark::before {
+  content: "";
+  position: var(--watermark-position, fixed);
+  inset: 0;
+  z-index: 9999;
+  opacity: var(--watermark-opacity, 0.075);
+  pointer-events: none;
+  background-image: var(--watermark-image);
+  background-size: var(--watermark-tile-width, 360px) var(--watermark-tile-height, 260px);
+  background-repeat: repeat;
+}
+
+body.has-page-watermark.watermark-scroll {
+  position: relative;
+}
+
+body.has-page-watermark.watermark-scroll::before {
+  min-height: 100%;
+  height: auto;
+}
