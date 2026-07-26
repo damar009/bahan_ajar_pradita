@@ -99,22 +99,22 @@
         {
           "type": "contoh",
           "title": "Fungsi Polinomial",
-          "content": "Bentuk umum: $$f(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0$$. Domainnya seluruh bilangan real, yaitu $D_f=\\{x|x\\in\\mathbb{R}\\}$."
+          "content": "Bentuk umum: $$f(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0$$<br>Domainnya seluruh bilangan real, yaitu $D_f=\\{x|x\\in\\mathbb{R}\\}$."
         },
         {
           "type": "contoh",
           "title": "Fungsi Rasional",
-          "content": "Bentuk umum: $f(x)=\\dfrac{g(x)}{h(x)}$. Domainnya semua bilangan real kecuali nilai yang membuat penyebut nol, yaitu $D_f=\\{x|h(x)\\ne0\\}$."
+          "content": "Bentuk umum: $f(x)=\\dfrac{g(x)}{h(x)}$<br>Domainnya semua bilangan real kecuali nilai yang membuat penyebut nol, yaitu $D_f=\\{x|h(x)\\ne0\\}$."
         },
         {
           "type": "contoh",
           "title": "Fungsi Irasional",
-          "content": "Bentuk umum: $f(x)=\\sqrt{g(x)}$. Untuk akar genap, domainnya nilai yang membuat bagian dalam akar tidak negatif, yaitu $D_f=\\{x|g(x)\\ge0\\}$."
+          "content": "Bentuk umum: $f(x)=\\sqrt{g(x)}$<br>Untuk akar genap, domainnya nilai yang membuat bagian dalam akar tidak negatif, yaitu $D_f=\\{x|g(x)\\ge0\\}$."
         },
         {
           "type": "contoh",
           "title": "Fungsi Logaritma",
-          "content": "Bentuk umum: $f(x)=\\log_a g(x)$, dengan $a>0$ dan $a\\ne1$. Domainnya nilai yang membuat numerus positif, yaitu $D_f=\\{x|g(x)>0\\}$."
+          "content": "Bentuk umum: $f(x)=\\log_a g(x)$, dengan $a>0$ dan $a\\ne1$<br>Domainnya nilai yang membuat numerus positif, yaitu $D_f=\\{x|g(x)>0\\}$."
         }
       ]
     },
@@ -126,22 +126,22 @@
         {
           "type": "contoh",
           "title": "Fungsi Polinomial",
-          "content": "Tentukan domain $f(x)=3x^4-2x^2+x-7$. Karena fungsi polinomial terdefinisi untuk semua bilangan real, domainnya adalah $D_f=\\{x|x\\in\\mathbb{R}\\}$."
+          "content": "Tentukan domain $f(x)=3x^4-2x^2+x-7$.<br>Karena fungsi polinomial terdefinisi untuk semua bilangan real, domainnya adalah $D_f=\\{x|x\\in\\mathbb{R}\\}$."
         },
         {
           "type": "contoh",
           "title": "Fungsi Rasional",
-          "content": "Tentukan domain $f(x)=\\dfrac{5-x}{x^2-4x-12}$. Syarat domain: penyebut tidak boleh nol. $x^2-4x-12=(x+2)(x-6)$, sehingga $x\\ne-2$ dan $x\\ne6$. Jadi $D_f=\\{x|x\\ne-2, x\\ne6, x\\in\\mathbb{R}\\}$."
+          "content": "Tentukan domain $f(x)=\\dfrac{5-x}{x^2-4x-12}$.<br>Syarat domain: penyebut tidak boleh nol. $x^2-4x-12=(x+2)(x-6)$, sehingga $x\\ne-2$ dan $x\\ne6$.<br>Jadi, $D_f=\\{x|x\\ne-2, x\\ne6, x\\in\\mathbb{R}\\}$."
         },
         {
           "type": "contoh",
           "title": "Fungsi Irasional",
-          "content": "Tentukan domain $f(x)=\\sqrt{2x-6}$. Syarat akar genap: $2x-6\\ge0$, sehingga $x\\ge3$. Jadi $D_f=\\{x|x\\ge3, x\\in\\mathbb{R}\\}$."
+          "content": "Tentukan domain $f(x)=\\sqrt{2x-6}$. Syarat akar genap: $2x-6\\ge0$, sehingga $x\\ge3$.<br>Jadi, $D_f=\\{x|x\\ge3, x\\in\\mathbb{R}\\}$."
         },
         {
           "type": "contoh",
           "title": "Fungsi Logaritma",
-          "content": "Tentukan domain $f(x)=\\log_2(x-5)$. Syarat logaritma: $x-5>0$, sehingga $x>5$. Jadi $D_f=\\{x|x>5, x\\in\\mathbb{R}\\}$."
+          "content": "Tentukan domain $f(x)=\\log_2(x-5)$.<br>Syarat logaritma: $x-5>0$, sehingga $x>5$.<br>Jadi, $D_f=\\{x|x>5, x\\in\\mathbb{R}\\}$."
         }
       ]
     },
@@ -211,7 +211,7 @@
         {
           "type": "contoh",
           "title": "Geser Kiri dan Bawah",
-          "content": "Jika grafik $f(x)=2x+4$ digeser 2 satuan ke kiri dan 3 satuan ke bawah, maka fungsi barunya adalah $g(x)=f(x+2)-3$. Karena $f(x+2)=2(x+2)+4=2x+8$, diperoleh $g(x)=2x+8-3=2x+5$."
+          "content": "Jika grafik $f(x)=2x+4$ digeser 2 satuan ke kiri dan 3 satuan ke bawah, maka fungsi barunya adalah $$g(x)=f(x+2)-3$$.<br>Karena $f(x+2)=2(x+2)+4=2x+8$, diperoleh $g(x)=2x+8-3=2x+5$."
         },
         {
           "type": "note",
@@ -289,7 +289,7 @@
         {
           "type": "contoh",
           "title": "Kuis 3",
-          "content": "Diketahui $f(x)=\\sqrt{2x+k}$ dengan $f(6)=4$ dan $g(x)=f(x-2)$. Berdasarkan informasi tersebut, berapa banyak pernyataan berikut yang bernilai benar? (1) $k=4$. (2) $-1$ termasuk anggota domain fungsi $f$. (3) Grafik fungsi $g$ diperoleh dengan menggeser grafik fungsi $f$ sejauh 2 satuan ke kanan. (4) Jika $g(a)=6$, maka $a=18$.",
+          "content": "Diketahui $f(x)=\\sqrt{2x+k}$ dengan $f(6)=4$ dan $g(x)=f(x-2)$. Berdasarkan informasi tersebut, berapa banyak pernyataan berikut yang bernilai benar?<br>(1) $k=4$.<br>(2) $-1$ termasuk anggota domain fungsi $f$.<br>(3) Grafik fungsi $g$ diperoleh dengan menggeser grafik fungsi $f$ sejauh 2 satuan ke kanan.<br>(4) Jika $g(a)=6$, maka $a=18$.",
           "options": [
             {
               "label": "A",
@@ -471,7 +471,7 @@
         {
           "type": "contoh",
           "title": "Kuis 6",
-          "content": "Misalkan $(x,y)$ menyatakan koordinat suatu titik pada bidang-$xy$ dengan $x+y\\ne0$. Apakah $x=2y$? Putuskan kecukupan pernyataan: (1) $2y=1-x$. (2) $(4-y)(x+y)=x^2-y^2$.",
+          "content": "Misalkan $(x,y)$ menyatakan koordinat suatu titik pada bidang-$xy$ dengan $x+y\\ne0$. Apakah $x=2y$?<br>Putuskan apakah pernyataan 1 dan 2 berikut cukup untuk menjawab pertanyaan tersebut.<br>(1) $2y=1-x$<br>(2) $(4-y)(x+y)=x^2-y^2$",
           "options": [
             {
               "label": "A",
@@ -502,7 +502,7 @@
         {
           "type": "contoh",
           "title": "Kuis 7",
-          "content": "Uang Andi sama dengan dua kali uang Budi. Berapakah uang Budi? Putuskan kecukupan pernyataan: (1) Jumlah uang Andi dan Budi Rp150.000,00. (2) Selisih uang Budi dan Andi sama dengan uang Budi.",
+          "content": "Uang Andi sama dengan dua kali uang Budi. Berapakah uang Budi?<br>Putuskan apakah pernyataan 1 dan 2 berikut cukup untuk menjawab pertanyaan tersebut.<br>(1) Jumlah uang Andi dan Budi Rp150.000,00.<br>(2) Selisih uang Budi dan Andi sama dengan uang Budi.",
           "options": [
             {
               "label": "A",
@@ -785,7 +785,7 @@
         "rows": [
           [
             "$a$",
-            "Menentukan arah buka dan lebar parabola. Jika $a>0$, kurva terbuka ke atas. Jika $a<0$, kurva terbuka ke bawah. Semakin besar $|a|$, kurva semakin sempit."
+            "Menentukan arah buka dan lebar parabola.<br>Jika $a>0$, kurva terbuka ke atas.<br>Jika $a<0$, kurva terbuka ke bawah.<br>Note: semakin besar $|a|$, kurva semakin sempit."
           ],
           [
             "$b$",
@@ -797,7 +797,7 @@
           ],
           [
             "$D=b^2-4ac$",
-            "Menentukan banyak titik potong terhadap sumbu-$x$: dua titik jika $D>0$, satu titik jika $D=0$, dan tidak memotong sumbu-$x$ jika $D<0$."
+            "Menentukan banyak titik potong terhadap sumbu-$x$:<br>» di 2 titik berbeda jika $D>0$<br>» di 1 titik tunggal (akar kembar) jika $D=0$<br>» tidak memotong sumbu-$x$ jika $D<0$."
           ]
         ],
         "leftAlign": [
@@ -888,7 +888,7 @@
         {
           "type": "contoh",
           "title": "Kuis 13",
-          "content": "Titik P terletak pada kurva $y=x^2+4$ dan $y=x+x$. Koordinat titik P yang mungkin adalah: (1) $(2,6)$, (2) $(6,2)$, (3) $(-2,2)$, (4) $(-2,6)$.",
+          "content": "Titik P terletak pada kurva $y=x^2+4$ dan $y=x+x$. Koordinat titik P yang mungkin adalah ....<br>(1) $(2,6)$<br>(2) $(6,2)$<br>(3) $(-2,2)$<br>(4) $(-2,6)$.",
           "options": [
             {
               "label": "A",
@@ -971,24 +971,76 @@
       }
     },
     {
-      "judul": "Contoh Perbandingan",
-      "icon": "fa-puzzle-piece",
+      "judul": "Perbandingan Bertingkat",
+      "icon": "fa-layer-group",
+      "tipe": "basic",
+      "isi": [
+        "Perbandingan bertingkat adalah perbandingan yang melibatkan lebih dari dua besaran dan hubungan antarbesaran tersebut tidak selalu searah. Pada beberapa soal, satu besaran dapat berbanding senilai terhadap hasil, tetapi berbanding terbalik terhadap jumlah subjek atau kecepatan kerja.",
+        "Contoh konteks yang sering muncul adalah banyak pekerja, lama waktu, dan hasil pekerjaan; atau banyak kambing, lama hari, dan banyak rumput yang dihabiskan.",
+        {
+          "type": "list",
+          "items": [
+            "Jika hasil atau beban kerja bertambah, waktu yang dibutuhkan ikut bertambah. Hubungan ini merupakan perbandingan senilai.",
+            "Jika jumlah subjek yang bekerja atau menghabiskan beban bertambah, waktu yang dibutuhkan berkurang. Hubungan ini merupakan perbandingan berbalik nilai.",
+            "Jika kedua hubungan muncul dalam satu soal, gunakan perbandingan bertingkat atau pecah menjadi dua langkah logika."
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Kunci soal perbandingan bertingkat adalah menentukan pasangan besaran mana yang senilai dan mana yang berbalik nilai terhadap besaran yang ditanyakan."
+        }
+      ]
+    },
+    {
+      "judul": "Rumus Perbandingan Bertingkat",
+      "icon": "fa-calculator",
+      "tipe": "table",
+      "isi": [
+        "Untuk hubungan jumlah subjek ($K$), waktu ($H$), dan hasil atau beban kerja ($R$), bentuk umum yang dapat digunakan adalah:",
+        {
+          "type": "formula",
+          "content": "$\\dfrac{K_1\\times H_1}{R_1}=\\dfrac{K_2\\times H_2}{R_2}$"
+        },
+        "Rumus ini cocok ketika $H$ berbanding senilai dengan $R$ dan berbanding terbalik dengan $K$."
+      ],
+      "table": {
+        "headers": [
+          "Simbol",
+          "Makna",
+          "Hubungan terhadap waktu"
+        ],
+        "rows": [
+          [
+            "$K$",
+            "Jumlah subjek, misalnya kambing atau pekerja",
+            "Semakin besar $K$, waktu $H$ semakin kecil"
+          ],
+          [
+            "$H$",
+            "Waktu, misalnya hari atau jam",
+            "－"
+          ],
+          [
+            "$R$",
+            "Hasil atau beban kerja, misalnya rumput, pekerjaan, atau produksi",
+            "Semakin besar $R$, waktu $H$ semakin besar"
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "judul": "Contoh Soal",
+      "icon": "fa-seedling",
       "tipe": "box",
       "isi": [
         {
           "type": "contoh",
-          "title": "Perbandingan Senilai",
-          "content": "Nabil dapat membuat 4 karangan bunga dalam 3 jam. Karena banyak karangan bunga dan waktu bekerja berbanding lurus, maka $\\dfrac{4}{3}=\\dfrac{x}{12}$ sehingga $x=16$. Jadi, dalam 12 jam Nabil dapat membuat 16 karangan bunga."
-        },
-        {
-          "type": "contoh",
-          "title": "Perbandingan Berbalik Nilai",
-          "content": "Jika 12 pekerja menyelesaikan pekerjaan dalam 60 hari, maka 18 pekerja membutuhkan waktu lebih singkat. Gunakan $12 \\cdot 60 = 18 \\cdot y$, sehingga $y=40$ hari."
-        },
-        {
-          "type": "contoh",
-          "title": "Perbandingan Tiga Besaran",
-          "content": "Jika perbandingan kelereng Andi, Beni, dan Calvin adalah $4:3:5$, maka banyak kelerengnya dapat dimisalkan $4k$, $3k$, dan $5k$. Jika selisih Calvin dan Beni adalah $p$, maka $5k-3k=2k=p$, sehingga totalnya $12k=6p$."
+          "content": "Lima kambing dapat menghabiskan 6 kg rumput dalam 8 hari. Berapa hari yang dibutuhkan 10 kambing untuk menghabiskan 18 kg rumput?"
         }
       ]
     },
@@ -1125,27 +1177,6 @@
       }
     },
     {
-      "judul": "Contoh Aritmetika Sosial",
-      "icon": "fa-tags",
-      "tipe": "box",
-      "isi": [
-        {
-          "type": "contoh",
-          "title": "Mencari Harga Mula-Mula",
-          "content": "Sebuah toko memberi diskon 30% untuk sepatu. Jika pembeli membayar Rp420.000,00, maka harga setelah diskon adalah 70% dari harga mula-mula. Jadi $70\\% \\times Hb = 420.000$, sehingga $Hb=600.000$."
-        },
-        {
-          "type": "contoh",
-          "title": "Kenaikan Lalu Diskon",
-          "content": "Harga rumah tahun 2020 adalah Rp200.000.000,00. Tahun 2021 naik 30%, sehingga menjadi Rp260.000.000,00. Tahun 2022 didiskon 10% dari harga tahun 2021, sehingga harganya $90\\% \\times 260.000.000 = 234.000.000$."
-        },
-        {
-          "type": "note",
-          "content": "Untuk perubahan berurutan, jangan menjumlahkan persentase secara langsung. Terapkan persentase satu per satu terhadap harga pada tahap tersebut."
-        }
-      ]
-    },
-    {
       "judul": "Kuis 16-20: Aritmetika Sosial",
       "icon": "fa-star",
       "tipe": "box",
@@ -1247,7 +1278,7 @@
         {
           "type": "contoh",
           "title": "Kuis 19",
-          "content": "Pada tahun 2020 harga sebuah rumah adalah Rp200.000.000,00. Pada tahun 2021 naik 30% dari tahun sebelumnya. Kemudian pada tahun 2022 rumah tersebut diberi diskon 10% dari harga tahun 2021. Maka, harga rumah tersebut pada tahun 2022 adalah ....",
+          "content": "Pada tahun 2020 harga sebuah rumah adalah Rp200.000.000,00. Pada tahun 2021 naik 30% dari tahun sebelumnya. Kemudian pada tahun 2022 rumah tersebut diberi diskon 10% dari harga tahun 2021. Harga rumah tersebut pada tahun 2022 adalah ....",
           "options": [
             {
               "label": "A",
@@ -1278,7 +1309,7 @@
         {
           "type": "contoh",
           "title": "Kuis 20",
-          "content": "Ibu membuat tiga jenis roti dengan bahan telur, tepung, dan gula. Roti I membutuhkan 2 telur, 2 kg tepung, 4 kg gula, harga jual 100 ribu rupiah. Roti II membutuhkan 4 telur, 1 kg tepung, 3 kg gula, harga jual 90 ribu rupiah. Roti III membutuhkan 3 telur, 3 kg tepung, 2 kg gula, harga jual 95 ribu rupiah. Harga telur Rp2.000,00 per butir, tepung Rp5.000,00 per kg, dan gula Rp8.000,00 per kg. Manakah pernyataan yang benar? (1) Untung roti I Rp54.000,00. (2) Untung roti II Rp53.000,00. (3) Untung roti III Rp58.000,00. (4) Modal roti II sama dengan modal roti III.",
+          "content": "Ibu membuat tiga jenis roti dengan bahan telur, tepung, dan gula. Roti I membutuhkan 2 telur, 2 kg tepung, 4 kg gula, harga jual 100 ribu rupiah. Roti II membutuhkan 4 telur, 1 kg tepung, 3 kg gula, harga jual 90 ribu rupiah. Roti III membutuhkan 3 telur, 3 kg tepung, 2 kg gula, harga jual 95 ribu rupiah. Harga telur Rp2.000,00 per butir, tepung Rp5.000,00 per kg, dan gula Rp8.000,00 per kg.<br>Berdasarkan infromasi tersebut, mana saja pernyataan berikut yang benar?<br>(1) Untung roti I Rp54.000,00.<br>(2) Untung roti II Rp53.000,00.<br>(3) Untung roti III Rp58.000,00.<br>(4) Modal roti II sama dengan modal roti III.",
           "options": [
             {
               "label": "A",

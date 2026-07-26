@@ -1,0 +1,565 @@
+{
+  "materi": [
+    {
+      "judul": "Belajar Apa Hari Ini",
+      "icon": "fa-book-open",
+      "tipe": "basic",
+      "isi": [
+        "<strong>Topik:</strong> Transformasi Fungsi",
+        "<strong>Subtopik:</strong> Dilatasi, Rotasi, dan Kombinasi Transformasi Fungsi",
+        "<strong>Pertemuan:</strong> 02",
+        "Materi ini membahas cara menentukan bayangan titik, kurva, dan garis setelah dikenai transformasi geometri. Fokus utama pertemuan ini adalah dilatasi, rotasi, dan komposisi beberapa transformasi.",
+        {
+          "type": "list",
+          "items": [
+            "Dilatasi mengubah jarak titik terhadap pusat dilatasi berdasarkan faktor skala.",
+            "Rotasi memutar titik atau kurva terhadap pusat tertentu dengan arah dan sudut tertentu.",
+            "Kombinasi transformasi membutuhkan urutan pengerjaan yang tepat karena hasil akhir bergantung pada transformasi yang dilakukan lebih dulu."
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Dalam soal transformasi fungsi, biasakan membedakan titik awal, titik bayangan sementara, dan titik bayangan akhir. Gunakan notasi seperti $(x,y)$, $(x',y')$, dan $(x'',y'')$ agar substitusi ke persamaan awal tidak tertukar."
+        }
+      ]
+    },
+    {
+      "judul": "Learning Objective",
+      "icon": "fa-bullseye",
+      "tipe": "grid",
+      "isi": [
+        "Setelah mempelajari materi ini, siswa diharapkan dapat menentukan hasil transformasi titik, kurva, dan fungsi secara terstruktur."
+      ],
+      "grid": [
+        {
+          "title": "LO 1 - Dilatasi",
+          "content": "Siswa dapat menentukan bayangan titik atau fungsi akibat dilatasi dengan pusat dan faktor skala tertentu."
+        },
+        {
+          "title": "LO 2 - Rotasi",
+          "content": "Siswa dapat menentukan bayangan titik atau kurva akibat rotasi terhadap pusat tertentu, termasuk sudut negatif dan sudut $\\pi$ atau $180^\\circ$."
+        },
+        {
+          "title": "LO 3 - Kombinasi Transformasi",
+          "content": "Siswa dapat menyusun urutan transformasi dan menggunakan hasil transformasi pertama sebagai input untuk transformasi berikutnya."
+        }
+      ]
+    },
+    {
+      "judul": "Rumus Inti Transformasi",
+      "icon": "fa-square-root-variable",
+      "tipe": "table",
+      "isi": [
+        "Gunakan tabel berikut sebagai ringkasan rumus yang sering muncul pada soal."
+      ],
+      "table": {
+        "headers": [
+          "Transformasi",
+          "Rumus / Hasil"
+        ],
+        "rows": [
+          [
+            "Dilatasi pusat $O(0,0)$ faktor $k$",
+            "$P(x,y) \\to P'(kx,ky)$"
+          ],
+          [
+            "Dilatasi pusat $(a,b)$ faktor $k$",
+            "$P(x,y) \\to P'(k(x-a)+a,\\ k(y-b)+b)$"
+          ],
+          [
+            "Rotasi pusat $(a,b)$ sudut $\\theta$",
+            "$\\begin{pmatrix}x'-a\\\\y'-b\\end{pmatrix}=\\begin{pmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{pmatrix}\\begin{pmatrix}x-a\\\\y-b\\end{pmatrix}$"
+          ],
+          [
+            "Refleksi terhadap $y=-x$",
+            "$P(x,y) \\to P'(-y,-x)$"
+          ],
+          [
+            "Refleksi terhadap $y=h$",
+            "$P(x,y) \\to P'(x,2h-y)$"
+          ],
+          [
+            "Translasi oleh $\\begin{pmatrix}a\\\\b\\end{pmatrix}$",
+            "$P(x,y) \\to P'(x+a,y+b)$"
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "judul": "Strategi Mengerjakan Soal Transformasi Fungsi",
+      "icon": "fa-route",
+      "tipe": "basic",
+      "isi": [
+        "Langkah paling aman untuk soal transformasi fungsi adalah mengubah hubungan antara koordinat awal dan koordinat bayangan, lalu mensubstitusikan koordinat awal ke persamaan semula.",
+        {
+          "type": "list",
+          "items": [
+            "Tentukan apakah objek yang ditransformasi berupa titik, garis, atau kurva.",
+            "Tuliskan rumus transformasi dalam bentuk hubungan koordinat awal dan koordinat bayangan.",
+            "Untuk kurva atau garis, nyatakan $x$ dan $y$ lama dalam $x'$ dan $y'$ baru, lalu substitusikan ke persamaan awal.",
+            "Jika ada dua transformasi, kerjakan secara berurutan dan gunakan notasi bayangan sementara.",
+            "Periksa kembali apakah sudut negatif berarti searah jarum jam."
+          ]
+        },
+        {
+          "type": "contoh",
+          "content": "Jika titik dirotasi sebesar $-90^\\circ$, artinya titik diputar $90^\\circ$ searah jarum jam atau setara dengan $270^\\circ$ berlawanan arah jarum jam."
+        }
+      ]
+    },
+    {
+      "judul": "Kuis 1 - Rotasi Titik",
+      "icon": "fa-pen-to-square",
+      "tipe": "box",
+      "isi": [
+        "<strong>Soal:</strong> Titik $P(2,-5)$ dirotasikan oleh $[(1,3),-90^\\circ]$. Bayangannya adalah ....",
+        {
+          "type": "list",
+          "items": [
+            "A. $P'(-7,2)$",
+            "B. $P'(-7,-2)$",
+            "C. $P'(2,-7)$",
+            "D. $P'(2,7)$",
+            "E. $P'(-2,7)$"
+          ]
+        },
+        {
+          "type": "contoh",
+          "content": "Rotasi $-90^\\circ$ sama dengan $270^\\circ$ berlawanan arah jarum jam. Dengan pusat $(1,3)$, diperoleh $x'-1=-8$ sehingga $x'=-7$, dan $y'-3=1$ sehingga $y'=2$."
+        },
+        {
+          "type": "note",
+          "content": "<strong>Jawaban:</strong> A. $P'(-7,2)$"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Topik",
+          "Subtopik",
+          "Level"
+        ],
+        "rows": [
+          [
+            "Transformasi Geometri (Wajib)",
+            "Rotasi dan Dilatasi",
+            "LOTS"
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "judul": "Kuis 2 - Rotasi Kurva",
+      "icon": "fa-pen-to-square",
+      "tipe": "box",
+      "isi": [
+        "<strong>Soal:</strong> Bayangan kurva $y=4x^2-1$ terhadap rotasi sebesar sudut $\\theta=\\pi$ dengan pusat $P(1,2)$ adalah ....",
+        {
+          "type": "list",
+          "items": [
+            "A. $y=-4x^2+16x-11$",
+            "B. $y=4x^2+16x-11$",
+            "C. $y=-4x^2-16x-11$",
+            "D. $y=-4x^2+16x+11$",
+            "E. $y=4x^2-16x+11$"
+          ]
+        },
+        {
+          "type": "contoh",
+          "content": "Rotasi $\\pi$ terhadap pusat $(1,2)$ memberi hubungan $x=-x'+2$ dan $y=-y'+4$. Substitusi ke $y=4x^2-1$ menghasilkan $-y'+4=4(-x'+2)^2-1$, sehingga $y'=-4x'^2+16x'-11$."
+        },
+        {
+          "type": "note",
+          "content": "<strong>Jawaban:</strong> A. $y=-4x^2+16x-11$"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Topik",
+          "Subtopik",
+          "Level"
+        ],
+        "rows": [
+          [
+            "Transformasi Geometri (Wajib)",
+            "Rotasi dan Dilatasi",
+            "MOTS"
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "judul": "Kuis 3 - Dilatasi Pusat O",
+      "icon": "fa-pen-to-square",
+      "tipe": "box",
+      "isi": [
+        "<strong>Soal:</strong> Jika titik $N(-2,3)$ didilatasi dengan pusat $O(0,0)$ dan faktor skala $-5$, maka koordinat bayangan titik $N$ adalah ....",
+        {
+          "type": "list",
+          "items": [
+            "A. $(10,-15)$",
+            "B. $(-10,15)$",
+            "C. $(-10,-15)$",
+            "D. $(10,15)$",
+            "E. $(-1,15)$"
+          ]
+        },
+        {
+          "type": "contoh",
+          "content": "Dilatasi pusat $O(0,0)$ faktor $k$ mengubah $P(x,y)$ menjadi $P'(kx,ky)$. Maka $N'(-5\\cdot(-2),-5\\cdot3)=N'(10,-15)$."
+        },
+        {
+          "type": "note",
+          "content": "<strong>Jawaban:</strong> A. $(10,-15)$"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Topik",
+          "Subtopik",
+          "Level"
+        ],
+        "rows": [
+          [
+            "Transformasi Geometri (Wajib)",
+            "Rotasi dan Dilatasi",
+            "MOTS"
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "judul": "Kuis 4 - Dilatasi Pusat Tertentu",
+      "icon": "fa-pen-to-square",
+      "tipe": "box",
+      "isi": [
+        "<strong>Soal:</strong> Titik $A(9,-8)$ didilatasi dengan pusat $P(-2,3)$ dan faktor skala $2$. Bayangan titik $A$ tersebut adalah ....",
+        {
+          "type": "list",
+          "items": [
+            "A. $A'(20,19)$",
+            "B. $A'(-20,19)$",
+            "C. $A'(20,-19)$",
+            "D. $A'(-20,-19)$",
+            "E. $A'(19,-20)$"
+          ]
+        },
+        {
+          "type": "contoh",
+          "content": "Gunakan $x'=k(x-a)+a$ dan $y'=k(y-b)+b$. Untuk pusat $(-2,3)$ dan $k=2$, diperoleh $x'=2(9-(-2))+(-2)=20$ dan $y'=2(-8-3)+3=-19$."
+        },
+        {
+          "type": "note",
+          "content": "<strong>Jawaban:</strong> C. $A'(20,-19)$"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Topik",
+          "Subtopik",
+          "Level"
+        ],
+        "rows": [
+          [
+            "Transformasi Geometri (Wajib)",
+            "Rotasi dan Dilatasi",
+            "MOTS"
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "judul": "Kuis 5 - Refleksi dan Dilatasi",
+      "icon": "fa-pen-to-square",
+      "tipe": "box",
+      "isi": [
+        "<strong>Soal:</strong> Diketahui titik $K(-3,2)$. Jika titik $K$ dicerminkan terhadap garis $y=ax$ dan dilatasi $[O,-2]$ menjadi titik $K'\\left(-\\frac{12}{5},-\\frac{34}{5}\\right)$, maka nilai $a$ adalah ....",
+        {
+          "type": "list",
+          "items": [
+            "A. $-4$",
+            "B. $-3$",
+            "C. $2$",
+            "D. $3$",
+            "E. $4$"
+          ]
+        },
+        {
+          "type": "contoh",
+          "content": "Refleksi terhadap $y=ax$ dapat dinyatakan dengan matriks $\\frac{1}{1+a^2}\\begin{pmatrix}1-a^2&2a\\\\2a&a^2-1\\end{pmatrix}$. Setelah dilatasi pusat $O$ faktor $-2$, syarat koordinat akhir menghasilkan $a=-3$ sebagai nilai yang memenuhi kedua koordinat."
+        },
+        {
+          "type": "note",
+          "content": "<strong>Jawaban:</strong> B. $-3$"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Topik",
+          "Subtopik",
+          "Level"
+        ],
+        "rows": [
+          [
+            "Transformasi Geometri (Wajib)",
+            "Rotasi dan Dilatasi",
+            "HOTS"
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "judul": "Kuis 6 - Translasi dan Dilatasi",
+      "icon": "fa-pen-to-square",
+      "tipe": "box",
+      "isi": [
+        "<strong>Soal:</strong> Jika titik $B(1,p)$ digeser ke kiri sejauh $4$ satuan dan ke atas $2$ satuan, kemudian titik tersebut didilatasi dengan faktor skala $3$ dan pusat $P(1,2)$ sehingga bayangan akhirnya $B(q,r)$, maka nilai $3p-r+q$ adalah ....",
+        {
+          "type": "list",
+          "items": [
+            "A. $-2$",
+            "B. $-6$",
+            "C. $-11$",
+            "D. $-13$",
+            "E. $-17$"
+          ]
+        },
+        {
+          "type": "contoh",
+          "content": "Translasi pertama memberi $B'( -3,p+2)$. Dilatasi pusat $(1,2)$ faktor $3$ memberi $B''(-11,3p+2)$. Jadi $q=-11$ dan $r=3p+2$, sehingga $3p-r+q=3p-(3p+2)-11=-13$."
+        },
+        {
+          "type": "note",
+          "content": "<strong>Jawaban:</strong> D. $-13$"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Topik",
+          "Subtopik",
+          "Level"
+        ],
+        "rows": [
+          [
+            "Transformasi Geometri",
+            "Komposisi Transformasi",
+            "Medium"
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "judul": "Kuis 7 - Refleksi Berurutan",
+      "icon": "fa-pen-to-square",
+      "tipe": "box",
+      "isi": [
+        "<strong>Soal:</strong> Jika suatu titik $P$ direfleksikan terhadap garis $y=-x$, kemudian direfleksikan lagi terhadap garis $y=-3$, sehingga bayangan akhirnya $(-12,-10)$, maka koordinat titik $P$ adalah ....",
+        {
+          "type": "list",
+          "items": [
+            "A. $(-4,-12)$",
+            "B. $(-4,12)$",
+            "C. $(12,4)$",
+            "D. $(12,-4)$",
+            "E. $(12,12)$"
+          ]
+        },
+        {
+          "type": "contoh",
+          "content": "Misalkan titik awal $(x,y)$. Refleksi terhadap $y=-x$ menghasilkan $(-y,-x)$. Refleksi terhadap $y=-3$ mengubah koordinat menjadi $(-y,2(-3)-(-x))=(-y,x-6)$. Karena hasil akhir $(-12,-10)$, diperoleh $y=12$ dan $x=-4$."
+        },
+        {
+          "type": "note",
+          "content": "<strong>Jawaban:</strong> B. $(-4,12)$"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Topik",
+          "Subtopik",
+          "Level"
+        ],
+        "rows": [
+          [
+            "Transformasi Geometri",
+            "Komposisi Transformasi",
+            "Medium"
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "judul": "Kuis 8 - Refleksi Garis dan Rotasi",
+      "icon": "fa-pen-to-square",
+      "tipe": "box",
+      "isi": [
+        "<strong>Soal:</strong> Diketahui persamaan garis $x-y+2=0$. Garis tersebut direfleksikan terhadap garis $-x=y$, kemudian dirotasi sebesar $180^\\circ$ dengan pusat $O$. Persamaan bayangan garis tersebut adalah ....",
+        {
+          "type": "list",
+          "items": [
+            "A. $y=x-2$",
+            "B. $y=x+2$",
+            "C. $y+x-2=0$",
+            "D. $x+y+2=0$",
+            "E. $x+2y+1=0$"
+          ]
+        },
+        {
+          "type": "contoh",
+          "content": "Refleksi terhadap $y=-x$ memberi $(x,y)\\to(-y,-x)$. Rotasi $180^\\circ$ terhadap $O$ mengubahnya menjadi $(x'',y'')=(y,x)$. Substitusi ke persamaan awal $x-y+2=0$ menghasilkan $y''-x''+2=0$, atau $y=x-2$."
+        },
+        {
+          "type": "note",
+          "content": "<strong>Jawaban:</strong> A. $y=x-2$"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Topik",
+          "Subtopik",
+          "Level"
+        ],
+        "rows": [
+          [
+            "Transformasi Geometri",
+            "Komposisi Transformasi",
+            "Medium"
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "judul": "Kuis 9 - Translasi Garis",
+      "icon": "fa-pen-to-square",
+      "tipe": "box",
+      "isi": [
+        "<strong>Soal:</strong> Diberikan garis $2x-3y=6$ yang ditranslasikan oleh $\\begin{pmatrix}4\\\\m\\end{pmatrix}$ dan dilanjutkan dengan translasi $\\begin{pmatrix}n\\\\-2\\end{pmatrix}$. Diketahui $m=n$. Jika bayangan garis tersebut adalah $2x-3y=19$, maka nilai $m+n$ adalah ....",
+        {
+          "type": "list",
+          "items": [
+            "A. $-4$",
+            "B. $-2$",
+            "C. $2$",
+            "D. $4$",
+            "E. $6$"
+          ]
+        },
+        {
+          "type": "contoh",
+          "content": "Dua translasi menghasilkan $(x'',y'')=(x+4+n,y+m-2)$, sehingga $x=x''-4-n$ dan $y=y''-m+2$. Substitusi ke $2x-3y=6$ memberi $2x''-3y''=-3m+2n+20$. Karena bayangannya $2x-3y=19$ dan $m=n$, diperoleh $n=1$, maka $m+n=2$."
+        },
+        {
+          "type": "note",
+          "content": "<strong>Jawaban:</strong> C. $2$"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Topik",
+          "Subtopik",
+          "Level"
+        ],
+        "rows": [
+          [
+            "Transformasi Geometri",
+            "Komposisi Transformasi",
+            "Hard"
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "judul": "Kuis 10 - Refleksi Kurva",
+      "icon": "fa-pen-to-square",
+      "tipe": "box",
+      "isi": [
+        "<strong>Soal:</strong> Persamaan bayangan kurva $y=3x^2-2x-1$ oleh pencerminan terhadap $y=k$, dilanjutkan dengan pencerminan oleh garis $y=-x$, adalah $x=3y^2+2y-5$. Nilai $k$ yang tepat adalah ....",
+        {
+          "type": "list",
+          "items": [
+            "A. $1$",
+            "B. $2$",
+            "C. $3$",
+            "D. $4$",
+            "E. $5$"
+          ]
+        },
+        {
+          "type": "contoh",
+          "content": "Ambil titik umum $P(x,y)$ pada kurva. Refleksi terhadap $y=k$ memberi $P'(x,2k-y)$, lalu refleksi terhadap $y=-x$ memberi $P''(-(2k-y),-x)$. Dari hubungan ini diperoleh bentuk bayangan $x=3y^2+2y-1-2k$. Karena bayangan yang diketahui $x=3y^2+2y-5$, maka $-1-2k=-5$ sehingga $k=2$."
+        },
+        {
+          "type": "note",
+          "content": "<strong>Jawaban:</strong> B. $2$"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Topik",
+          "Subtopik",
+          "Level"
+        ],
+        "rows": [
+          [
+            "Transformasi Geometri (Wajib)",
+            "Refleksi",
+            "MOTS"
+          ]
+        ],
+        "leftAlign": [
+          0,
+          1,
+          2
+        ]
+      }
+    }
+  ]
+}

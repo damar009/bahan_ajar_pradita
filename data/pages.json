@@ -79,8 +79,15 @@
   {
     "id": "page_mat_wajib_01",
     "title": "Matematika 01",
-    "summary": "| Konten dummy sementara untuk struktur page Dasar Numerasi 10.",
-    "url": "pages/page_pd_dasnum_10/index.html",
+    "summary": "Materi Matematika Wajib 01.",
+    "url": "pages/page_mat_wajib_1/index.html",
+    "published": true
+  },
+  {
+    "id": "page_mat_wajib_02",
+    "title": "Matematika 02",
+    "summary": "Transformasi Fungsi: Dilatasi, Rotasi, dan Kombinasi Transformasi Fungsi.",
+    "url": "pages/page_mat_wajib_2/index.html",
     "published": true
   },
   {
