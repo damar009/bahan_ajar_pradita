@@ -1,565 +1,668 @@
 {
   "materi": [
     {
-      "judul": "Belajar Apa Hari Ini",
-      "icon": "fa-book-open",
-      "tipe": "basic",
+      "judul": "Intuisi Aljabar Linear",
+      "icon": "A",
       "isi": [
-        "<strong>Topik:</strong> Transformasi Fungsi",
-        "<strong>Subtopik:</strong> Dilatasi, Rotasi, dan Kombinasi Transformasi Fungsi",
-        "<strong>Pertemuan:</strong> 02",
-        "Materi ini membahas cara menentukan bayangan titik, kurva, dan garis setelah dikenai transformasi geometri. Fokus utama pertemuan ini adalah dilatasi, rotasi, dan komposisi beberapa transformasi.",
         {
-          "type": "list",
-          "items": [
-            "Dilatasi mengubah jarak titik terhadap pusat dilatasi berdasarkan faktor skala.",
-            "Rotasi memutar titik atau kurva terhadap pusat tertentu dengan arah dan sudut tertentu.",
-            "Kombinasi transformasi membutuhkan urutan pengerjaan yang tepat karena hasil akhir bergantung pada transformasi yang dilakukan lebih dulu."
-          ]
+          "type": "paragraph",
+          "content": "Dalam matriks $2 \\times 2$, kolom pertama merekam posisi baru vektor basis $\\hat{i}$, sedangkan kolom kedua merekam posisi baru vektor basis $\\hat{j}$. Karena itu, transformasi bisa dilihat sebagai perubahan kisi koordinat."
+        },
+        {
+          "type": "formula",
+          "content": "$$\\begin{pmatrix}x'\\\\y'\\end{pmatrix}=A\\begin{pmatrix}x\\\\y\\end{pmatrix},\\quad A=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}$$ $$x'=ax+by,\\qquad y'=cx+dy$$"
         },
         {
           "type": "note",
-          "content": "Dalam soal transformasi fungsi, biasakan membedakan titik awal, titik bayangan sementara, dan titik bayangan akhir. Gunakan notasi seperti $(x,y)$, $(x',y')$, dan $(x'',y'')$ agar substitusi ke persamaan awal tidak tertukar."
+          "content": "Transformasi linear murni selalu mempertahankan titik asal $O(0,0)$. Translasi bukan transformasi linear murni karena titik asal ikut bergeser."
         }
       ]
     },
     {
-      "judul": "Learning Objective",
-      "icon": "fa-bullseye",
-      "tipe": "grid",
+      "judul": "Rumus Pokok Transformasi Geometri",
+      "icon": "B",
       "isi": [
-        "Setelah mempelajari materi ini, siswa diharapkan dapat menentukan hasil transformasi titik, kurva, dan fungsi secara terstruktur."
-      ],
-      "grid": [
         {
-          "title": "LO 1 - Dilatasi",
-          "content": "Siswa dapat menentukan bayangan titik atau fungsi akibat dilatasi dengan pusat dan faktor skala tertentu."
+          "type": "table",
+          "headers": [
+            "Jenis",
+            "Rumus titik bayangan",
+            "Sifat utama"
+          ],
+          "rows": [
+            [
+              "Translasi oleh $T=\\begin{pmatrix}a\\\\b\\end{pmatrix}$",
+              "$\\begin{pmatrix}x'\\\\y'\\end{pmatrix}=\\begin{pmatrix}x\\\\y\\end{pmatrix}+\\begin{pmatrix}a\\\\b\\end{pmatrix}$",
+              "Bentuk, ukuran, dan orientasi tetap."
+            ],
+            [
+              "Refleksi sumbu-x",
+              "$\\begin{pmatrix}x'\\\\y'\\end{pmatrix}=\\begin{pmatrix}1&0\\\\0&-1\\end{pmatrix}\\begin{pmatrix}x\\\\y\\end{pmatrix}$",
+              "Bentuk dan ukuran tetap, orientasi berubah."
+            ],
+            [
+              "Refleksi sumbu-y",
+              "$\\begin{pmatrix}x'\\\\y'\\end{pmatrix}=\\begin{pmatrix}-1&0\\\\0&1\\end{pmatrix}\\begin{pmatrix}x\\\\y\\end{pmatrix}$",
+              "Bentuk dan ukuran tetap, orientasi berubah."
+            ],
+            [
+              "Refleksi garis $y=x$",
+              "$\\begin{pmatrix}x'\\\\y'\\end{pmatrix}=\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}\\begin{pmatrix}x\\\\y\\end{pmatrix}$",
+              "Koordinat saling bertukar."
+            ],
+            [
+              "Refleksi garis $y=-x$",
+              "$\\begin{pmatrix}x'\\\\y'\\end{pmatrix}=\\begin{pmatrix}0&-1\\\\-1&0\\end{pmatrix}\\begin{pmatrix}x\\\\y\\end{pmatrix}$",
+              "Koordinat bertukar dan berubah tanda."
+            ],
+            [
+              "Refleksi titik $O(0,0)$",
+              "$\\begin{pmatrix}x'\\\\y'\\end{pmatrix}=\\begin{pmatrix}-1&0\\\\0&-1\\end{pmatrix}\\begin{pmatrix}x\\\\y\\end{pmatrix}$",
+              "Setara rotasi $180^\\circ$ terhadap titik asal."
+            ],
+            [
+              "Dilatasi pusat $O(0,0)$, faktor $k$",
+              "$\\begin{pmatrix}x'\\\\y'\\end{pmatrix}=\\begin{pmatrix}k&0\\\\0&k\\end{pmatrix}\\begin{pmatrix}x\\\\y\\end{pmatrix}$",
+              "Bentuk sebangun; ukuran berubah sesuai $|k|$."
+            ],
+            [
+              "Rotasi pusat $O(0,0)$, sudut $\\theta$",
+              "$\\begin{pmatrix}x'\\\\y'\\end{pmatrix}=\\begin{pmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{pmatrix}\\begin{pmatrix}x\\\\y\\end{pmatrix}$",
+              "Bentuk dan ukuran tetap; arah berubah sesuai sudut."
+            ]
+          ]
         },
         {
-          "title": "LO 2 - Rotasi",
-          "content": "Siswa dapat menentukan bayangan titik atau kurva akibat rotasi terhadap pusat tertentu, termasuk sudut negatif dan sudut $\\pi$ atau $180^\\circ$."
-        },
-        {
-          "title": "LO 3 - Kombinasi Transformasi",
-          "content": "Siswa dapat menyusun urutan transformasi dan menggunakan hasil transformasi pertama sebagai input untuk transformasi berikutnya."
+          "type": "note",
+          "content": "Jika pusat dilatasi atau rotasi adalah $P(p,q)$, kurangi koordinat titik dengan pusatnya, lakukan transformasi, lalu tambahkan kembali pusat $P(p,q)$."
         }
       ]
     },
     {
-      "judul": "Rumus Inti Transformasi",
-      "icon": "fa-square-root-variable",
-      "tipe": "table",
+      "judul": "Refleksi Garis Umum",
+      "icon": "C",
       "isi": [
-        "Gunakan tabel berikut sebagai ringkasan rumus yang sering muncul pada soal."
-      ],
-      "table": {
-        "headers": [
-          "Transformasi",
-          "Rumus / Hasil"
-        ],
-        "rows": [
-          [
-            "Dilatasi pusat $O(0,0)$ faktor $k$",
-            "$P(x,y) \\to P'(kx,ky)$"
-          ],
-          [
-            "Dilatasi pusat $(a,b)$ faktor $k$",
-            "$P(x,y) \\to P'(k(x-a)+a,\\ k(y-b)+b)$"
-          ],
-          [
-            "Rotasi pusat $(a,b)$ sudut $\\theta$",
-            "$\\begin{pmatrix}x'-a\\\\y'-b\\end{pmatrix}=\\begin{pmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{pmatrix}\\begin{pmatrix}x-a\\\\y-b\\end{pmatrix}$"
-          ],
-          [
-            "Refleksi terhadap $y=-x$",
-            "$P(x,y) \\to P'(-y,-x)$"
-          ],
-          [
-            "Refleksi terhadap $y=h$",
-            "$P(x,y) \\to P'(x,2h-y)$"
-          ],
-          [
-            "Translasi oleh $\\begin{pmatrix}a\\\\b\\end{pmatrix}$",
-            "$P(x,y) \\to P'(x+a,y+b)$"
-          ]
-        ],
-        "leftAlign": [
-          0,
-          1
-        ]
-      }
-    },
-    {
-      "judul": "Strategi Mengerjakan Soal Transformasi Fungsi",
-      "icon": "fa-route",
-      "tipe": "basic",
-      "isi": [
-        "Langkah paling aman untuk soal transformasi fungsi adalah mengubah hubungan antara koordinat awal dan koordinat bayangan, lalu mensubstitusikan koordinat awal ke persamaan semula.",
         {
-          "type": "list",
-          "items": [
-            "Tentukan apakah objek yang ditransformasi berupa titik, garis, atau kurva.",
-            "Tuliskan rumus transformasi dalam bentuk hubungan koordinat awal dan koordinat bayangan.",
-            "Untuk kurva atau garis, nyatakan $x$ dan $y$ lama dalam $x'$ dan $y'$ baru, lalu substitusikan ke persamaan awal.",
-            "Jika ada dua transformasi, kerjakan secara berurutan dan gunakan notasi bayangan sementara.",
-            "Periksa kembali apakah sudut negatif berarti searah jarum jam."
-          ]
+          "type": "paragraph",
+          "content": "Untuk garis cermin $L: Ax + By + C = 0$, bayangan titik $P(x_1, y_1)$ dapat dicari tanpa menggambar garis khusus seperti $x=h$ atau $y=k$."
         },
         {
-          "type": "contoh",
-          "content": "Jika titik dirotasi sebesar $-90^\\circ$, artinya titik diputar $90^\\circ$ searah jarum jam atau setara dengan $270^\\circ$ berlawanan arah jarum jam."
+          "type": "formula",
+          "content": "$$\\dfrac{x'-x_1}{A}=\\dfrac{y'-y_1}{B}=-2\\left(\\dfrac{Ax_1+By_1+C}{A^2+B^2}\\right)$$"
+        },
+        {
+          "type": "paragraph",
+          "content": "Penurunan rumusnya dimulai dari fakta bahwa vektor normal garis $Ax+By+C=0$ adalah $\\vec{n}=(A,B)$. Pada refleksi, ruas $PP'$ harus tegak lurus garis cermin, sehingga arah perpindahan dari $P$ ke $P'$ sejajar dengan $\\vec{n}$."
+        },
+        {
+          "type": "formula",
+          "content": "$$P'(x',y')=P(x_1,y_1)+t(A,B)$$ $$x'=x_1+tA,\\qquad y'=y_1+tB$$"
+        },
+        {
+          "type": "paragraph",
+          "content": "Titik tengah $M$ dari $P$ dan $P'$ harus terletak pada garis cermin. Karena $M\\left(\\dfrac{x_1+x'}{2},\\dfrac{y_1+y'}{2}\\right)$, substitusi bentuk $x'=x_1+tA$ dan $y'=y_1+tB$ ke persamaan garis memberi nilai $t$."
+        },
+        {
+          "type": "formula",
+          "content": "$$M=\\left(x_1+\\dfrac{tA}{2},\\ y_1+\\dfrac{tB}{2}\\right)$$ $$A\\left(x_1+\\dfrac{tA}{2}\\right)+B\\left(y_1+\\dfrac{tB}{2}\\right)+C=0$$ $$Ax_1+By_1+C+\\dfrac{t}{2}(A^2+B^2)=0$$ $$t=-2\\left(\\dfrac{Ax_1+By_1+C}{A^2+B^2}\\right)$$"
+        },
+        {
+          "type": "note",
+          "content": "Jadi nilai skalar pada rumus adalah $t$. Karena $x'-x_1=tA$ dan $y'-y_1=tB$, bentuk perbandingan $\\dfrac{x'-x_1}{A}=\\dfrac{y'-y_1}{B}=t$ langsung menghasilkan rumus refleksi garis umum."
+        },
+        {
+          "type": "example",
+          "title": "Contoh:",
+          "content": "Titik $P(1,1)$ direfleksikan terhadap garis $x+y-4=0$. Karena $A=1$, $B=1$, dan $C=-4$, maka $Ax_1+By_1+C=-2$ serta $A^2+B^2=2$. Nilai skalar $k=-2\\left(\\dfrac{-2}{2}\\right)=2$, sehingga $x'=3$ dan $y'=3$. Jadi bayangannya $P'(3,3)$."
         }
       ]
     },
     {
-      "judul": "Kuis 1 - Rotasi Titik",
-      "icon": "fa-pen-to-square",
-      "tipe": "box",
+      "judul": "Komposisi Transformasi",
+      "icon": "D",
       "isi": [
-        "<strong>Soal:</strong> Titik $P(2,-5)$ dirotasikan oleh $[(1,3),-90^\\circ]$. Bayangannya adalah ....",
         {
-          "type": "list",
-          "items": [
-            "A. $P'(-7,2)$",
-            "B. $P'(-7,-2)$",
-            "C. $P'(2,-7)$",
-            "D. $P'(2,7)$",
-            "E. $P'(-2,7)$"
-          ]
+          "type": "paragraph",
+          "content": "Jika titik ditransformasikan oleh $M_1$ lalu dilanjutkan oleh $M_2$, penulisannya adalah $M_2\\cdot M_1\\cdot v$. Urutan perkalian matriks terlihat terbalik karena transformasi yang paling dekat dengan vektor bekerja lebih dulu."
         },
         {
-          "type": "contoh",
-          "content": "Rotasi $-90^\\circ$ sama dengan $270^\\circ$ berlawanan arah jarum jam. Dengan pusat $(1,3)$, diperoleh $x'-1=-8$ sehingga $x'=-7$, dan $y'-3=1$ sehingga $y'=2$."
-        },
-        {
-          "type": "note",
-          "content": "<strong>Jawaban:</strong> A. $P'(-7,2)$"
+          "type": "formula",
+          "content": "Jika $R$ adalah rotasi $90^\\circ$ dan $D$ adalah dilatasi faktor $3$, komposisi rotasi lalu dilatasi ditulis $D\\cdot R$."
         }
-      ],
-      "table": {
-        "headers": [
-          "Topik",
-          "Subtopik",
-          "Level"
-        ],
-        "rows": [
-          [
-            "Transformasi Geometri (Wajib)",
-            "Rotasi dan Dilatasi",
-            "LOTS"
-          ]
-        ],
-        "leftAlign": [
-          0,
-          1,
-          2
-        ]
-      }
+      ]
     },
     {
-      "judul": "Kuis 2 - Rotasi Kurva",
-      "icon": "fa-pen-to-square",
-      "tipe": "box",
+      "judul": "Determinan, Luas, dan Volume",
+      "icon": "E",
       "isi": [
-        "<strong>Soal:</strong> Bayangan kurva $y=4x^2-1$ terhadap rotasi sebesar sudut $\\theta=\\pi$ dengan pusat $P(1,2)$ adalah ....",
         {
-          "type": "list",
-          "items": [
-            "A. $y=-4x^2+16x-11$",
-            "B. $y=4x^2+16x-11$",
-            "C. $y=-4x^2-16x-11$",
-            "D. $y=-4x^2+16x+11$",
-            "E. $y=4x^2-16x+11$"
+          "type": "paragraph",
+          "content": "Untuk matriks $M=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}$, determinannya adalah $\\det(M)=ad-bc$. Nilai $|\\det(M)|$ menjadi faktor pengali luas bangun 2D."
+        },
+        {
+          "type": "formula",
+          "content": "$$\\text{Luas bayangan}=|\\det(M)|\\times\\text{Luas awal}$$"
+        },
+        {
+          "type": "formula",
+          "content": "$$\\text{Volume bayangan}=|k^3|\\times\\text{Volume awal}$$"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Transformasi",
+            "Determinan",
+            "Bentuk",
+            "Luas / Volume"
+          ],
+          "rows": [
+            [
+              "Translasi",
+              "$\\det=1$",
+              "Kongruen",
+              "Luas tetap"
+            ],
+            [
+              "Rotasi",
+              "$\\det=1$",
+              "Kongruen",
+              "Luas tetap"
+            ],
+            [
+              "Refleksi",
+              "$\\det=-1$",
+              "Kongruen",
+              "Luas tetap"
+            ],
+            [
+              "Dilatasi 2D faktor $k$",
+              "$\\det=k^2$",
+              "Sebangun",
+              "$L'=k^2\\times L$"
+            ],
+            [
+              "Dilatasi 3D faktor $k$",
+              "$\\det=k^3$",
+              "Sebangun",
+              "$V'=|k^3|\\times V$"
+            ]
           ]
-        },
-        {
-          "type": "contoh",
-          "content": "Rotasi $\\pi$ terhadap pusat $(1,2)$ memberi hubungan $x=-x'+2$ dan $y=-y'+4$. Substitusi ke $y=4x^2-1$ menghasilkan $-y'+4=4(-x'+2)^2-1$, sehingga $y'=-4x'^2+16x'-11$."
-        },
-        {
-          "type": "note",
-          "content": "<strong>Jawaban:</strong> A. $y=-4x^2+16x-11$"
         }
-      ],
-      "table": {
-        "headers": [
-          "Topik",
-          "Subtopik",
-          "Level"
-        ],
-        "rows": [
-          [
-            "Transformasi Geometri (Wajib)",
-            "Rotasi dan Dilatasi",
-            "MOTS"
-          ]
-        ],
-        "leftAlign": [
-          0,
-          1,
-          2
-        ]
-      }
+      ]
     },
     {
-      "judul": "Kuis 3 - Dilatasi Pusat O",
-      "icon": "fa-pen-to-square",
-      "tipe": "box",
+      "judul": "Contoh",
+      "icon": "F",
       "isi": [
-        "<strong>Soal:</strong> Jika titik $N(-2,3)$ didilatasi dengan pusat $O(0,0)$ dan faktor skala $-5$, maka koordinat bayangan titik $N$ adalah ....",
         {
-          "type": "list",
-          "items": [
-            "A. $(10,-15)$",
-            "B. $(-10,15)$",
-            "C. $(-10,-15)$",
-            "D. $(10,15)$",
-            "E. $(-1,15)$"
-          ]
+          "type": "example",
+          "title": "Perubahan luas segitiga",
+          "content": "Segitiga $ABC$ dengan $A(1,1)$, $B(5,1)$, $C(3,4)$ memiliki alas $4$ dan tinggi $3$, sehingga luas awal $6$. Jika ditransformasikan oleh $M=\\begin{pmatrix}3&1\\\\2&4\\end{pmatrix}$, maka $\\det(M)=3(4)-1(2)=10$. Luas bayangan $=10\\times6=60$ satuan luas. Karena determinan positif, orientasinya tetap."
         },
         {
-          "type": "contoh",
-          "content": "Dilatasi pusat $O(0,0)$ faktor $k$ mengubah $P(x,y)$ menjadi $P'(kx,ky)$. Maka $N'(-5\\cdot(-2),-5\\cdot3)=N'(10,-15)$."
+          "type": "example",
+          "title": "Rotasi lalu dilatasi lingkaran",
+          "content": "Lingkaran $x^2+y^2=9$ memiliki luas awal $9\\pi$. Jika dirotasi $90^\\circ$ lalu didilatasi faktor $3$, matriks komposisinya $D\\cdot R=\\begin{pmatrix}0&-3\\\\3&0\\end{pmatrix}$. Determinannya $9$, sehingga luas akhir $81\\pi$. Bentuk tetap lingkaran karena dilatasi seragam."
         },
         {
-          "type": "note",
-          "content": "<strong>Jawaban:</strong> A. $(10,-15)$"
+          "type": "example",
+          "title": "Dilatasi ruang",
+          "content": "Kubus volume awal $8\\text{ cm}^3$ didilatasi 3D dengan faktor $k=-2$. Determinan dilatasi 3D adalah $k^3=-8$, sehingga volume bayangan $=|-8|\\times8=64\\text{ cm}^3$. Tanda negatif menunjukkan orientasi ruang terbalik."
         }
+      ]
+    }
+  ],
+  "latihan": [
+    {
+      "question": "Titik $P(2,-5)$ dirotasikan oleh $[(1,3),-90^\\circ]$. Bayangannya adalah ....",
+      "options": [
+        "$P'(-7,2)$",
+        "$P'(-7,-2)$",
+        "$P'(2,-7)$",
+        "$P'(2,7)$",
+        "$P'(-2,7)$"
       ],
-      "table": {
-        "headers": [
-          "Topik",
-          "Subtopik",
-          "Level"
-        ],
-        "rows": [
-          [
-            "Transformasi Geometri (Wajib)",
-            "Rotasi dan Dilatasi",
-            "MOTS"
-          ]
-        ],
-        "leftAlign": [
-          0,
-          1,
-          2
-        ]
-      }
+      "answer": "A. $P'(-7,2)$",
+      "discussion": [
+        "Pusat rotasi adalah $C(1,3)$. Vektor dari pusat ke titik $P$ adalah $P-C=(2-1,-5-3)=(1,-8)$.",
+        "Rotasi $-90^\\circ$ mengubah vektor $(x,y)$ menjadi $(y,-x)$, sehingga $(1,-8)$ menjadi $(-8,-1)$.",
+        "Kembalikan ke pusat rotasi: $P'=C+(-8,-1)=(1,3)+(-8,-1)=(-7,2)$.",
+        "Jadi bayangan titiknya adalah $P'(-7,2)$."
+      ],
+      "intro": "Rotasi dengan pusat selain titik asal dikerjakan dengan memindahkan titik ke sistem koordinat yang berpusat di titik rotasi. Setelah vektornya dirotasikan, hasilnya dikembalikan lagi ke pusat semula."
     },
     {
-      "judul": "Kuis 4 - Dilatasi Pusat Tertentu",
-      "icon": "fa-pen-to-square",
-      "tipe": "box",
-      "isi": [
-        "<strong>Soal:</strong> Titik $A(9,-8)$ didilatasi dengan pusat $P(-2,3)$ dan faktor skala $2$. Bayangan titik $A$ tersebut adalah ....",
-        {
-          "type": "list",
-          "items": [
-            "A. $A'(20,19)$",
-            "B. $A'(-20,19)$",
-            "C. $A'(20,-19)$",
-            "D. $A'(-20,-19)$",
-            "E. $A'(19,-20)$"
-          ]
-        },
-        {
-          "type": "contoh",
-          "content": "Gunakan $x'=k(x-a)+a$ dan $y'=k(y-b)+b$. Untuk pusat $(-2,3)$ dan $k=2$, diperoleh $x'=2(9-(-2))+(-2)=20$ dan $y'=2(-8-3)+3=-19$."
-        },
-        {
-          "type": "note",
-          "content": "<strong>Jawaban:</strong> C. $A'(20,-19)$"
-        }
+      "question": "Bayangan dari kurva $y=4x^2-1$ terhadap rotasi sebesar sudut $\\theta=\\pi$ dengan pusat $P(1,2)$ adalah ....",
+      "options": [
+        "$y=-4x^2+16x-11$",
+        "$y=4x^2+16x-11$",
+        "$y=-4x^2-16x-11$",
+        "$y=-4x^2+16x+11$",
+        "$y=4x^2-16x+11$"
       ],
-      "table": {
-        "headers": [
-          "Topik",
-          "Subtopik",
-          "Level"
-        ],
-        "rows": [
-          [
-            "Transformasi Geometri (Wajib)",
-            "Rotasi dan Dilatasi",
-            "MOTS"
-          ]
-        ],
-        "leftAlign": [
-          0,
-          1,
-          2
-        ]
-      }
+      "answer": "A. $y=-4x^2+16x-11$",
+      "discussion": [
+        "Rotasi $180^\\circ$ terhadap pusat $(1,2)$ mengubah titik $(x,y)$ menjadi $(2-x,4-y)$.",
+        "Misalkan koordinat bayangan tetap ditulis $(x,y)$. Karena rotasi $180^\\circ$ inversnya sama, koordinat asalnya adalah $x_{asal}=2-x$ dan $y_{asal}=4-y$.",
+        "Substitusikan ke kurva awal $y_{asal}=4x_{asal}^2-1$: $4-y=4(2-x)^2-1$.",
+        "Uraikan: $4-y=4(x^2-4x+4)-1=4x^2-16x+15$.",
+        "Pindahkan ruas: $-y=4x^2-16x+11$, sehingga $y=-4x^2+16x-11$."
+      ],
+      "intro": "Rotasi sebesar $\\pi$ sama dengan rotasi $180^\\circ$. Untuk mencari persamaan bayangan kurva, gunakan hubungan koordinat bayangan dengan koordinat asal, lalu substitusikan ke persamaan kurva awal."
     },
     {
-      "judul": "Kuis 5 - Refleksi dan Dilatasi",
-      "icon": "fa-pen-to-square",
-      "tipe": "box",
-      "isi": [
-        "<strong>Soal:</strong> Diketahui titik $K(-3,2)$. Jika titik $K$ dicerminkan terhadap garis $y=ax$ dan dilatasi $[O,-2]$ menjadi titik $K'\\left(-\\frac{12}{5},-\\frac{34}{5}\\right)$, maka nilai $a$ adalah ....",
-        {
-          "type": "list",
-          "items": [
-            "A. $-4$",
-            "B. $-3$",
-            "C. $2$",
-            "D. $3$",
-            "E. $4$"
-          ]
-        },
-        {
-          "type": "contoh",
-          "content": "Refleksi terhadap $y=ax$ dapat dinyatakan dengan matriks $\\frac{1}{1+a^2}\\begin{pmatrix}1-a^2&2a\\\\2a&a^2-1\\end{pmatrix}$. Setelah dilatasi pusat $O$ faktor $-2$, syarat koordinat akhir menghasilkan $a=-3$ sebagai nilai yang memenuhi kedua koordinat."
-        },
-        {
-          "type": "note",
-          "content": "<strong>Jawaban:</strong> B. $-3$"
-        }
+      "question": "Jika titik $N(-2,3)$ didilatasi dengan pusat $O(0,0)$ dan faktor skala $-5$, maka koordinat bayangan titik $N$ adalah ....",
+      "options": [
+        "$(10,-15)$",
+        "$(-10,15)$",
+        "$(-10,-15)$",
+        "$(10,15)$",
+        "$(-1,15)$"
       ],
-      "table": {
-        "headers": [
-          "Topik",
-          "Subtopik",
-          "Level"
-        ],
-        "rows": [
-          [
-            "Transformasi Geometri (Wajib)",
-            "Rotasi dan Dilatasi",
-            "HOTS"
-          ]
-        ],
-        "leftAlign": [
-          0,
-          1,
-          2
-        ]
-      }
+      "answer": "A. $(10,-15)$",
+      "discussion": [
+        "Faktor skala dilatasi adalah $k=-5$.",
+        "Kalikan titik $N(-2,3)$ dengan $-5$: $N'=(-5)(-2,3)$.",
+        "Hasilnya $N'=(10,-15)$."
+      ],
+      "intro": "Karena pusat dilatasi adalah $O(0,0)$, bayangan titik langsung diperoleh dengan mengalikan setiap koordinat titik dengan faktor skala."
     },
     {
-      "judul": "Kuis 6 - Translasi dan Dilatasi",
-      "icon": "fa-pen-to-square",
-      "tipe": "box",
-      "isi": [
-        "<strong>Soal:</strong> Jika titik $B(1,p)$ digeser ke kiri sejauh $4$ satuan dan ke atas $2$ satuan, kemudian titik tersebut didilatasi dengan faktor skala $3$ dan pusat $P(1,2)$ sehingga bayangan akhirnya $B(q,r)$, maka nilai $3p-r+q$ adalah ....",
-        {
-          "type": "list",
-          "items": [
-            "A. $-2$",
-            "B. $-6$",
-            "C. $-11$",
-            "D. $-13$",
-            "E. $-17$"
-          ]
-        },
-        {
-          "type": "contoh",
-          "content": "Translasi pertama memberi $B'( -3,p+2)$. Dilatasi pusat $(1,2)$ faktor $3$ memberi $B''(-11,3p+2)$. Jadi $q=-11$ dan $r=3p+2$, sehingga $3p-r+q=3p-(3p+2)-11=-13$."
-        },
-        {
-          "type": "note",
-          "content": "<strong>Jawaban:</strong> D. $-13$"
-        }
+      "question": "Titik $A(9,-8)$ didilatasi dengan pusat $P(-2,3)$ dan faktor skala $2$. Bayangan titik $A$ tersebut adalah ....",
+      "options": [
+        "$A'(20,19)$",
+        "$A'(-20,19)$",
+        "$A'(20,-19)$",
+        "$A'(-20,-19)$",
+        "$A'(19,-20)$"
       ],
-      "table": {
-        "headers": [
-          "Topik",
-          "Subtopik",
-          "Level"
-        ],
-        "rows": [
-          [
-            "Transformasi Geometri",
-            "Komposisi Transformasi",
-            "Medium"
-          ]
-        ],
-        "leftAlign": [
-          0,
-          1,
-          2
-        ]
-      }
+      "answer": "C. $A'(20,-19)$",
+      "discussion": [
+        "Pusat dilatasi adalah $P(-2,3)$ dan titik yang didilatasi adalah $A(9,-8)$.",
+        "Vektor dari pusat ke titik adalah $A-P=(9-(-2),-8-3)=(11,-11)$.",
+        "Kalikan vektor tersebut dengan faktor skala $2$: $2(11,-11)=(22,-22)$.",
+        "Tambahkan ke pusat dilatasi: $A'=(-2,3)+(22,-22)=(20,-19)$."
+      ],
+      "intro": "Untuk dilatasi dengan pusat bukan titik asal, cari dulu vektor dari pusat dilatasi ke titik. Vektor itu dikalikan faktor skala, lalu ditempelkan kembali ke pusat dilatasi."
     },
     {
-      "judul": "Kuis 7 - Refleksi Berurutan",
-      "icon": "fa-pen-to-square",
-      "tipe": "box",
-      "isi": [
-        "<strong>Soal:</strong> Jika suatu titik $P$ direfleksikan terhadap garis $y=-x$, kemudian direfleksikan lagi terhadap garis $y=-3$, sehingga bayangan akhirnya $(-12,-10)$, maka koordinat titik $P$ adalah ....",
-        {
-          "type": "list",
-          "items": [
-            "A. $(-4,-12)$",
-            "B. $(-4,12)$",
-            "C. $(12,4)$",
-            "D. $(12,-4)$",
-            "E. $(12,12)$"
-          ]
-        },
-        {
-          "type": "contoh",
-          "content": "Misalkan titik awal $(x,y)$. Refleksi terhadap $y=-x$ menghasilkan $(-y,-x)$. Refleksi terhadap $y=-3$ mengubah koordinat menjadi $(-y,2(-3)-(-x))=(-y,x-6)$. Karena hasil akhir $(-12,-10)$, diperoleh $y=12$ dan $x=-4$."
-        },
-        {
-          "type": "note",
-          "content": "<strong>Jawaban:</strong> B. $(-4,12)$"
-        }
+      "question": "Diketahui titik $K(-3,2)$. Jika titik $K$ dicerminkan terhadap $y=ax$ dan dilatasi $[O,-2]$ menjadi titik $K'\\left(-\\dfrac{12}{5},-\\dfrac{34}{5}\\right)$, maka nilai $a$ adalah ....",
+      "options": [
+        "$-4$",
+        "$-3$",
+        "$2$",
+        "$3$",
+        "$4$"
       ],
-      "table": {
-        "headers": [
-          "Topik",
-          "Subtopik",
-          "Level"
-        ],
-        "rows": [
-          [
-            "Transformasi Geometri",
-            "Komposisi Transformasi",
-            "Medium"
-          ]
-        ],
-        "leftAlign": [
-          0,
-          1,
-          2
-        ]
-      }
+      "answer": "B. $-3$",
+      "discussion": [
+        "Misalkan hasil refleksi titik $K$ terhadap $y=ax$ adalah $Q$. Karena setelah itu didilatasi $[O,-2]$ menjadi $K'\\left(-\\dfrac{12}{5},-\\dfrac{34}{5}\\right)$, maka $K'=-2Q$.",
+        "Jadi $Q=-\\dfrac{1}{2}K'=\\left(\\dfrac{6}{5},\\dfrac{17}{5}\\right)$.",
+        "Titik tengah antara $K(-3,2)$ dan $Q\\left(\\dfrac{6}{5},\\dfrac{17}{5}\\right)$ adalah $M=\\left(\\dfrac{-3+\\dfrac{6}{5}}{2},\\dfrac{2+\\dfrac{17}{5}}{2}\\right)=\\left(-\\dfrac{9}{10},\\dfrac{27}{10}\\right)$.",
+        "Karena garis cermin $y=ax$ melalui titik tengah $M$, maka $\\dfrac{27}{10}=a\\left(-\\dfrac{9}{10}\\right)$.",
+        "Diperoleh $a=\\dfrac{\\dfrac{27}{10}}{-\\dfrac{9}{10}}=-3$."
+      ],
+      "intro": "Soal ini lebih ringan jika dikerjakan mundur. Dari bayangan akhir setelah dilatasi, cari dulu titik hasil refleksi. Setelah itu, gunakan sifat refleksi: garis cermin adalah sumbu tegak lurus ruas yang menghubungkan titik asal dan bayangannya, sehingga garis cermin melalui titik tengah ruas tersebut."
     },
     {
-      "judul": "Kuis 8 - Refleksi Garis dan Rotasi",
-      "icon": "fa-pen-to-square",
-      "tipe": "box",
-      "isi": [
-        "<strong>Soal:</strong> Diketahui persamaan garis $x-y+2=0$. Garis tersebut direfleksikan terhadap garis $-x=y$, kemudian dirotasi sebesar $180^\\circ$ dengan pusat $O$. Persamaan bayangan garis tersebut adalah ....",
-        {
-          "type": "list",
-          "items": [
-            "A. $y=x-2$",
-            "B. $y=x+2$",
-            "C. $y+x-2=0$",
-            "D. $x+y+2=0$",
-            "E. $x+2y+1=0$"
-          ]
-        },
-        {
-          "type": "contoh",
-          "content": "Refleksi terhadap $y=-x$ memberi $(x,y)\\to(-y,-x)$. Rotasi $180^\\circ$ terhadap $O$ mengubahnya menjadi $(x'',y'')=(y,x)$. Substitusi ke persamaan awal $x-y+2=0$ menghasilkan $y''-x''+2=0$, atau $y=x-2$."
-        },
-        {
-          "type": "note",
-          "content": "<strong>Jawaban:</strong> A. $y=x-2$"
-        }
+      "question": "Jika titik $B(1,p)$ digeser ke kiri sejauh $4$ satuan dan ke atas $2$ satuan, kemudian titik tersebut didilatasi dengan faktor skala $3$ pusat $P(1,2)$ akan menghasilkan bayangan titik $B(q,r)$, maka nilai dari $3p-r+q$ adalah ....",
+      "options": [
+        "$-2$",
+        "$-6$",
+        "$-11$",
+        "$-13$",
+        "$-17$"
       ],
-      "table": {
-        "headers": [
-          "Topik",
-          "Subtopik",
-          "Level"
-        ],
-        "rows": [
-          [
-            "Transformasi Geometri",
-            "Komposisi Transformasi",
-            "Medium"
-          ]
-        ],
-        "leftAlign": [
-          0,
-          1,
-          2
-        ]
-      }
+      "answer": "D. $-13$",
+      "discussion": [
+        "Titik awal $B(1,p)$ digeser ke kiri $4$ satuan dan ke atas $2$ satuan, sehingga menjadi $(-3,p+2)$.",
+        "Dilatasi pusat $(1,2)$ faktor $3$ menggunakan bentuk $(q,r)=(1,2)+3[(-3,p+2)-(1,2)]$.",
+        "Hitung vektor dari pusat ke titik hasil translasi: $(-3,p+2)-(1,2)=(-4,p)$.",
+        "Maka $(q,r)=(1,2)+3(-4,p)=(1,2)+(-12,3p)=(-11,3p+2)$.",
+        "Jadi $q=-11$ dan $r=3p+2$. Nilai yang ditanya $3p-r+q=3p-(3p+2)+(-11)=-13$."
+      ],
+      "intro": "Perhatikan urutan transformasinya. Titik digeser terlebih dahulu, lalu hasilnya didilatasi terhadap pusat $(1,2)$. Nilai yang diminta dapat dicari tanpa harus menentukan nilai $p$ satu per satu."
     },
     {
-      "judul": "Kuis 9 - Translasi Garis",
-      "icon": "fa-pen-to-square",
-      "tipe": "box",
-      "isi": [
-        "<strong>Soal:</strong> Diberikan garis $2x-3y=6$ yang ditranslasikan oleh $\\begin{pmatrix}4\\\\m\\end{pmatrix}$ dan dilanjutkan dengan translasi $\\begin{pmatrix}n\\\\-2\\end{pmatrix}$. Diketahui $m=n$. Jika bayangan garis tersebut adalah $2x-3y=19$, maka nilai $m+n$ adalah ....",
-        {
-          "type": "list",
-          "items": [
-            "A. $-4$",
-            "B. $-2$",
-            "C. $2$",
-            "D. $4$",
-            "E. $6$"
-          ]
-        },
-        {
-          "type": "contoh",
-          "content": "Dua translasi menghasilkan $(x'',y'')=(x+4+n,y+m-2)$, sehingga $x=x''-4-n$ dan $y=y''-m+2$. Substitusi ke $2x-3y=6$ memberi $2x''-3y''=-3m+2n+20$. Karena bayangannya $2x-3y=19$ dan $m=n$, diperoleh $n=1$, maka $m+n=2$."
-        },
-        {
-          "type": "note",
-          "content": "<strong>Jawaban:</strong> C. $2$"
-        }
+      "question": "Jika suatu titik $P$ direfleksikan terhadap garis $y=-x$, kemudian direfleksikan lagi terhadap garis $y=-3$, sehingga mendapatkan titik bayangan akhirnya $(-12,-10)$. Maka koordinat titik $P$ adalah ....",
+      "options": [
+        "$(-4,-12)$",
+        "$(-4,12)$",
+        "$(12,4)$",
+        "$(12,-4)$",
+        "$(12,12)$"
       ],
-      "table": {
-        "headers": [
-          "Topik",
-          "Subtopik",
-          "Level"
-        ],
-        "rows": [
-          [
-            "Transformasi Geometri",
-            "Komposisi Transformasi",
-            "Hard"
-          ]
-        ],
-        "leftAlign": [
-          0,
-          1,
-          2
-        ]
-      }
+      "answer": "B. $(-4,12)$",
+      "discussion": [
+        "Bayangan akhir adalah $(-12,-10)$. Titik ini merupakan hasil refleksi terhadap garis $y=-3$.",
+        "Refleksi terhadap garis horizontal $y=k$ mengubah ordinat $y$ menjadi $2k-y$. Untuk $k=-3$, rumusnya $y'= -6-y$.",
+        "Jika $-10=-6-y$, maka $y=4$. Absis tidak berubah, sehingga titik sebelum refleksi kedua adalah $(-12,4)$.",
+        "Titik $(-12,4)$ adalah hasil refleksi titik awal terhadap garis $y=-x$.",
+        "Refleksi terhadap $y=-x$ mengubah $(x,y)$ menjadi $(-y,-x)$. Maka $(-y,-x)=(-12,4)$.",
+        "Dari $-y=-12$ diperoleh $y=12$, dan dari $-x=4$ diperoleh $x=-4$. Jadi $P=(-4,12)$."
+      ],
+      "intro": "Karena yang diketahui adalah bayangan akhir, pengerjaan paling jelas dilakukan mundur dari titik akhir ke titik awal. Balik urutan transformasinya: refleksi terhadap $y=-3$ dulu, lalu refleksi terhadap $y=-x$."
     },
     {
-      "judul": "Kuis 10 - Refleksi Kurva",
-      "icon": "fa-pen-to-square",
-      "tipe": "box",
-      "isi": [
-        "<strong>Soal:</strong> Persamaan bayangan kurva $y=3x^2-2x-1$ oleh pencerminan terhadap $y=k$, dilanjutkan dengan pencerminan oleh garis $y=-x$, adalah $x=3y^2+2y-5$. Nilai $k$ yang tepat adalah ....",
-        {
-          "type": "list",
-          "items": [
-            "A. $1$",
-            "B. $2$",
-            "C. $3$",
-            "D. $4$",
-            "E. $5$"
-          ]
-        },
-        {
-          "type": "contoh",
-          "content": "Ambil titik umum $P(x,y)$ pada kurva. Refleksi terhadap $y=k$ memberi $P'(x,2k-y)$, lalu refleksi terhadap $y=-x$ memberi $P''(-(2k-y),-x)$. Dari hubungan ini diperoleh bentuk bayangan $x=3y^2+2y-1-2k$. Karena bayangan yang diketahui $x=3y^2+2y-5$, maka $-1-2k=-5$ sehingga $k=2$."
-        },
-        {
-          "type": "note",
-          "content": "<strong>Jawaban:</strong> B. $2$"
-        }
+      "question": "Diketahui persamaan garis $x-y+2=0$. Garis tersebut direfleksikan terhadap garis $-x=y$, kemudian dirotasi sebesar $180^\\circ$ dengan pusat $O$. Persamaan bayangan garis tersebut adalah ....",
+      "options": [
+        "$y=x-2$",
+        "$y=x+2$",
+        "$y+x-2=0$",
+        "$x+y+2=0$",
+        "$x+2y+1=0$"
       ],
-      "table": {
-        "headers": [
-          "Topik",
-          "Subtopik",
-          "Level"
-        ],
-        "rows": [
-          [
-            "Transformasi Geometri (Wajib)",
-            "Refleksi",
-            "MOTS"
-          ]
-        ],
-        "leftAlign": [
-          0,
-          1,
-          2
-        ]
-      }
+      "answer": "A. $y=x-2$",
+      "discussion": [
+        "Refleksi terhadap $y=-x$ mengubah $(x,y)$ menjadi $(-y,-x)$.",
+        "Rotasi $180^\\circ$ terhadap $O$ mengubah $(u,v)$ menjadi $(-u,-v)$. Jika $(u,v)=(-y,-x)$, hasil akhirnya adalah $(y,x)$.",
+        "Misalkan koordinat bayangan adalah $(X,Y)$. Dari $(X,Y)=(y,x)$, koordinat asalnya adalah $x=Y$ dan $y=X$.",
+        "Substitusikan ke garis awal $x-y+2=0$: $Y-X+2=0$.",
+        "Maka $Y=X-2$. Dengan variabel biasa, persamaan bayangannya adalah $y=x-2$."
+      ],
+      "intro": "Untuk garis, kita dapat melihat perubahan koordinat titik-titik pada garis. Komposisi refleksi terhadap $y=-x$ lalu rotasi $180^\\circ$ ternyata membuat koordinat akhir menjadi hasil pertukaran koordinat awal."
+    },
+    {
+      "question": "Diberikan garis $2x-3y=6$ yang ditranslasikan oleh $\\begin{pmatrix}4\\\\m\\end{pmatrix}$ dan dilanjutkan dengan translasi oleh $\\begin{pmatrix}n\\\\-2\\end{pmatrix}$. Diketahui $m=n$. Jika bayangan garis tersebut adalah $2x-3y=19$, maka nilai dari $m+n$ adalah ....",
+      "options": [
+        "$-4$",
+        "$-2$",
+        "$2$",
+        "$4$",
+        "$6$"
+      ],
+      "answer": "C. $2$",
+      "discussion": [
+        "Translasi pertama adalah $\\begin{pmatrix}4\\\\m\\end{pmatrix}$ dan translasi kedua adalah $\\begin{pmatrix}n\\\\-2\\end{pmatrix}$, sehingga translasi totalnya $(4+n,m-2)$.",
+        "Diketahui $m=n$, maka translasi total menjadi $(4+m,m-2)$.",
+        "Untuk garis $2x-3y=6$ yang ditranslasi oleh $(a,b)$, ruas kanan baru menjadi $6+2a-3b$.",
+        "Substitusikan $a=4+m$ dan $b=m-2$: $19=6+2(4+m)-3(m-2)$.",
+        "Hitung: $19=6+8+2m-3m+6=20-m$.",
+        "Maka $m=1$. Karena $m=n$, diperoleh $n=1$, sehingga $m+n=2$."
+      ],
+      "intro": "Gabungan dua translasi dapat dijumlahkan menjadi satu translasi total. Setelah itu, gunakan perubahan konstanta pada persamaan garis akibat translasi."
+    },
+    {
+      "question": "Persamaan bayangan kurva $y=3x^2-2x-1$ oleh pencerminan terhadap $y=k$ dilanjutkan dengan pencerminan oleh garis $y=-x$ adalah $x=3y^2+2y-5$. Nilai $k$ yang tepat adalah ....",
+      "options": [
+        "$1$",
+        "$2$",
+        "$3$",
+        "$4$",
+        "$5$"
+      ],
+      "answer": "B. $2$",
+      "discussion": [
+        "Refleksi terhadap $y=k$ mengubah titik awal $(x,y)$ menjadi $(x,2k-y)$.",
+        "Refleksi terhadap $y=-x$ mengubah $(u,v)$ menjadi $(-v,-u)$. Dengan $u=x$ dan $v=2k-y$, bayangan akhirnya adalah $(X,Y)=(y-2k,-x)$.",
+        "Dari $X=y-2k$ diperoleh $y=X+2k$. Dari $Y=-x$ diperoleh $x=-Y$.",
+        "Substitusikan ke kurva awal $y=3x^2-2x-1$: $X+2k=3(-Y)^2-2(-Y)-1$.",
+        "Sederhanakan: $X+2k=3Y^2+2Y-1$, sehingga $X=3Y^2+2Y-1-2k$.",
+        "Persamaan bayangan yang diketahui adalah $X=3Y^2+2Y-5$. Maka $-1-2k=-5$.",
+        "Diperoleh $2k=4$, sehingga $k=2$."
+      ],
+      "intro": "Pada transformasi kurva, gunakan koordinat asal dalam bentuk koordinat bayangan. Transformasinya dilakukan dua kali: refleksi terhadap garis horizontal $y=k$, lalu refleksi terhadap garis $y=-x$."
+    },
+    {
+      "question": "Suatu transformasi linear $T$ memetakan $(1,0)$ ke $(2,-1)$ dan $(0,1)$ ke $(1,3)$. Jika segitiga $OAB$ memiliki $O(0,0)$, $A(2,0)$, dan $B(0,4)$, maka luas bayangan segitiga tersebut adalah ....",
+      "options": [
+        "$14$",
+        "$21$",
+        "$28$",
+        "$35$",
+        "$42$"
+      ],
+      "answer": "C. $28$",
+      "intro": "Soal ini menguji makna kolom matriks. Kolom pertama adalah bayangan $\\hat{i}$ dan kolom kedua adalah bayangan $\\hat{j}$. Perubahan luas bangun 2D kemudian dibaca dari nilai mutlak determinan matriks transformasi.",
+      "discussion": [
+        "Karena $T(\\hat{i})=(2,-1)$ dan $T(\\hat{j})=(1,3)$, matriks transformasinya adalah $M=\\begin{pmatrix}2&1\\\\-1&3\\end{pmatrix}$.",
+        "Determinan matriks tersebut adalah $\\det(M)=2(3)-1(-1)=7$.",
+        "Luas segitiga awal dengan alas $OA=2$ dan tinggi $OB=4$ adalah $\\dfrac{1}{2}\\cdot2\\cdot4=4$.",
+        "Luas bayangan $=|\\det(M)|\\times$ luas awal $=7\\times4=28$."
+      ]
+    },
+    {
+      "question": "Diberikan matiks transformasi linear $M=\\begin{pmatrix}2&-1\\\\1&3\\end{pmatrix}$. Bayangan garis $x+2y=5$ oleh transformasi tersebut adalah ....",
+      "options": [
+        "$x+5y=35$",
+        "$3x+y=35$",
+        "$5x+y=35$",
+        "$x-5y=35$",
+        "$5x-y=35$"
+      ],
+      "answer": "A. $x+5y=35$",
+      "intro": "Untuk mencari bayangan persamaan garis, gunakan koordinat asal dalam bentuk koordinat bayangan. Misalkan koordinat bayangan adalah $(X,Y)$, lalu nyatakan $(x,y)$ dari sistem transformasinya.",
+      "discussion": [
+        "Dari $\\begin{pmatrix}X\\\\Y\\end{pmatrix}=\\begin{pmatrix}2&-1\\\\1&3\\end{pmatrix}\\begin{pmatrix}x\\\\y\\end{pmatrix}$, diperoleh $X=2x-y$ dan $Y=x+3y$.",
+        "Invers matriksnya adalah $M^{-1}=\\dfrac{1}{7}\\begin{pmatrix}3&1\\\\-1&2\\end{pmatrix}$ karena $\\det(M)=7$.",
+        "Maka $x=\\dfrac{3X+Y}{7}$ dan $y=\\dfrac{-X+2Y}{7}$.",
+        "Substitusikan ke garis awal $x+2y=5$: $\\dfrac{3X+Y}{7}+2\\left(\\dfrac{-X+2Y}{7}\\right)=5$.",
+        "Sederhanakan: $\\dfrac{X+5Y}{7}=5$, sehingga $X+5Y=35$.",
+        "Dengan notasi variabel biasa, persamaan bayangannya adalah $x+5y=35$."
+      ]
+    },
+    {
+      "question": "Diberikan transformasi $R=\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}$ dan $S=\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix}$. Jika $S(R(P))=(s,t)$ dan $R(S(P))=(u,v)$ untuk $P(1,-2)$, maka nilai $s+t-u-v$ adalah ....",
+      "options": [
+        "$-6$",
+        "$-2$",
+        "$0$",
+        "$4$",
+        "$6$"
+      ],
+      "answer": "E. $6$",
+      "intro": "Soal ini menekankan bahwa komposisi transformasi matriks bergantung pada urutan. Transformasi yang ditulis paling dekat dengan titik bekerja lebih dulu.",
+      "discussion": [
+        "Untuk $S(R(P))$, matriks komposisinya adalah $SR=\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix}\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}=\\begin{pmatrix}2&1\\\\1&0\\end{pmatrix}$.",
+        "Maka $S(R(P))=\\begin{pmatrix}2&1\\\\1&0\\end{pmatrix}\\begin{pmatrix}1\\\\-2\\end{pmatrix}=\\begin{pmatrix}0\\\\1\\end{pmatrix}$, sehingga $(s,t)=(0,1)$.",
+        "Untuk $R(S(P))$, matriks komposisinya adalah $RS=\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix}=\\begin{pmatrix}0&1\\\\1&2\\end{pmatrix}$.",
+        "Maka $R(S(P))=\\begin{pmatrix}0&1\\\\1&2\\end{pmatrix}\\begin{pmatrix}1\\\\-2\\end{pmatrix}=\\begin{pmatrix}-2\\\\-3\\end{pmatrix}$, sehingga $(u,v)=(-2,-3)$.",
+        "Nilai yang diminta adalah $s+t-u-v=0+1-(-2)-(-3)=6$."
+      ]
+    },
+    {
+      "question": "Titik $P(4,-1)$ direfleksikan terhadap garis $2x-y-3=0$, kemudian hasilnya didilatasi berpusat di $O(0,0)$ dengan faktor $\\dfrac{1}{2}$. Koordinat akhir titik tersebut adalah ....",
+      "options": [
+        "$\\left(-\\dfrac{2}{5},\\dfrac{7}{10}\\right)$",
+        "$\\left(-\\dfrac{4}{5},\\dfrac{7}{5}\\right)$",
+        "$\\left(\\dfrac{2}{5},-\\dfrac{7}{10}\\right)$",
+        "$\\left(\\dfrac{7}{10},-\\dfrac{2}{5}\\right)$",
+        "$\\left(-\\dfrac{7}{10},\\dfrac{2}{5}\\right)$"
+      ],
+      "answer": "A. $\\left(-\\dfrac{2}{5},\\dfrac{7}{10}\\right)$",
+      "intro": "Refleksi garis umum dapat langsung memakai rumus dengan $A=2$, $B=-1$, dan $C=-3$. Setelah titik hasil refleksi diperoleh, baru lakukan dilatasi terhadap titik asal.",
+      "discussion": [
+        "Hitung nilai $Ax_1+By_1+C=2(4)+(-1)(-1)-3=6$.",
+        "Hitung $A^2+B^2=2^2+(-1)^2=5$.",
+        "Faktor perpindahan refleksi adalah $k=-2\\left(\\dfrac{Ax_1+By_1+C}{A^2+B^2}\\right)=-2\\left(\\dfrac{6}{5}\\right)=-\\dfrac{12}{5}$.",
+        "Titik hasil refleksi adalah $P_1=(x_1+kA,y_1+kB)=\\left(4-\\dfrac{24}{5},-1+\\dfrac{12}{5}\\right)=\\left(-\\dfrac{4}{5},\\dfrac{7}{5}\\right)$.",
+        "Dilatasi pusat $O$ faktor $\\dfrac{1}{2}$ menghasilkan $P_2=\\dfrac{1}{2}P_1=\\left(-\\dfrac{2}{5},\\dfrac{7}{10}\\right)$."
+      ]
+    },
+    {
+      "question": "Sebuah persegi panjang memiliki luas $12$. Setelah ditransformasikan oleh matriks $M=\\begin{pmatrix}p&2\\\\3&p\\end{pmatrix}$, luas bayangannya menjadi $36$. Jika $p>1$, maka nilai $p$ adalah ....",
+      "options": [
+        "$1$",
+        "$\\sqrt{2}$",
+        "$\\sqrt{3}$",
+        "$2$",
+        "$3$"
+      ],
+      "answer": "C. $\\sqrt{3}$",
+      "intro": "Perubahan luas oleh matriks 2D ditentukan oleh nilai mutlak determinan. Informasi orientasi terbalik memberi tanda determinan, sehingga nilai $p$ dapat ditentukan lebih spesifik.",
+      "discussion": [
+        "Faktor perubahan luas adalah $\\dfrac{36}{12}=3$, sehingga $|\\det(M)|=3 \\to \\det(M)=-3 \\lor \\det(M)=3$.",
+        "Determinan matriks $M$ adalah $\\det(M)=p^2-6$.",
+        "Maka, $p^2-6=3 \\lor p^2-6=-3$.",
+        "Diperoleh $p^2=9 \\lor p^2=3$.",
+        "Karena $p>1$, nilai $p=3 \\text{ (TM)} \\lor p=\\sqrt{3}$."
+      ]
+    },
+    {
+      "question": "Sebuah bangun ruang bervolume $40$ satuan persegi ditransformasikan oleh dilatasi tak seragam dengan matriks $D=\\begin{pmatrix}k&0&0\\\\0&-2&0\\\\0&0&3\\end{pmatrix}$. Volume bayangannya menjadi $240$ satuan persegi. Jumlah seluruh nilai $k$ yang mungkin adalah ....",
+      "options": [
+        "$-3$",
+        "$-1$",
+        "$0$",
+        "$1$",
+        "$3$"
+      ],
+      "answer": "C. $0$",
+      "intro": "Pada transformasi ruang 3D, volume dikalikan oleh nilai mutlak determinan matriks. Tanda determinan menentukan apakah orientasi ruang tetap atau terbalik.",
+      "discussion": [
+        "Faktor perubahan volume adalah $\\dfrac{240}{40}=6$, sehingga $|\\det(D)|=6$.",
+        "Karena $D$ matriks diagonal, determinannya adalah hasil kali elemen diagonal: $\\det(D)=k(-2)(3)=-6k$.",
+        "Dari $|-6k|=6$ diperoleh $|k|=1$, sehingga kemungkinannya adalah $k_1=1$ atau $k_2=-1$.",
+        "$k_1+k_2=0.$"
+      ]
+    },
+    {
+      "question": "Titik $P(2,3)$ dicerminkan terhadap garis $x+2y+C=0$ dan menghasilkan bayangan $P'(-2,-5)$. Nilai $C$ adalah ....",
+      "options": [
+        "$-4$",
+        "$-2$",
+        "$0$",
+        "$2$",
+        "$4$"
+      ],
+      "answer": "D. $2$",
+      "intro": "Pada refleksi, garis cermin adalah sumbu tegak lurus ruas yang menghubungkan titik asal dan bayangannya. Jadi garis cermin pasti melalui titik tengah $PP'$.",
+      "discussion": [
+        "Titik tengah antara $P(2,3)$ dan $P'(-2,-5)$ adalah $M=\\left(\\dfrac{2+(-2)}{2},\\dfrac{3+(-5)}{2}\\right)=(0,-1)$.",
+        "Karena $M$ berada pada garis cermin $x+2y+C=0$, substitusikan $M(0,-1)$ ke persamaan garis.",
+        "Diperoleh $0+2(-1)+C=0$.",
+        "Maka $C=2$."
+      ]
+    },
+    {
+      "question": "Diketahui transformasi $T$ memetakan setiap titik $(x,y)$ menjadi $(2x-y+1,x+3y-2)$. Jika garis $g: x+2y=4$ ditransformasikan oleh $T$, kemudian hasilnya direfleksikan terhadap garis $y=x$, maka persamaan akhir garis tersebut adalah ....",
+      "options": [
+        "$5x+y=19$",
+        "$x+5y=19$",
+        "$5x-y=19$",
+        "$x-5y=19$",
+        "$3x+2y=19$"
+      ],
+      "answer": "A. $5x+y=19$",
+      "intro": "Soal ini menggabungkan transformasi affine dan refleksi garis. Karena ada translasi pada $T$, koordinat bayangan harus ditulis lengkap, lalu refleksi terhadap $y=x$ cukup menukar koordinat.",
+      "discussion": [
+        "Misalkan hasil transformasi $T$ adalah $(X,Y)$, maka $X=2x-y+1$ dan $Y=x+3y-2$.",
+        "Pindahkan translasi: $X-1=2x-y$ dan $Y+2=x+3y$.",
+        "Dari sistem tersebut, diperoleh $x=\\dfrac{3(X-1)+(Y+2)}{7}=\\dfrac{3X+Y-1}{7}$ dan $y=\\dfrac{-(X-1)+2(Y+2)}{7}=\\dfrac{-X+2Y+5}{7}$.",
+        "Substitusikan ke garis awal $x+2y=4$: $\\dfrac{3X+Y-1}{7}+2\\left(\\dfrac{-X+2Y+5}{7}\\right)=4$.",
+        "Sederhanakan: $\\dfrac{X+5Y+9}{7}=4$, sehingga $X+5Y=19$.",
+        "Garis ini kemudian direfleksikan terhadap $y=x$. Jika koordinat akhir ditulis $(u,v)$, maka sebelum refleksi adalah $(X,Y)=(v,u)$.",
+        "Substitusi ke $X+5Y=19$ memberi $v+5u=19$, atau $5u+v=19$.",
+        "Dengan variabel biasa, persamaan akhirnya adalah $5x+y=19$."
+      ]
+    },
+    {
+      "question": "Parabola $y=x^2-4x+1$ dirotasikan $180^\\circ$ terhadap titik $(1,2)$, lalu didilatasi terhadap pusat $(1,2)$ dengan faktor $-2$. Persamaan bayangan akhirnya adalah ....",
+      "options": [
+        "$y=2x^2-4x+6$",
+        "$y=-2x^2+4x-6$",
+        "$y=\\dfrac{1}{2}x^2-x+3$",
+        "$y=-\\dfrac{1}{2}x^2+x+1$",
+        "$y=2x^2-8x+10$"
+      ],
+      "answer": "C. $y=\\dfrac{1}{2}x^2-x+3$",
+      "intro": "Transformasi kurva lebih aman dikerjakan dengan menuliskan koordinat asal dalam bentuk koordinat akhir. Kedua transformasi berpusat sama, sehingga hubungan koordinatnya dapat disusun dari pusat $(1,2)$.",
+      "discussion": [
+        "Rotasi $180^\\circ$ terhadap $(1,2)$ mengubah vektor relatif $(x-1,y-2)$ menjadi $-(x-1,y-2)$.",
+        "Dilatasi faktor $-2$ terhadap pusat yang sama mengalikan vektor relatif hasil rotasi dengan $-2$.",
+        "Gabungan keduanya mengalikan vektor relatif awal dengan $(-2)(-1)=2$.",
+        "Jika titik akhir ditulis $(X,Y)$, maka $(X-1,Y-2)=2(x-1,y-2)$.",
+        "Jadi $x=1+\\dfrac{X-1}{2}=\\dfrac{X+1}{2}$ dan $y=2+\\dfrac{Y-2}{2}=\\dfrac{Y+2}{2}$.",
+        "Substitusikan ke parabola awal $y=x^2-4x+1$: $\\dfrac{Y+2}{2}=\\left(\\dfrac{X+1}{2}\\right)^2-4\\left(\\dfrac{X+1}{2}\\right)+1$.",
+        "Kalikan dan sederhanakan: $Y=\\dfrac{1}{2}X^2-X+3$.",
+        "Dengan variabel biasa, persamaan akhirnya adalah $y=\\dfrac{1}{2}x^2-x+3$."
+      ]
+    },
+    {
+      "question": "Matriks $A=\\begin{pmatrix}1&p\\\\2&4\\end{pmatrix}$ dan $B=\\begin{pmatrix}3&1\\\\0&2\\end{pmatrix}$. Bangun datar berluas $10$ ditransformasikan oleh $A$ lalu oleh $B$. Jika luas akhirnya $120$ dan orientasinya tetap, maka jumlah semua nilai $p$ yang mungkin adalah ....",
+      "options": [
+        "$-2$",
+        "$-1$",
+        "$1$",
+        "$2$",
+        "$4$"
+      ],
+      "answer": "C. $1$",
+      "intro": "Untuk komposisi transformasi linear, faktor perubahan luas adalah nilai mutlak determinan hasil komposisi. Determinan hasil komposisi sama dengan hasil kali determinan masing-masing matriks.",
+      "discussion": [
+        "Faktor perubahan luas adalah $\\dfrac{120}{10}=12$, sehingga $|\\det(BA)|=12$.",
+        "Karena $\\det(BA)=\\det(B)\\det(A)$, hitung masing-masing determinan.",
+        "$\\det(B)=3(2)-1(0)=6$ dan $\\det(A)=1(4)-p(2)=4-2p$.",
+        "Maka $|6(4-2p)|=12$, sehingga $|4-2p|=2$.",
+        "Dari $4-2p=2$ diperoleh $p=1$, sedangkan dari $4-2p=-2$ diperoleh $p=3$.",
+        "Orientasi tetap berarti $\\det(BA)>0$. Untuk $p=1$, $6(4-2)=12>0$. Untuk $p=3$, $6(4-6)=-12<0$.",
+        "Jadi hanya $p=1$ yang memenuhi orientasi tetap. Jumlah semua nilai $p$ yang mungkin adalah $1$."
+      ]
+    },
+    {
+      "question": "TKA Matematika Lanjut:<br>Apabila garis $ax+y-9=0$ dan $x+by+6=0$ dicerminkan terhadap garis $y=x$, kemudian dilanjutkan translasi $T\\begin{pmatrix}1\\\\-1\\end{pmatrix}$, menghasilkan bayangan dengan persamaan berturut-turut $x+2y-8=0$ dan $2x-y-9=0$. Nilai dari $2a-b$ adalah ....",
+      "options": [
+        "$-6$",
+        "$-2$",
+        "$0$",
+        "$2$",
+        "$6$"
+      ],
+      "answer": "E. $6$",
+      "intro": "Untuk bayangan garis, gunakan hubungan koordinat secara berurutan. Refleksi terhadap $y=x$ menukar koordinat, sedangkan translasi $T\\begin{pmatrix}1\\\\-1\\end{pmatrix}$ mengubah titik $(X,Y)$ menjadi $(X+1,Y-1)$.",
+      "discussion": [
+        "Garis pertama $ax+y-9=0$ setelah dicerminkan terhadap $y=x$ menjadi $x+ay-9=0$.",
+        "Setelah translasi $(1,-1)$, titik sebelum translasi adalah $(x-1,y+1)$, sehingga persamaan bayangannya menjadi $(x-1)+a(y+1)-9=0$.",
+        "Sederhanakan: $x+ay+a-10=0$.",
+        "Persamaan ini sama dengan $x+2y-8=0$, sehingga $a=2$ dan konstanta $a-10=-8$ sesuai.",
+        "Garis kedua $x+by+6=0$ setelah dicerminkan terhadap $y=x$ menjadi $bx+y+6=0$.",
+        "Setelah translasi $(1,-1)$, persamaannya menjadi $b(x-1)+(y+1)+6=0$ atau $bx+y+7-b=0$.",
+        "Persamaan $bx+y+7-b=0$ sebanding dengan $2x-y-9=0$. Karena koefisien $y$ adalah $1$ dan $-1$, faktor pembandingnya adalah $-1$.",
+        "Maka $b=-2$ dan konstanta $7-b=9$ sesuai dengan hasil kali $-1(2x-y-9)= -2x+y+9=0$.",
+        "Jadi $2a-b=2(2)-(-2)=6$."
+      ]
+    },
+    {
+      "question": "TKA Matematika Lanjut:<br>Lingkaran $L_1$ memiliki pusat di $(-5,3)$ dan jari-jari $2$. Lingkaran $L_2$ adalah bayangan dari $L_1$ setelah dilakukan translasi $T$. Lingkaran $L_3$ dengan persamaan $(x+4)^2+(y-4)^2=16$ adalah bayangan dari $L_2$ setelah dilakukan dilatasi dengan pusat $O(0,0)$ dengan faktor skala tertentu. Pernyataan yang benar mengenai translasi $T$ dan faktor skala dilatasi yang dilakukan adalah ....",
+      "options": [
+        "$T=\\begin{pmatrix}3\\\\-1\\end{pmatrix}$ dan skala dilatasi $8$",
+        "$T=\\begin{pmatrix}3\\\\-1\\end{pmatrix}$ dan skala dilatasi $4$",
+        "$T=\\begin{pmatrix}3\\\\-1\\end{pmatrix}$ dan skala dilatasi $2$",
+        "$T=\\begin{pmatrix}1\\\\1\\end{pmatrix}$ dan skala dilatasi $2$",
+        "$T=\\begin{pmatrix}1\\\\1\\end{pmatrix}$ dan skala dilatasi $8$"
+      ],
+      "answer": "C. $T=\\begin{pmatrix}3\\\\-1\\end{pmatrix}$ dan skala dilatasi $2$",
+      "intro": "Translasi menggeser pusat lingkaran tanpa mengubah jari-jari. Dilatasi berpusat di $O(0,0)$ mengalikan pusat dan jari-jari dengan faktor skala yang sama dalam nilai mutlak.",
+      "discussion": [
+        "Lingkaran $L_1$ berpusat di $(-5,3)$ dan berjari-jari $2$.",
+        "Lingkaran $L_3$ memiliki persamaan $(x+4)^2+(y-4)^2=16$, sehingga pusatnya $(-4,4)$ dan jari-jarinya $4$.",
+        "Karena jari-jari berubah dari $2$ menjadi $4$, faktor skala dilatasi yang mungkin adalah $2$.",
+        "Jika $L_2$ didilatasi pusat $O$ dengan faktor $2$ menjadi pusat $(-4,4)$, maka pusat $L_2$ adalah $\\left(-2,2\\right)$.",
+        "Pusat $L_1(-5,3)$ ditranslasikan menjadi pusat $L_2(-2,2)$, sehingga vektor translasinya adalah $(-2-(-5),2-3)=(3,-1)$.",
+        "Jadi $T=\\begin{pmatrix}3\\\\-1\\end{pmatrix}$ dan faktor skala dilatasi $2$."
+      ]
+    },
+    {
+      "question": "TKA Matematika Lanjut:<br>Garis $l$ merupakan bayangan garis $3x+2y=6$ yang dirotasikan sejauh $90^\\circ$ berlawanan arah jarum jam dengan pusat rotasi $(2,0)$. Manakah koordinat titik yang terletak pada garis $l$? Pilihlah semua jawaban benar.",
+      "options": [
+        "$(-3,-2)$",
+        "$(-2,-1)$",
+        "$(1,2)$",
+        "$(2,0)$",
+        "$(5,2)$"
+      ],
+      "answer": "D dan E. $(2,0)$ dan $(5,2)$",
+      "intro": "Untuk mencari persamaan bayangan garis akibat rotasi, gunakan invers rotasi pada titik umum bayangan. Rotasi $90^\\circ$ berlawanan arah jarum jam memiliki invers rotasi $90^\\circ$ searah jarum jam.",
+      "discussion": [
+        "Misalkan titik bayangan pada garis $l$ adalah $(X,Y)$.",
+        "Kurangi pusat rotasi $(2,0)$, sehingga vektor relatifnya adalah $(X-2,Y)$.",
+        "Invers rotasi $90^\\circ$ berlawanan arah jarum jam adalah rotasi $-90^\\circ$, sehingga $(X-2,Y)$ menjadi $(Y,2-X)$.",
+        "Tambahkan kembali pusat $(2,0)$, maka koordinat titik asalnya adalah $(Y+2,2-X)$.",
+        "Karena titik asal berada pada garis $3x+2y=6$, substitusikan $x=Y+2$ dan $y=2-X$: $3(Y+2)+2(2-X)=6$.",
+        "Sederhanakan: $3Y+6+4-2X=6$, sehingga $2X-3Y-4=0$.",
+        "Uji opsi pada $2x-3y-4=0$. Titik $(2,0)$ memberi $4-0-4=0$, dan titik $(5,2)$ memberi $10-6-4=0$.",
+        "Jadi titik yang terletak pada garis $l$ adalah $(2,0)$ dan $(5,2)$."
+      ]
     }
   ]
 }

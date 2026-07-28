@@ -1,148 +1,111 @@
-const mainContent = document.getElementById('main-content');
+const $ = (id) => document.getElementById(id);
 
 const escapeHtml = (value) => String(value)
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#039;');
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
 
-const renderTable = (table) => {
-    if (!table) return '';
-
-    const headers = table.headers.map((header, index) => {
-        const alignClass = table.leftAlign?.includes(index) ? ' class="text-left"' : '';
-        return `<th${alignClass}>${header}</th>`;
-    }).join('');
-
-    const rows = table.rows.map((row) => {
-        const cells = row.map((cell, index) => {
-            const alignClass = table.leftAlign?.includes(index) ? ' class="text-left"' : '';
-            return `<td${alignClass}>${cell}</td>`;
-        }).join('');
-        return `<tr>${cells}</tr>`;
-    }).join('');
-
-    return `
-        <div class="table-container">
-            <table>
-                <thead><tr>${headers}</tr></thead>
-                <tbody>${rows}</tbody>
-            </table>
-        </div>
-    `;
-};
-
-const renderGrid = (grid = []) => `
-    <div class="grid-3">
-        ${grid.map((item) => `
-            <article class="method-card">
-                <h3>${item.title}</h3>
-                <div>${item.content}</div>
-            </article>
-        `).join('')}
-    </div>
-`;
-
-const renderOptions = (options = []) => `
-    <ol class="option-list" type="A">
-        ${options.map((option) => `<li>${option}</li>`).join('')}
-    </ol>
-`;
-
-const renderContentBlock = (block) => {
-    if (typeof block === 'string') {
-        return `<p>${block}</p>`;
+function renderMath() {
+    if (window.MathJax?.typesetPromise) {
+        window.MathJax.typesetPromise();
     }
+}
 
+function renderTable(block) {
+    const headers = block.headers.map((header) => `<th>${escapeHtml(header)}</th>`).join("");
+    const rows = block.rows.map((row) => `<tr>${row.map((cell) => `<td>${cell}</td>`).join("")}</tr>`).join("");
+    return `<div class="table-wrap"><table><thead><tr>${headers}</tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+
+function renderBlock(block) {
     switch (block.type) {
-        case 'list':
-            return `
-                <ul class="styled-list">
-                    ${block.items.map((item) => `<li>${item}</li>`).join('')}
-                </ul>
-            `;
-        case 'contoh':
-            return `
-                <div class="example-box">
-                    <strong>Contoh / Pembahasan</strong>
-                    <div>${block.content}</div>
-                    ${block.options ? renderOptions(block.options) : ''}
-                </div>
-            `;
-        case 'note':
-            return `
-                <div class="note-box note-box--toggle is-collapsed">
-                    <button class="note-toggle" type="button" aria-expanded="false">
-                        <span><i class="fa-solid fa-circle-info"></i> Catatan</span>
-                        <i class="fa-solid fa-chevron-up note-toggle__icon" aria-hidden="true"></i>
-                    </button>
-                    <div class="note-box__content">${block.content}</div>
-                </div>
-            `;
-        case 'table':
-            return renderTable(block.table);
-        case 'grid':
-            return renderGrid(block.grid);
-        case 'formula':
-            return `<div class="formula-line">${block.content}</div>`;
+        case "paragraph":
+            return `<div class="content-block"><p>${block.content}</p></div>`;
+        case "grid":
+            return `<div class="info-grid">${block.items.map((item) => `
+        <article class="info-card">
+          <h4>${escapeHtml(item.title)}</h4>
+          <p>${item.content}</p>
+        </article>
+      `).join("")}</div>`;
+        case "formula":
+            return `<div class="formula-box">${block.content}</div>`;
+        case "note":
+            return `<div class="note-box">${block.content}</div>`;
+        case "example":
+            return `<div class="example-box"><strong>${escapeHtml(block.title)}</strong><p>${block.content}</p></div>`;
+        case "table":
+            return renderTable(block);
         default:
-            return '';
+            return "";
     }
-};
+}
 
-const renderMateriCard = (materi) => {
-    const body = (materi.isi || []).map(renderContentBlock).join('');
-    const table = renderTable(materi.table);
-    const grid = renderGrid(materi.grid);
+function renderMaterial(data) {
+    const root = $("material-grid");
+    root.innerHTML = data.materi.map((item) => `
+    <article class="material-card">
+      <div class="material-card__header">
+        <div class="material-icon">${escapeHtml(item.icon)}</div>
+        <h3>${escapeHtml(item.judul)}</h3>
+      </div>
+      ${item.isi.map(renderBlock).join("")}
+    </article>
+  `).join("");
+    renderMath();
+}
 
-    return `
-        <section class="card-materi" data-tipe="${escapeHtml(materi.tipe)}">
-            <div class="card-materi__header">
-                <div class="card-materi__icon"><i class="fa-solid ${escapeHtml(materi.icon)}"></i></div>
-                <h2>${materi.judul}</h2>
-            </div>
-            ${body}
-            ${table}
-            ${grid}
-        </section>
+function renderExercises(data) {
+    const root = $("exercise-list");
+    if (!root || !data.latihan) return;
+
+    root.innerHTML = data.latihan.map((item, index) => {
+        const solutionId = `solution-${index}`;
+        return `
+      <article class="exercise-card">
+        <div class="exercise-card__header">
+          <span class="exercise-number">${index + 1}</span>
+          <p>${item.question}</p>
+        </div>
+        <ol class="option-list" type="A">
+          ${item.options.map((option) => `<li>${option}</li>`).join("")}
+        </ol>
+        <button class="solution-toggle" type="button" aria-expanded="false" aria-controls="${solutionId}">
+          Tampilkan pembahasan
+        </button>
+        <div class="solution-box" id="${solutionId}" hidden>
+          <strong>Jawaban: ${escapeHtml(item.answer)}</strong>
+          ${item.intro ? `<p>${item.intro}</p>` : ""}
+          <ol>
+            ${item.discussion.map((step) => `<li>${step}</li>`).join("")}
+          </ol>
+        </div>
+      </article>
     `;
-};
+    }).join("");
 
-const renderData = (data) => {
-    mainContent.innerHTML = data.materi.map(renderMateriCard).join('');
-};
+    root.addEventListener("click", (event) => {
+        const button = event.target.closest(".solution-toggle");
+        if (!button) return;
+        const solution = $(button.getAttribute("aria-controls"));
+        const isOpen = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!isOpen));
+        button.textContent = isOpen ? "Tampilkan pembahasan" : "Sembunyikan pembahasan";
+        solution.hidden = isOpen;
+        if (!isOpen) renderMath();
+    });
 
-mainContent.addEventListener('click', (event) => {
-    const toggle = event.target.closest('.note-toggle');
-    if (!toggle) return;
+    renderMath();
+}
 
-    const noteBox = toggle.closest('.note-box');
-    const isCollapsed = noteBox.classList.toggle('is-collapsed');
-    toggle.setAttribute('aria-expanded', String(!isCollapsed));
-});
 
-const loadMateri = async () => {
-    try {
-        const response = await fetch('data.json');
-        if (!response.ok) {
-            throw new Error(`Gagal memuat data.json (${response.status})`);
-        }
+async function loadData() {
+    const response = await fetch("data.json");
+    const data = await response.json();
+    renderMaterial(data);
+    renderExercises(data);
+}
 
-        const data = await response.json();
-        renderData(data);
-
-        if (window.MathJax?.typesetPromise) {
-            await window.MathJax.typesetPromise();
-        }
-    } catch (error) {
-        mainContent.innerHTML = `
-            <div class="error-state">
-                Materi belum dapat dimuat. Jalankan melalui server lokal agar fetch('data.json') dapat bekerja.
-                <br>${escapeHtml(error.message)}
-            </div>
-        `;
-    }
-};
-
-loadMateri();
+loadData();
