@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light;
+  color-scheme: light only;
   --bg: #f6f5f1;
   --surface: #ffffff;
   --text: #1f2933;
@@ -164,11 +164,11 @@ h2 {
 }
 
 .cover__actions {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   align-items: center;
   justify-content: center;
-  gap: 14px;
+  justify-items: center;
+  gap: clamp(28px, 5vh, 44px);
   margin-top: clamp(26px, 5vh, 34px);
 }
 
@@ -188,42 +188,58 @@ h2 {
 
 .cover__contact {
   display: grid;
+  justify-items: center;
   gap: 8px;
-  width: fit-content;
-  max-width: min(560px, 92vw);
-  padding: 14px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.38);
-  border-radius: 20px;
-  background: rgba(20, 61, 105, 0.18);
+  width: min(430px, 92vw);
+  padding: 18px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.52);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(20, 61, 105, 0.22));
   color: #ffffff;
+  font-family: "Trebuchet MS", "Comic Sans MS", ui-rounded, system-ui, sans-serif;
   font-style: normal;
-  line-height: 1.5;
-  box-shadow: 0 10px 24px rgba(20, 61, 105, 0.12);
+  line-height: 1.35;
+  box-shadow: 0 16px 34px rgba(20, 61, 105, 0.18);
+  backdrop-filter: blur(6px);
+}
+
+.cover__contact-label {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: clamp(0.72rem, 1.4vw, 0.8rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .cover__contact-name {
-  font-size: clamp(0.98rem, 2vw, 1.08rem);
-  font-weight: 500;
+  color: #ffffff;
+  font-size: clamp(1.02rem, 2vw, 1.18rem);
+  font-weight: 800;
+  text-align: center;
 }
 
-.cover__contact-links {
-  display: flex;
-  flex-wrap: wrap;
+.cover__contact-link {
+  display: inline-flex;
+  width: 100%;
+  min-width: 0;
+  min-height: 34px;
+  align-items: center;
   justify-content: center;
-  gap: 8px 14px;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: clamp(0.86rem, 1.8vw, 0.96rem);
-  font-weight: 500;
+  border-radius: 999px;
+  padding: 7px 16px;
+  background: rgba(255, 255, 255, 0.82);
+  color: #173b68;
+  font-size: clamp(0.84rem, 1.8vw, 0.94rem);
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  overflow-wrap: anywhere;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.72);
 }
 
-.cover__contact a {
-  color: inherit;
-  text-decoration-color: rgba(255, 211, 77, 0.72);
-  text-underline-offset: 4px;
-}
-
-.cover__contact a:hover {
-  color: var(--accent);
+.cover__contact-link:hover {
+  background: var(--accent);
 }
 
 .cover__decor {
@@ -550,12 +566,7 @@ h2 {
 
   .cover__contact {
     width: min(100%, 360px);
-    padding: 12px 14px;
-  }
-
-  .cover__contact-links {
-    display: grid;
-    gap: 6px;
+    padding: 14px;
   }
 
   .cover__decor--cap {

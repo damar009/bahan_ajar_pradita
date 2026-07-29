@@ -1,5 +1,6 @@
 /* Variabel Warna & Palette */
 :root {
+  color-scheme: light only;
     --bg-gradient: linear-gradient(135deg, #49A6E9, #2C73B4);
     --primary-blue: #21436E;
     --accent-yellow: #F2C94C;
