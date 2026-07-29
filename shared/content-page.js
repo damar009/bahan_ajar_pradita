@@ -232,6 +232,7 @@ function renderExercises(data) {
           <span class="exercise-number">${index + 1}</span>
           <p>${item.question}</p>
         </div>
+        ${renderTable(item.table)}
         ${renderOptions(item.options)}
         <button class="solution-toggle" type="button" aria-expanded="false" aria-controls="${solutionId}">
           Tampilkan Pembahasan
