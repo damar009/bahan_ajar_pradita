@@ -23,7 +23,7 @@
   {
     "id": "page_pd_dasnum_3",
     "title": "DASAR NUMERASI 03",
-    "summary": "| Under Construction...",
+    "summary": "| Bilangan",
     "url": "pages/page_pd_dasnum_3/index.html",
     "published": true
   },
@@ -81,12 +81,12 @@
     "title": "Matematika 01",
     "summary": "Materi Matematika Wajib 01.",
     "url": "pages/page_mat_wajib_1/index.html",
-    "published": true
+    "published": false
   },
   {
     "id": "page_mat_wajib_02",
-    "title": "Matematika 02",
-    "summary": "Transformasi Fungsi: Dilatasi, Rotasi, dan Kombinasi Transformasi Fungsi.",
+    "title": "Matematika TKA",
+    "summary": "Transformasi Geometri",
     "url": "pages/page_mat_wajib_2/index.html",
     "published": true
   },

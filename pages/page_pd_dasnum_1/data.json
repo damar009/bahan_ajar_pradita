@@ -336,7 +336,7 @@
       "isi": [
         "Subtes Penalaran Umum terdiri dari soal-soal dengan pilihan ganda biasa, pilihan ganda majemuk berbentuk tabel, dan isian singkat. Soal-soal yang akan dibahas di sini hanya bagian Penalaran Kuantitatif karena menjadi bagian dari dasar-dasar numerasi. Sementara itu, bagian Penalaran Induktif dan Penalaran Deduktif akan dijelaskan tersendiri di bagian Penalaran Umum.",
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 1",
           "content": "1. Jumlah pengunjung perpustakaan pada hari Rabu, Kamis, Jumat, dan Sabtu berturut-turut adalah 125, 136, 147, dan 158. Jika kenaikan jumlah pengunjung perpustakaan tersebut bersifat konstan setiap harinya pada minggu tersebut, jumlah pengunjung pada hari Senin adalah ....",
           "options": [
@@ -363,7 +363,7 @@
           ]
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 2",
           "content": "2. Bilangan yang PALING MENDEKATI hasil $1{,}23 + \\dfrac{16}{5}$ adalah ....",
           "options": [
@@ -390,7 +390,7 @@
           ]
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 3",
           "content": "3. Untuk membuat racikan kopi susu, rasio kopi dan susu yang digunakan adalah 2 : 5. Jika jumlah susu yang digunakan adalah 80 ml, maka jumlah kopi yang dibutuhkan adalah ... ml.",
           "options": [
@@ -417,7 +417,7 @@
           ]
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 4",
           "content": "4. Sebuah toko buah menjual 20 kg apel. Sebagian apel terjual dengan harga total Rp15.000,00 per kg, sedangkan sisanya terjual dengan harga normal Rp18.000,00 per kg. Jika total pendapatan dari penjualan seluruh apel tersebut adalah Rp324.000,00, banyak apel yang terjual dengan harga promo adalah ... kg.",
           "options": [
@@ -444,7 +444,7 @@
           ]
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 5",
           "content": "5. Enam tahun yang lalu, usia Bu Aminah adalah 6 kali lipat usia anaknya, Salsa. Saat ini, usia Bu Aminah adalah 3 kali lipat usia Salsa. Jumlah usia mereka berdua saat ini adalah ... tahun.",
           "options": [
@@ -471,7 +471,7 @@
           ]
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 6",
           "content": "6. Berikut adalah tabel kandungan nutrisi dari lima jenis susu kemasan per 200 ml. Seseorang yang sedang menjalani program diet ingin memilih susu yang paling optimal untuk kesehatan tulangnya, tetapi tetap rendah kalori. Ia memutuskan untuk memilih susu dengan rasio kandungan Kalsium per kkal energi tertinggi. Susu yang sebaiknya ia pilih adalah susu ....",
           "table": {
@@ -841,7 +841,7 @@
           ]
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 7",
           "content": "7. Jika $2A + 3 \\times 5 - 10 \\div 2 = 4$, maka nilai $A$ adalah ....",
           "options": [
@@ -868,7 +868,7 @@
           ]
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 8",
           "content": "8. Bilangan-bilangan 3, 2, 9, 1, 6, 1, 5 diurutkan dari yang terkecil hingga terbesar. Jika $p$, $q$, dan $r$ menyatakan bilangan pada posisi ke-1, ke-5, dan ke-7, maka nilai dari $p + q \\times r$ adalah ....",
           "options": [
@@ -895,7 +895,7 @@
           ]
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 9",
           "content": "9. Banyak segitiga pada bangun datar berikut adalah ....",
           "diagram": "triangle-9",
@@ -923,7 +923,7 @@
           ]
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 10",
           "content": "10. Rata-rata dari 3, 1, 5, 3, 5, 6, 2, dan $x$ adalah 4. Nilai dari $x$ adalah ....",
           "options": [
@@ -950,7 +950,7 @@
           ]
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 11",
           "content": "11. Fungsi $g$ memenuhi $3x + 10 < g(x) < 5^x$ untuk $x \\ge 2$. Di antara pilihan berikut, nilai $g$ saat $x = 2$ yang TIDAK MUNGKIN adalah ....<br>1. 18<br>2. 21<br>3. 24<br>4. 27",
           "options": [
@@ -977,7 +977,7 @@
           ]
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 12",
           "content": "12. Pada garis bilangan, posisi pecahan $\\dfrac{4}{x}$ di sebelah kanan pecahan $\\dfrac{3}{y}$ dengan $x$ dan $y$ positif. Berdasarkan informasi tersebut, manakah hubungan yang benar antara kuantitas $P$ dan $Q$ berikut berdasarkan informasi yang diberikan?",
           "table": {
@@ -1012,7 +1012,7 @@
           ]
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 13",
           "content": "13. Variabel $a$, $b$, dan $c$ merupakan bilangan real yang memenuhi $2a + b + 3c = 15$. Berapakah nilai $b$? Putuskan apakah pernyataan 1 dan 2 berikut cukup untuk menjawab pertanyaan tersebut.<br>1. $a = 3$<br>2. $2b + c = 8$",
           "options": [
@@ -1039,7 +1039,7 @@
           ]
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 14",
           "content": "14. Suatu tabung memiliki tinggi 9 cm dan volume $144\\pi$ cm$^3$. Berdasarkan informasi di atas, tentukan apakah pernyataan berikut benar atau salah.",
           "table": {
@@ -1349,7 +1349,7 @@
           "content": "Teks berikut digunakan untuk menjawab kuis 15-17.<br>Terdapat 8 calon pengurus kelas yang terdiri dari 5 laki-laki dan 3 perempuan. Akan dipilih pengurus kelas yang terdiri dari ketua, sekretaris, dan bendahara secara acak dari 8 calon pengurus kelas tersebut."
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 15",
           "content": "15. Banyak cara terpilihnya pengurus kelas dengan ketua laki-laki adalah ....",
           "options": [
@@ -1376,7 +1376,7 @@
           ]
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 16",
           "content": "16. Peluang terpilihnya ketua laki-laki adalah ....",
           "options": [
@@ -1403,7 +1403,7 @@
           ]
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 17",
           "content": "17. Peluang terpilihnya sekretaris dan bendahara yang berbeda gender adalah ....",
           "options": [
@@ -1461,7 +1461,7 @@
           }
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 18",
           "content": "18. Jika Toko Berkah akan menerima kiriman detergen merek P, Q, dan R pada hari yang sama untuk ke-6 kalinya pada 100 hari setelah <b>pengiriman pertama di</b> 1 Mei 2026, nilai $y$ adalah ....",
           "options": [
@@ -1488,7 +1488,7 @@
           ]
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 19",
           "content": "19. Jika Toko Berkah menerima kiriman detergen merek P, Q, dan R bersamaan pada tanggal 1 Mei 2026, volume detergen merek P dan Q yang diterima Toko Berkah pada bulan Mei 2026 adalah ... bungkus.",
           "options": [
@@ -1515,7 +1515,7 @@
           ]
         },
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Kuis 20",
           "content": "20. Jika Toko Berkah menerima kiriman detergen merek P, Q, dan R bersamaan pada tanggal 1 Mei 2026, jumlah hari Toko Berkah tidak menerima satu pun kiriman detergen merek P ataupun Q pada bulan Mei 2026 adalah ... hari.",
           "options": [
