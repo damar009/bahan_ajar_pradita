@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="light only">
-  <meta name="supported-color-schemes" content="light">
-    <title>Dummy Page Dasar Numerasi 10 | Brain Academy</title>
+    <meta name="color-scheme" content="light only">
+    <meta name="supported-color-schemes" content="light">
+    <title>DASAR NUMERASI 10 | Brain Academy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Quicksand:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script>
         window.MathJax = {
             tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                inlineMath: [["$", "$"], ["\\(", "\\)"]],
+                displayMath: [["$$", "$$"], ["\\[", "\\]"]]
             },
-            svg: { fontCache: 'global' }
+            svg: { fontCache: "global" }
         };
     </script>
-	    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-	    <link rel="stylesheet" href="../../shared/page-nav.css">
-	    <link rel="stylesheet" href="../../shared/watermark.css">
-	    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <link rel="stylesheet" href="../../shared/page-nav.css">
+    <link rel="stylesheet" href="../../shared/watermark.css">
+    <link rel="stylesheet" href="../../shared/content-page.css">
 </head>
+<body class="has-page-watermark">
+    <div data-page-nav></div>
 
-	<body class="has-page-watermark">
-	    <div data-page-nav></div>
-	    <header class="hero">
-        <div class="hero__decor hero__decor--one"><i class="fa-solid fa-graduation-cap"></i></div>
-        <div class="hero__decor hero__decor--two"><i class="fa-solid fa-square-root-variable"></i></div>
-        <div class="hero__decor hero__decor--three"><i class="fa-solid fa-lightbulb"></i></div>
+    <header class="hero">
         <div class="hero__inner">
-            <div class="brand">
-                <strong>BRAIN <span>ACADEMY</span></strong>
-                <small>By Ruangguru</small>
-            </div>
-            <p class="hero__eyebrow">Dasar-Dasar Numerasi</p>
-            <h1>Dummy Page Dasar Numerasi 10</h1>
-            <p class="hero__subtitle">Media Pembelajaran | <strong>Yuk, Belajar!</strong></p>
+            <p class="hero__eyebrow">Web Interaktif Matematika SMA</p>
+            <h1>Dasar Numerasi 10</h1>
+            <p class="hero__subtitle">Konten dummy sementara untuk struktur page Dasar Numerasi 10.</p>
         </div>
     </header>
 
-    <main id="main-content"></main>
+    <main>
+        <section id="materi" class="section-band">
+            <div class="section-inner">
+                <div class="section-title">
+                    <p>Materi</p>
+                    <h2>Ringkasan Pembelajaran</h2>
+                </div>
+                <div id="material-grid" class="material-stack" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section id="latihan" class="section-band section-band--alt" hidden>
+            <div class="section-inner">
+                <div class="section-title">
+                    <p>Latihan</p>
+                    <h2>Soal dan Pembahasan</h2>
+                </div>
+                <div id="exercise-list" class="exercise-list"></div>
+            </div>
+        </section>
+    </main>
 
     <footer class="site-footer">
         <p>Property of Ruangguru</p>
     </footer>
 
-	    <script src="../../shared/watermark.js" type="module"></script>
-	    <script src="../../shared/page-nav.js" type="module"></script>
-	    <script src="script.js"></script>
-	</body>
-
+    <script src="../../shared/watermark.js" type="module"></script>
+    <script src="../../shared/page-nav.js" type="module"></script>
+    <script src="../../shared/content-page.js"></script>
+</body>
 </html>

@@ -1,71 +1,112 @@
 .page-nav {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 40;
   display: flex;
-  gap: 10px;
   align-items: center;
-  justify-content: flex-end;
-  border-bottom: 1px solid #d9dee7;
-  padding: 12px clamp(16px, 4vw, 40px);
+  justify-content: space-between;
+  gap: 18px;
+  min-height: 72px;
+  border-bottom: 1px solid rgba(207, 224, 247, 0.85);
+  padding: 10px clamp(16px, 4vw, 42px);
   background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 18px 45px rgba(21, 49, 95, 0.08);
+  font-family: "Quicksand", Arial, sans-serif;
 }
 
-.page-nav__home,
-.page-nav__toggle,
-.page-nav__menu a {
-  min-height: 40px;
-  border-radius: 8px;
-  font: inherit;
-  font-weight: 750;
-}
-
-.page-nav__home,
-.page-nav__toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #cbd5e1;
-  background: #ffffff;
-  color: #1f2933;
+.page-nav a {
   text-decoration: none;
 }
 
-.page-nav__home {
-  padding: 0 14px;
+.page-nav__brand {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: max-content;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #ffffff;
+  color: #15315f;
+  box-shadow: 0 10px 30px rgba(21, 49, 95, 0.1);
+  font-family: "Poppins", Arial, sans-serif;
 }
 
+.page-nav__brand strong {
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.page-nav__brand span {
+  color: #ff7a00;
+}
+
+.page-nav__brand small {
+  color: #50698f;
+  font-weight: 800;
+}
+
+.page-nav__actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  min-width: 0;
+}
+
+.page-nav__home,
 .page-nav__toggle {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 0 12px 0 14px;
+  border: 1px solid #cfe0f7;
+  border-radius: 8px;
+  padding: 0 16px;
+  background: #f4f8ff;
+  color: #15315f;
+  font: 800 0.95rem "Quicksand", Arial, sans-serif;
   cursor: pointer;
 }
 
-.page-nav__toggle::after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 6px solid currentColor;
+.page-nav__home:hover,
+.page-nav__home:focus-visible,
+.page-nav__toggle:hover,
+.page-nav__toggle:focus-visible {
+  border-color: #226bd0;
+  background: #e8f2ff;
+  outline: 3px solid rgba(34, 107, 208, 0.18);
+  outline-offset: 2px;
 }
 
 .page-nav__dropdown {
   position: relative;
 }
 
+.page-nav__chevron {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.page-nav__dropdown.is-open .page-nav__chevron {
+  transform: rotate(180deg);
+}
+
 .page-nav__menu {
   position: absolute;
-  top: calc(100% + 8px);
+  top: calc(100% + 12px);
   right: 0;
-  width: min(320px, calc(100vw - 32px));
+  width: min(420px, calc(100vw - 32px));
+  max-height: min(70vh, 560px);
+  overflow: auto;
   display: none;
-  border: 1px solid #d9dee7;
+  gap: 8px;
+  border: 1px solid #cfe0f7;
   border-radius: 8px;
-  padding: 6px;
+  padding: 10px;
   background: #ffffff;
-  box-shadow: 0 18px 45px rgba(31, 41, 51, 0.16);
+  box-shadow: 0 24px 60px rgba(21, 49, 95, 0.18);
 }
 
 .page-nav__dropdown.is-open .page-nav__menu {
@@ -73,31 +114,63 @@
 }
 
 .page-nav__menu a {
-  display: flex;
-  align-items: center;
-  padding: 10px 12px;
-  color: #1f2933;
-  text-decoration: none;
+  display: grid;
+  gap: 3px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 12px;
+  color: #15315f;
 }
 
 .page-nav__menu a:hover,
-.page-nav__menu a:focus-visible {
-  background: #eef7f6;
+.page-nav__menu a:focus-visible,
+.page-nav__menu a.is-active {
+  border-color: #cfe0f7;
+  background: #f4f8ff;
   outline: none;
 }
 
-@media (max-width: 520px) {
+.page-nav__menu a.is-active {
+  border-left: 4px solid #226bd0;
+}
+
+.page-nav__menu span {
+  font-weight: 900;
+}
+
+.page-nav__menu small {
+  color: #5f6f86;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.page-nav--fallback {
+  justify-content: flex-end;
+}
+
+@media (max-width: 640px) {
   .page-nav {
-    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 10px;
   }
 
-  .page-nav__home,
+  .page-nav__brand,
+  .page-nav__actions,
   .page-nav__dropdown,
+  .page-nav__home,
   .page-nav__toggle {
-    flex: 1;
+    width: 100%;
   }
 
-  .page-nav__toggle {
+  .page-nav__actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .page-nav__menu {
+    left: 0;
+    right: auto;
     width: 100%;
   }
 }
