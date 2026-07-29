@@ -52,7 +52,7 @@
       "isi": [
         "Penjumlahan dan pengurangan bilangan bulat negatif mengikuti aturan tanda. Secara umum, $a+(-b)=a-b$ dan $a-(-b)=a+b$.",
         {
-          "type": "contoh",
+          "type": "example",
           "title": "Contoh Operasi Tanda",
           "content": "$2+(-3)=2-3=-1$ dan $2-(-3)=2+3=5$."
         },
@@ -430,7 +430,7 @@
         "Deret geometri adalah jumlah suku-suku barisan geometri.",
         {
           "type": "formula",
-          "content": "$$S_n=\\dfrac{a(1-r^n)}{1-r}$ untuk $r\\ne1$$"
+          "content": "$$S_n=\\dfrac{a(1-r^n)}{1-r}$$ untuk $$r\\ne1$$"
         },
         {
           "type": "example",
@@ -585,7 +585,7 @@
         "Untuk tiga himpunan, bagian irisan tiga himpunan perlu ditambahkan kembali setelah irisan berpasangan dikurangi.",
         {
           "type": "formula",
-          "content": "$$\\begin{array}{rcl} n\\left(A\\cup B\\cup C\\right) &=& n\\left(A\\right)+n\\left(B\\right)+n\\left(C\\right) \\\\ &=& -n\\left(A\\cap B\\right)-n\\left(A\\cap C\\right)-n\\left(B\\cap C\\right) \\\\ &=& +n\\left(A\\cap B\\cap C\\right) \\\\ \\end{array}$$"
+          "content": "$$\\begin{array}{rcl} n\\left(A\\cup B\\cup C\\right) &=& n\\left(A\\right)+n\\left(B\\right)+n\\left(C\\right) \\\\ && -n\\left(A\\cap B\\right)-n\\left(A\\cap C\\right)-n\\left(B\\cap C\\right) \\\\ && +n\\left(A\\cap B\\cap C\\right) \\\\ \\end{array}$$"
         },
         {
           "type": "example",
