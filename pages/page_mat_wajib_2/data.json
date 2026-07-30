@@ -646,7 +646,7 @@
       ]
     },
     {
-      "question": "TKA Matematika Lanjut:<br>Garis $l$ merupakan bayangan garis $3x+2y=6$ yang dirotasikan sejauh $90^\\circ$ berlawanan arah jarum jam dengan pusat rotasi $(2,0)$. Manakah koordinat titik yang terletak pada garis $l$? Pilihlah semua jawaban benar.",
+      "question": "TKA Matematika Lanjut:<br>Garis $l$ merupakan bayangan garis $3x+2y=6$ yang dirotasikan sejauh $90^\\circ$ berlawanan arah jarum jam dengan pusat rotasi $(2,0)$.<br>Manakah koordinat titik yang terletak pada garis $l$?<br><i>Pilihlah semua jawaban benar.</i>",
       "options": [
         "$(-3,-2)$",
         "$(-2,-1)$",

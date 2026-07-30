@@ -362,7 +362,7 @@
         },
         {
           "title": "Relasi FPB dan KPK",
-          "content": "Untuk dua bilangan $a$ dan $b$, berlaku $FPB(a,b)\\times KPK(a,b)=a\\times b$."
+          "content": "Untuk dua bilangan $a$ dan $b$, berlaku $$FPB(a,b)\\times KPK(a,b)=a\\times b$$"
         }
       ]
     },
@@ -401,7 +401,7 @@
         "Barisan aritmetika adalah barisan bilangan yang mempunyai beda tetap antara dua suku berdekatan. Rumus beda barisan aritmetika adalah $b=U_2-U_1=U_3-U_2=\\cdots=U_n-U_{n-1}$.",
         {
           "type": "formula",
-          "content": "$U_n=U_1+(n-1)b$"
+          "content": "$$U_n=U_1+(n-1)b$$"
         },
         {
           "type": "example",
@@ -420,7 +420,7 @@
       "icon": "fa-arrow-trend-up",
       "tipe": "basic",
       "isi": [
-        "Barisan geometri adalah barisan bilangan yang mempunyai rasio tetap antara dua suku berdekatan. Rasio dapat dihitung dengan $r=\\dfrac{U_2}{U_1}=\\dfrac{U_3}{U_2}=\\cdots$.",
+        "Barisan geometri adalah barisan bilangan yang mempunyai rasio tetap antara dua suku berdekatan. Rasio dapat dihitung dengan $$r=\\dfrac{U_2}{U_1}=\\dfrac{U_3}{U_2}=\\cdots$$",
         {
           "type": "formula",
           "content": "$$U_n=ar^{n-1}$$"
@@ -428,7 +428,7 @@
         {
           "type": "example",
           "title": "Contoh: Suku ke-11 Barisan Geometri",
-          "content": "Untuk barisan $3,6,12,24,48,\\ldots$, diketahui $a=3$ dan $r=2$. Maka $U_{11}=3\\cdot2^{10}=3072$."
+          "content": "Untuk barisan $3,6,12,24,48,\\ldots$, diketahui $a=3$ dan $r=2$.$$U_{11}=3\\cdot2^{10}=3072$$"
         },
         "Deret geometri adalah jumlah suku-suku barisan geometri.",
         {
@@ -438,7 +438,7 @@
         {
           "type": "example",
           "title": "Contoh: Jumlah 8 Suku Pertama",
-          "content": "Untuk barisan $7,14,28,56,\\ldots$, diketahui $a=7$ dan $r=2$. Maka $S_8=\\dfrac{7(1-2^8)}{1-2}=1785$."
+          "content": "Untuk barisan $7,14,28,56,\\ldots$, diketahui $a=7$ dan $r=2$.$$S_8=\\dfrac{7(1-2^8)}{1-2}=1785$$"
         },
         {
           "type": "note",
@@ -562,11 +562,11 @@
         },
         {
           "title": "Sifat Komutatif",
-          "content": "$A\\cap B=B\\cap A$ dan $A\\cup B=B\\cup A$."
+          "content": "$$A\\cap B=B\\cap A$$ $$A\\cup B=B\\cup A$$"
         },
         {
           "title": "Sifat Asosiatif",
-          "content": "$(A\\cap B)\\cap C=A\\cap(B\\cap C)$ dan $(A\\cup B)\\cup C=A\\cup(B\\cup C)$."
+          "content": "$$(A\\cap B)\\cap C=A\\cap(B\\cap C)$$ $$(A\\cup B)\\cup C=A\\cup(B\\cup C)$$"
         }
       ]
     },
@@ -697,6 +697,50 @@
     },
     {
       "question": "Pada kompetisi matematika terdapat 50 soal. Jawaban benar bernilai 4 poin, tidak dijawab bernilai 1 poin, dan salah mengurangi 1 poin.<br>Fuad mengikuti kompetisi tersebut dan hanya ada 1 soal yang tidak dijawabnya. Jika skor Fuad sama dengan skor salah satu dari 5 peserta pada tabel, banyak soal yang dijawab benar oleh Fuad adalah ....",
+      "table": {
+        "headers": [
+          "Nama Peserta",
+          "Benar",
+          "Salah",
+          "Tidak Dijawab"
+        ],
+        "rows": [
+          [
+            "Arika",
+            "30",
+            "9",
+            "11"
+          ],
+          [
+            "Benny",
+            "28",
+            "7",
+            "15"
+          ],
+          [
+            "Cut",
+            "29",
+            "4",
+            "17"
+          ],
+          [
+            "Dede",
+            "31",
+            "12",
+            "7"
+          ],
+          [
+            "Erwin",
+            "35",
+            "10",
+            "5"
+          ]
+        ],
+        "leftAlign": [
+          0,
+          4
+        ]
+      },
       "options": [
         "30",
         "31",
@@ -709,7 +753,7 @@
       "intro": "Jika Fuad benar $b$ soal, salah $49-b$ soal, dan tidak menjawab 1 soal, skornya $4b+1-(49-b)=5b-48=5(b-10)+2$. Skor harus bersisa 2 saat dibagi 5. Dari tabel, skor yang cocok adalah 122, sehingga $5b-48=122$ dan $b=34$."
     },
     {
-      "question": "Diketahui bilangan $2a.57b$ habis dibagi 9. Berapa banyak pernyataan yang benar? <br>1. Jika $a=1$, nilai $b=3$. <br>2. Jika $a=3$, nilai $b=1$. <br>3. Jika $a=6$, nilai $b=7$. <br>4. Jika $a=9$, nilai $b=0$.",
+      "question": "Diketahui bilangan $\\overline{2a.57b}$ habis dibagi 9. Berapa banyak pernyataan yang benar? <br>1. Jika $a=1$, nilai $b=3$. <br>2. Jika $a=3$, nilai $b=1$. <br>3. Jika $a=6$, nilai $b=7$. <br>4. Jika $a=9$, nilai $b=0$.",
       "options": [
         "0",
         "1",
@@ -722,7 +766,7 @@
       "intro": "Jumlah digitnya $2+a+5+7+b=14+a+b$ harus habis dibagi 9. Pernyataan 1, 2, dan 3 benar; untuk $a=9$, nilai $b$ yang memenuhi adalah 4, bukan 0."
     },
     {
-      "question": "Diketahui $x$ adalah bilangan di antara 500 dan 1.000. Berapakah sisa pembagian $x$ oleh 10? Putuskan apakah pernyataan 1 dan 2 berikut cukup untuk menjawab pertanyaan tersebut.<br>1. $x$ habis dibagi 13.<br>2. $x$ habis dibagi 37.",
+      "question": "Diketahui $x$ adalah bilangan di antara 500 dan 1.000. Berapakah sisa pembagian $x$ oleh 10?<br>Putuskan apakah pernyataan 1 dan 2 berikut cukup untuk menjawab pertanyaan tersebut.<br>1. $x$ habis dibagi 13.<br>2. $x$ habis dibagi 37.",
       "options": [
         "Pernyataan 1 SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan 2 SAJA tidak cukup.",
         "Pernyataan 2 SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan 1 SAJA tidak cukup.",
@@ -735,7 +779,7 @@
       "intro": "Pernyataan 1 saja memberi banyak kemungkinan kelipatan 13 dengan digit satuan berbeda. Pernyataan 2 saja juga memberi banyak kemungkinan kelipatan 37 dengan digit satuan berbeda. Jika keduanya dipakai, $x$ habis dibagi $13\\times37=481$ dan di antara 500 sampai 1.000 hanya mungkin $962$, sehingga sisanya saat dibagi 10 adalah 2."
     },
     {
-      "question": "Dua bilangan dua digit berbeda dibentuk dari angka 3, 5, 7, 8. Berapa banyak pernyataan yang benar? <br>1. Bilangan terbesar yang mungkin dibentuk habis dibagi 3. <br>2. Jumlah terkecil dari kedua bilangan yang mungkin terbentuk adalah 131. <br>3. Jumlah terbesar dari kedua bilangan yang mungkin terbentuk adalah 158. <br>4. Selisih terkecil dari kedua bilangan yang mungkin terbentuk adalah 12.",
+      "question": "Dua bilangan dua digit berbeda dibentuk dari angka 3, 5, 7, 8.<br>Berapa banyak pernyataan yang benar? <br>1. Bilangan terbesar yang mungkin dibentuk habis dibagi 3. <br>2. Jumlah terkecil dari kedua bilangan yang mungkin terbentuk adalah 131. <br>3. Jumlah terbesar dari kedua bilangan yang mungkin terbentuk adalah 158. <br>4. Selisih terkecil dari kedua bilangan yang mungkin terbentuk adalah 12.",
       "options": [
         "0",
         "1",
@@ -745,7 +789,7 @@
       ],
       "answer": "C",
       "discussion": [],
-      "intro": "Bilangan terbesar 87 habis dibagi 3, sehingga pernyataan 1 benar. Jumlah terkecil dapat dibuat 37+58 atau 38+57, yaitu 95, sehingga pernyataan 2 salah. Jumlah terbesar 85+73 atau 83+75, yaitu 158, sehingga pernyataan 3 benar. Selisih terkecil adalah 8, bukan 12, sehingga pernyataan 4 salah."
+      "intro": "Bilangan terbesar 87 habis dibagi 3, sehingga pernyataan 1 benar.<br>Jumlah terkecil dapat dibuat 37+58 atau 38+57, yaitu 95, sehingga pernyataan 2 salah.<br>Jumlah terbesar 85+73 atau 83+75, yaitu 158, sehingga pernyataan 3 benar.<br>Selisih terkecil adalah 8, bukan 12, sehingga pernyataan 4 salah."
     },
     {
       "question": "FPB tiap dua bilangan di antara tiga bilangan asli $p,q,r$ adalah 1 dengan $pq=12$ dan $p+r=10$. Jumlah ketiga bilangan tersebut adalah ....",
@@ -763,7 +807,7 @@
       ]
     },
     {
-      "question": "Diberikan tiga bilangan asli $x < y < z$. Berapakah FPB dan KPK dari ketiga bilangan tersebut?<br>1. $x\\cdot y=6$.<br>2. $y+z=8$.",
+      "question": "Diberikan tiga bilangan asli $x < y < z$.<br>Berapakah FPB dan KPK dari ketiga bilangan tersebut?<br>1. $x\\cdot y=6$.<br>2. $y+z=8$.",
       "options": [
         "Pernyataan 1 saja cukup",
         "Pernyataan 2 saja cukup",
@@ -821,11 +865,11 @@
       "answer": "B",
       "discussion": [
         "Dalam kondisi optimal 7 hari, kelompok 1 dapat diambil 3 kali, kelompok 2 sebanyak 2 kali, dan kelompok 3 sebanyak 2 kali.",
-        "Totalnya $100\\times3+150\\times2+225\\times2=300+300+450=1.050$ butir."
+        "Totalnya $$100\\times3+150\\times2+225\\times2$$ $$=300+300+450$$ $$=1.050\\text{ butir}$$."
       ]
     },
     {
-      "question": "Diketahui suku ke-4 dan suku ke-7 suatu barisan aritmetika berturut-turut adalah 13 dan 22. Berapa banyak pernyataan yang benar? <br>1. Suku pertama 3. <br>2. Beda 4. <br>3. Suku ke-20 adalah 64. <br>4. Jumlah 10 suku pertama adalah 175.",
+      "question": "Diketahui suku ke-4 dan suku ke-7 suatu barisan aritmetika berturut-turut adalah 13 dan 22.<br>Berapa banyak pernyataan yang benar? <br>1. Suku pertama 3. <br>2. Beda 4. <br>3. Suku ke-20 adalah 64. <br>4. Jumlah 10 suku pertama adalah 175.",
       "options": [
         "0",
         "1",
@@ -840,7 +884,7 @@
       ]
     },
     {
-      "question": "Diberikan barisan geometri $18, 7x-2, 8, \\ldots$ yang suku-sukunya selalu positif. Nilai $x$ yang memenuhi adalah ....",
+      "question": "Diberikan barisan geometri $18, 7x-2, 8, \\ldots$ yang suku-sukunya selalu positif.<br>Nilai $x$ yang memenuhi adalah ....",
       "options": [
         "$-2$",
         "$-\\dfrac{10}{7}$",
@@ -901,11 +945,11 @@
       ]
     },
     {
-      "question": "Diketahui $S=\\{x\\mid0\\le x\\le20\\}$, $K$ adalah himpunan bilangan prima kurang dari 10, dan $L$ adalah himpunan bilangan genap di antara 4 dan 14. Berdasarkan informasi, hubungan kuantitas $P$ dan $Q$ yang benar adalah ....",
+      "question": "Diketahui $S=\\{x\\mid0\\le x\\le20\\}$, $K$ adalah himpunan bilangan prima kurang dari 10 dan $L$ adalah himpunan bilangan genap di antara 4 dan 14.<br>Berdasarkan informasi, hubungan kuantitas $P$ dan $Q$ yang benar adalah ....",
       "options": [
-        "$P>Q$",
-        "$P<Q$",
-        "$P=Q$",
+        "$P > Q$",
+        "$P < Q$",
+        "$P = Q$",
         "Tidak dapat ditentukan hubungan $P$ dan $Q$"
       ],
       "answer": "A",
