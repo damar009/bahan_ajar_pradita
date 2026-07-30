@@ -67,6 +67,24 @@ Setelah generator selesai, biasanya cukup edit:
 pages/page_pd_dasnum_2/data.json
 ```
 
+## Menyembunyikan Pembahasan
+
+Secara default, tombol `Tampilkan Pembahasan` muncul pada contoh dan latihan
+yang memiliki pembahasan. Untuk menyembunyikannya pada satu halaman, tambahkan
+konfigurasi berikut di bagian paling atas `data.json` halaman tersebut:
+
+```json
+{
+  "settings": {
+    "showSolutionToggle": false
+  },
+  "materi": []
+}
+```
+
+Saat bernilai `false`, tombol dan isi pembahasannya tidak dirender. Ubah menjadi
+`true` atau hapus pengaturan tersebut untuk menampilkannya kembali.
+
 ## Cara Manual Menambah Halaman
 
 1. Duplikat folder `pages/page_pd_dasnum_1/` atau page standar lain.

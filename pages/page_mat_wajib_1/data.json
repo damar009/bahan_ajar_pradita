@@ -1,4 +1,7 @@
 {
+  "settings": {
+    "showSolutionToggle": true
+  },
   "title": "Contoh Halaman",
   "category": "Template",
   "summary": "Gunakan folder ini sebagai contoh ketika menambah halaman baru.",

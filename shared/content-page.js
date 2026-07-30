@@ -100,7 +100,9 @@ function renderDiagram(name) {
   `;
 }
 
-function renderDiscussionToggle(content, index, label = "Tampilkan Pembahasan") {
+function renderDiscussionToggle(content, index, label = "Tampilkan Pembahasan", showSolutionToggle = true) {
+  if (!showSolutionToggle) return "";
+
   const id = `discussion-${index}`;
 
   return `
@@ -113,7 +115,7 @@ function renderDiscussionToggle(content, index, label = "Tampilkan Pembahasan") 
   `;
 }
 
-function renderBlock(block, index = 0) {
+function renderBlock(block, index = 0, showSolutionToggle = true) {
   if (typeof block === "string") {
     return `<div class="content-block"><p>${block}</p></div>`;
   }
@@ -145,23 +147,27 @@ function renderBlock(block, index = 0) {
         </aside>
       `;
     case "example":
+      if (block.diagram || block.options || block.table) {
+        return renderDiscussionToggle(
+          `
+            ${block.title ? `<strong>${escapeHtml(block.title)}</strong>` : ""}
+            <div>${block.content}</div>
+            ${block.diagram ? renderDiagram(block.diagram) : ""}
+            ${block.options ? renderOptions(block.options) : ""}
+            ${block.table ? renderTable(block.table) : ""}
+          `,
+          `block-${index}`,
+          "Tampilkan Pembahasan",
+          showSolutionToggle,
+        );
+      }
+
       return `
         <div class="example-box">
           ${block.title ? `<strong>${escapeHtml(block.title)}</strong>` : ""}
           <div>${block.content}</div>
         </div>
       `;
-    case "contoh":
-      return renderDiscussionToggle(
-        `
-          ${block.title ? `<strong>${escapeHtml(block.title)}</strong>` : ""}
-          <div>${block.content}</div>
-          ${block.diagram ? renderDiagram(block.diagram) : ""}
-          ${block.options ? renderOptions(block.options) : ""}
-          ${block.table ? renderTable(block.table) : ""}
-        `,
-        `block-${index}`,
-      );
     case "table":
       return renderTable(block);
     default:
@@ -196,7 +202,7 @@ function normalizeMaterials(data) {
   return [];
 }
 
-function renderMaterials(data) {
+function renderMaterials(data, showSolutionToggle) {
   if (!materialRoot) return;
 
   const materials = normalizeMaterials(data);
@@ -206,14 +212,14 @@ function renderMaterials(data) {
         <div class="material-icon">${renderIcon(item.icon)}</div>
         <h3>${escapeHtml(item.judul || "Materi")}</h3>
       </div>
-      ${(item.isi || []).map((block, blockIndex) => renderBlock(block, `${itemIndex}-${blockIndex}`)).join("")}
+      ${(item.isi || []).map((block, blockIndex) => renderBlock(block, `${itemIndex}-${blockIndex}`, showSolutionToggle)).join("")}
       ${renderTable(item.table)}
       ${renderGrid(item.grid)}
     </article>
   `).join("");
 }
 
-function renderExercises(data) {
+function renderExercises(data, showSolutionToggle) {
   if (!exerciseRoot) return;
 
   const exercises = Array.isArray(data.latihan) ? data.latihan : [];
@@ -234,16 +240,18 @@ function renderExercises(data) {
         </div>
         ${renderTable(item.table)}
         ${renderOptions(item.options)}
-        <button class="solution-toggle" type="button" aria-expanded="false" aria-controls="${solutionId}">
-          Tampilkan Pembahasan
-        </button>
-        <div class="solution-box" id="${solutionId}" hidden>
-          <strong>Jawaban: ${escapeHtml(item.answer)}</strong>
-          ${item.intro ? `<p>${item.intro}</p>` : ""}
-          <ol>
-            ${(item.discussion || []).map((step) => `<li>${step}</li>`).join("")}
-          </ol>
-        </div>
+        ${showSolutionToggle ? `
+          <button class="solution-toggle" type="button" aria-expanded="false" aria-controls="${solutionId}">
+            Tampilkan Pembahasan
+          </button>
+          <div class="solution-box" id="${solutionId}" hidden>
+            <strong>Jawaban: ${escapeHtml(item.answer)}</strong>
+            ${item.intro ? `<p>${item.intro}</p>` : ""}
+            <ol>
+              ${(item.discussion || []).map((step) => `<li>${step}</li>`).join("")}
+            </ol>
+          </div>
+        ` : ""}
       </article>
     `;
   }).join("");
@@ -273,8 +281,9 @@ async function loadContent() {
     }
 
     const data = await response.json();
-    renderMaterials(data);
-    renderExercises(data);
+    const showSolutionToggle = data.settings?.showSolutionToggle !== false;
+    renderMaterials(data, showSolutionToggle);
+    renderExercises(data, showSolutionToggle);
     renderMath();
   } catch (error) {
     if (materialRoot) {

@@ -1,4 +1,7 @@
 {
+  "settings": {
+    "showSolutionToggle": true
+  },
   "materi": [
     {
       "judul": "Intuisi Aljabar Linear",
