@@ -925,7 +925,7 @@
       ]
     },
     {
-      "question": "Seorang penjual minuman menjual 3 variasi minuman dan memberi diskon 20% untuk setiap pembelian paket. Paket 1 berisi 2 minuman A dan 1 minuman B seharga Rp45.600,00. Paket 2 berisi 1 minuman A, 1 minuman B, dan 1 minuman C seharga Rp47.600,00. Paket 3 berisi 1 minuman B dan 3 minuman C seharga Rp65.600,00.<br><br>Jika Alex membeli 1 minuman jenis A, Alex harus membayar uang sebesar ....",
+      "question": "Seorang penjual minuman menjual 3 variasi minuman dan memberi diskon 20% untuk setiap pembelian paket.<br>Paket 1 berisi 2 minuman A dan 1 minuman B seharga Rp45.600,00.<br>Paket 2 berisi 1 minuman A, 1 minuman B, dan 1 minuman C seharga Rp47.600,00.<br>Paket 3 berisi 1 minuman jenis B dan 3 minuman jenis C seharga Rp65.600,00.<br><br>Jika Alex membeli 1 minuman jenis A, Alex harus membayar uang sebesar ....",
       "options": [
         "Rp17.500,00",
         "Rp18.000,00",
@@ -939,7 +939,7 @@
       ]
     },
     {
-      "question": "Seorang penjual minuman menjual 3 variasi minuman dan memberi diskon 20% untuk setiap pembelian paket. Paket 1 berisi 2 minuman A dan 1 minuman B seharga Rp45.600,00. Paket 2 berisi 1 minuman A, 1 minuman B, dan 1 minuman C seharga Rp47.600,00. Paket 3 berisi 1 minuman B dan 3 minuman C seharga Rp65.600,00.<br><br>Jika setiap pembelian dikenakan pajak 10%, maka harga 1 minuman jenis A dan 1 minuman jenis B setelah dikenakan pajak adalah ....",
+      "question": "Seorang penjual minuman menjual 3 variasi minuman dan memberi diskon 20% untuk setiap pembelian paket.<br>Paket 1 berisi 2 minuman A dan 1 minuman B seharga Rp45.600,00.<br>Paket 2 berisi 1 minuman A, 1 minuman B, dan 1 minuman C seharga Rp47.600,00.<br>Paket 3 berisi 1 minuman jenis B dan 3 minuman jenis C seharga Rp65.600,00.<br><br>Jika setiap pembelian dikenakan pajak sebesar 10%, maka harga 1 minuman jenis A dan 1 minuman jenis B setelah dikenakan pajak adalah ....",
       "options": [
         "Rp40.550,00",
         "Rp41.250,00",
