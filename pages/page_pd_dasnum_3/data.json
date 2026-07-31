@@ -822,7 +822,7 @@
       ]
     },
     {
-      "question": "Tiga kelompok ayam diambil telurnya tiap 3, 4, dan 6 hari sekali, mulai bersamaan pada 1 Mei.<br>Tanggal yang tidak terdapat aktivitas pengumpulan telur adalah ....",
+      "question": "Di sebuah peternakan ayam petelur, ayam-ayam yang diternak dibagi ke dalam 3 kelompok berbeda. Telur-telur dari ayam pada kelompok 1, 2, dan 3 secara berurutan dikumpulkan setiap 3 hari sekali, 4 hari sekali, dan 6 hari sekali. Dalam sekali pengambilan, rata-rata banyak telur yang dapat dikumpulkan dari ayam pada kelompok 1, 2, dan 3 secara berurutan adalah 100 butir telur, 150 butir telur, dan 225 butir telur.<br>Telur-telur dari ketiga kelompok dikumpulkan secara bersamaan pada tanggal 1 Mei. Dari tanggal-tanggal berikut, tanggal yang tidak terdapat aktivitas pengumpulan telur di dalamnya adalah tanggal ....",
       "options": [
         "17 Mei",
         "19 Mei",
@@ -839,7 +839,7 @@
       ]
     },
     {
-      "question": "Tiga kelompok ayam diambil telurnya tiap 3, 4, dan 6 hari sekali, mulai bersamaan pada 1 Mei.<br>Selama bulan Mei, banyak tanggal yang terdapat aktivitas pengumpulan telur dari kelompok 3, tetapi tidak terdapat aktivitas pengumpulan telur di kelompok 1 adalah ....",
+      "question": "Di sebuah peternakan ayam petelur, ayam-ayam yang diternak dibagi ke dalam 3 kelompok berbeda. Telur-telur dari ayam pada kelompok 1, 2, dan 3 secara berurutan dikumpulkan setiap 3 hari sekali, 4 hari sekali, dan 6 hari sekali. Dalam sekali pengambilan, rata-rata banyak telur yang dapat dikumpulkan dari ayam pada kelompok 1, 2, dan 3 secara berurutan adalah 100 butir telur, 150 butir telur, dan 225 butir telur.<br>Telur-telur dari ketiga kelompok dikumpulkan secara bersamaan pada tanggal 1 Mei. Selama bulan Mei, banyaknya tanggal yang di dalamnya terdapat aktivitas pengumpulan telur dari kelompok 3, tetapi tidak terdapat aktivitas pengumpulan telur di kelompok 1 adalah ... buah.",
       "options": [
         "11",
         "6",
@@ -854,7 +854,7 @@
       ]
     },
     {
-      "question": "Tiga kelompok ayam diambil telurnya tiap 3, 4, dan 6 hari sekali, mulai bersamaan pada 1 Mei.<br>Perkiraan banyak telur maksimum yang dapat dikumpulkan dari ayam pada ketiga kelompok dalam 7 hari adalah ....",
+      "question": "Di sebuah peternakan ayam petelur, ayam-ayam yang diternak dibagi ke dalam 3 kelompok berbeda. Telur-telur dari ayam pada kelompok 1, 2, dan 3 secara berurutan dikumpulkan setiap 3 hari sekali, 4 hari sekali, dan 6 hari sekali. Dalam sekali pengambilan, rata-rata banyak telur yang dapat dikumpulkan dari ayam pada kelompok 1, 2, dan 3 secara berurutan adalah 100 butir telur, 150 butir telur, dan 225 butir telur.<br>Perkiraan banyak telur maksimum yang dapat dikumpulkan dari ayam pada ketiga kelompok dalam 7 hari adalah ... butir telur.",
       "options": [
         "1.200",
         "1.050",
@@ -899,7 +899,7 @@
       ]
     },
     {
-      "question": "Novel trilogi Bung Lala memiliki halaman 160, lalu tiap novel berikutnya 40 halaman lebih banyak.<br>Anita selesai membaca novel pertama dan kedua, serta 40% novel ketiga. Dari total halaman ketiga novel, Anita sudah membaca sebanyak ....",
+      "question": "Bung Lala menulis serangkaian novel trilogi yang terdiri dari tiga judul yang berbeda diurutkan dari yang pertama rilis, yaitu Gelas Pecah, Piring Kusam, dan Mangkuk Retak. Novel Gelas Pecah terdiri dari 160 halaman. Sementara itu, banyak halaman dari novel-novel setelahnya adalah 40 halaman lebih banyak dari banyak halaman di novel sebelumnya.<br>Anita merupakan pembaca setia novel Bung Lala. Ia telah membaca sebagian dari novel trilogi yang ditulis Bung Lala. Novel Gelas Pecah dan Piring Kusam telah dibacanya sampai selesai. Sementara itu, novel Mangkuk Retak sudah ia baca sebanyak 40% dari keseluruhan halaman di novel tersebut.<br>Jika dihitung dari total halaman pada ketiga novel trilogi Bung Lala, Anita sudah membaca sebanyak ....",
       "options": [
         "70%",
         "72%",
@@ -915,7 +915,7 @@
       ]
     },
     {
-      "question": "Novel trilogi Bung Lala memiliki halaman 160, lalu tiap novel berikutnya 40 halaman lebih banyak.<br>Jika novel Mangkuk Retak dimulai dari halaman 1, hasil penjumlahan semua nomor halaman yang sudah dibaca Anita dari halaman 37 hingga halaman terakhir yang ia baca adalah ....",
+      "question": "Bung Lala menulis serangkaian novel trilogi yang terdiri dari tiga judul yang berbeda diurutkan dari yang pertama rilis, yaitu Gelas Pecah, Piring Kusam, dan Mangkuk Retak. Novel Gelas Pecah terdiri dari 160 halaman. Sementara itu, banyak halaman dari novel-novel setelahnya adalah 40 halaman lebih banyak dari banyak halaman di novel sebelumnya.<br>Anita merupakan pembaca setia novel Bung Lala. Ia telah membaca sebagian dari novel trilogi yang ditulis Bung Lala. Novel Gelas Pecah dan Piring Kusam telah dibacanya sampai selesai. Sementara itu, novel Mangkuk Retak sudah ia baca sebanyak 40% dari keseluruhan halaman di novel tersebut.<br>Jika novel Mangkuk Retak dimulai dari halaman 1, maka hasil penjumlahan semua nomor halaman yang sudah dibaca Anita dari halaman 37 hingga halaman terakhir yang ia baca adalah ....",
       "options": [
         "684",
         "703",
@@ -930,7 +930,7 @@
       ]
     },
     {
-      "question": "Novel trilogi Bung Lala memiliki halaman 160, lalu tiap novel berikutnya 40 halaman lebih banyak.<br>Anita melanjutkan bacaannya hingga menyelesaikan $\\dfrac{1}{3}$ dari sisa halaman yang belum dibaca. Jika nomor halaman Mangkuk Retak dimulai dari 1, nomor halaman terakhir yang sudah dibaca Anita adalah ....",
+      "question": "Bung Lala menulis serangkaian novel trilogi yang terdiri dari tiga judul yang berbeda diurutkan dari yang pertama rilis, yaitu Gelas Pecah, Piring Kusam, dan Mangkuk Retak. Novel Gelas Pecah terdiri dari 160 halaman. Sementara itu, banyak halaman dari novel-novel setelahnya adalah 40 halaman lebih banyak dari banyak halaman di novel sebelumnya.<br>Anita merupakan pembaca setia novel Bung Lala. Ia telah membaca sebagian dari novel trilogi yang ditulis Bung Lala. Novel Gelas Pecah dan Piring Kusam telah dibacanya sampai selesai. Sementara itu, novel Mangkuk Retak sudah ia baca sebanyak 40% dari keseluruhan halaman di novel tersebut.<br>Suatu hari saat duduk menunggu bus, Anita melanjutkan bacaannya hingga ia menyelesaikan 1/3 dari sisa halaman yang belum dibaca olehnya. Jika nomor halaman pada novel Mangkuk Retak dimulai dari 1, maka nomor halaman terakhir yang sudah dibaca Anita adalah nomor ....",
       "options": [
         "160",
         "144",
