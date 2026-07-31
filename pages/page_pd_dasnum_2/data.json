@@ -680,8 +680,7 @@
         ]
       }
     }
-  ]
-,
+  ],
   "latihan": [
     {
       "question": "Jika $P=\\{a,b,c,d\\}$ dan $Q=\\{96,97,98,99\\}$, maka himpunan pasangan terurut yang menyatakan fungsi dari Q ke P adalah ....",
@@ -935,8 +934,11 @@
       ],
       "answer": "A",
       "discussion": [
-        "Dengan memodelkan harga sebelum diskon minuman A, B, dan C sebagai sistem persamaan linear dari tiga paket, diperoleh harga 1 minuman jenis A sebesar Rp17.500,00."
-      ]
+        "Paket 1: $(2a+b) \\cdot (1 - \\%\\text{Diskon})=45.600 \\to 2a+b = 57.000$",
+        "Paket 2: $(a+b+c) \\cdot (1 - \\%\\text{Diskon})=47.600 \\to a+b+c = 59.500$",
+        "Paket 3: $(b+3c) \\cdot (1 - \\%\\text{Diskon})=65.600 \\to b+3c = 82.000$"
+      ],
+      "intro": "Dengan memodelkan harga sebelum diskon minuman A, B, dan C sebagai sistem persamaan linear dari tiga paket, diperoleh harga 1 minuman jenis A sebesar Rp17.500,00."
     },
     {
       "question": "Seorang penjual minuman menjual 3 variasi minuman dan memberi diskon 20% untuk setiap pembelian paket.<br>Paket 1 berisi 2 minuman A dan 1 minuman B seharga Rp45.600,00.<br>Paket 2 berisi 1 minuman A, 1 minuman B, dan 1 minuman C seharga Rp47.600,00.<br>Paket 3 berisi 1 minuman jenis B dan 3 minuman jenis C seharga Rp65.600,00.<br><br>Jika setiap pembelian dikenakan pajak sebesar 10%, maka harga 1 minuman jenis A dan 1 minuman jenis B setelah dikenakan pajak adalah ....",
@@ -948,9 +950,8 @@
         "Rp46.200,00"
       ],
       "answer": "C",
-      "discussion": [
-        "Setelah harga satuan A dan B diperoleh dari sistem paket, jumlah harga A dan B dikenai pajak 10%, sehingga totalnya Rp43.450,00."
-      ]
+      "discussion": [],
+      "intro": "Setelah harga satuan A dan B diperoleh dari sistem paket, jumlah harga A dan B dikenai pajak 10%, sehingga totalnya Rp43.450,00."
     },
     {
       "question": "Pada tahun 2020 harga sebuah rumah adalah Rp200.000.000,00. Pada tahun 2021 naik 30% dari tahun sebelumnya. Kemudian pada tahun 2022 rumah tersebut diberi diskon 10% dari harga tahun 2021. Harga rumah tersebut pada tahun 2022 adalah ....",
